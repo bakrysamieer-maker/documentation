@@ -1,6 +1,7 @@
 =====================
 Planning an itinerary
 =====================
+.. _services/field_service/planning_itinerary:
 
 By default, **Odoo Field Service** shows a static map where all task locations for the day are
 pinned. To make it more useful for the field service workers, it is possible to display an itinerary
