@@ -39,8 +39,8 @@ either:
 
 The :guilabel:`Bank Matching` view is composed of lines for each transaction of the journal with the
 newest displayed first. Each transaction has a date, a label, a partner (if set), :ref:`action
-buttons <accounting/reconciliation/action-buttons>`, and the transaction amount. Each line can be
-expanded to show additional information and buttons.
+buttons <accounting/reconciliation/action-buttons>`, and the transaction amount. Each line has
+additional actions available through the :icon:`oi-ellipsis-v` :guilabel:`(ellipsis)` button.
 
 .. image:: reconciliation/user-interface.png
    :alt: The user interface of the bank matching view of a bank journal.
@@ -66,11 +66,10 @@ suspense account is replaced with the account of the counterpart item or, in the
 
 .. _accounting/reconciliation/action-buttons:
 
-Possible action buttons
-~~~~~~~~~~~~~~~~~~~~~~~
+Possible actions
+~~~~~~~~~~~~~~~~
 
-Up to two suggested action buttons are available as primary buttons, but all available action
-buttons are displayed when the transaction is expanded. The following action buttons are available
+Up to two suggested action buttons are available as primary buttons. Other options are available
 depending on the details of the transaction:
 
 - :guilabel:`Set Partner`: Open a search view to add a partner to the transaction.
@@ -94,14 +93,6 @@ depending on the details of the transaction:
   is displayed. Click the reconciliation model's action button to generate the counterpart items
   defined on the reconciliation model.
 
-.. note::
-   To remove the partner from a transaction, click the :icon:`fa-times` :guilabel:`(close)` icon
-   next to the partner's name.
-
-Click the :icon:`fa-chevron-down` :guilabel:`(chevron down)` button next to the possible action
-buttons of an expanded line to display any of the above action buttons that are hidden due to space
-limitations, as well as the following:
-
 - :guilabel:`Upload bills`: Upload one or more bills to be :doc:`digitized
   <../vendor_bills/invoice_digitization>`. After digitization, the bills are available for matching
   via the :guilabel:`Reconcile` action button.
@@ -110,8 +101,10 @@ limitations, as well as the following:
 - :guilabel:`Delete Transaction`: Delete this transaction.
 
 .. note::
-   Uploading bills from the :guilabel:`Bank Matching` view does not automatically reconcile them
-   with the active transaction.
+   - To remove the partner from a transaction, click the :icon:`fa-times` :guilabel:`(close)` icon
+     next to the partner's name.
+   - Uploading bills from the :guilabel:`Bank Matching` view does not automatically reconcile them
+     with the active transaction.
 
 .. seealso::
    :doc:`../../../essentials/in_app_purchase`
