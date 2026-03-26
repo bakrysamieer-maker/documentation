@@ -5,23 +5,28 @@
 PDF quote builder
 =================
 
-The *PDF Quote Builder* in Odoo *Sales* provides the opportunity to send customers a fully
-customized PDF file for quotes, showcasing the company and products, with various information and
-design elements, instead of just showing the price and total.
+The *PDF Quote Builder* in the Odoo **Sales** app transforms a standard, text-heavy quote into a
+polished, branded proposal. Instead of sending a simple table of products and prices, it enables
+users to sandwich a quotation between professionally designed PDF pages.
 
-The PDF Quote Builder groups header pages, product descriptions, the price(s), and footer pages to
-create a detailed quote. It can also inject dynamic texts or custom notes in the PDF to personalize
-the offer for the customer.
+The PDF Quote Builder seamlessly combines any user-provided marketing brochures, technical sheets,
+branded cover pages, and Odoo generated quotes into a single, cohesive document. It also attaches
+product-specific files to the quote when a product is added and makes them available on the online
+store.
 
-Having a customized PDF in quotes provides a heightened conclusion to the shopping experience for
-customers, and adds an elegant level of professionalism to a company.
+Quotation templates can also be configured to add specific PDFs to the quote, ensuring the correct
+documents reach the intended customers. Dynamic text in PDF templates lets users extract **Sales**
+app data and customize files for each project or customer.
+
+Empty text fields on the PDF can be completed directly from the quotation form in the **Sales** app.
+This approach lets users personalize quotes without editing the PDF itself.
 
 .. seealso::
    `Odoo Quick Tips - Create a PDF quote [video] <https://www.youtube.com/watch?v=tQNydBZt-VI>`_
 
 .. note::
-   It is recommended to edit PDF forms with Adobe software. The form fields on the header and footer
-   PDF templates are necessary to get dynamic values with Odoo.
+   It is recommended to edit PDF forms with Adobe software. The form fields in the header and footer
+   PDF templates are required to retrieve dynamic values in Odoo.
 
 .. cards::
 
@@ -38,60 +43,65 @@ customers, and adds an elegant level of professionalism to a company.
    .. card:: Add PDFs to products
       :target: pdf_quote_builder/add_pdf_products
 
-      Set up the headers and footers for products. These will appear on sales quotes and online
-      store pages.
+      Set up the PDF headers and footers for products. These appear on sales quotes and online store
+      pages.
 
 
 Configuration
 =============
 
-In order to add custom PDF files for quotes, the :guilabel:`PDF Quote builder` feature *must* be
-configured.
+To add custom PDF files to quotes, the :guilabel:`PDF Quote builder` feature *must* be configured.
 
-To do that, navigate to :menuselection:`Sales app --> Configuration --> Settings`. Then, on the
-:guilabel:`Settings` page, scroll to the :guilabel:`Quotations & Orders` section, and locate the
-:guilabel:`PDF Quote builder` feature.
+Navigate to :menuselection:`Sales app --> Configuration --> Settings`. On the :guilabel:`Settings`
+page, scroll to the *Quotations & Orders* section. Enable the :guilabel:`PDF Quote builder` feature,
+then click :guilabel:`Save`.
 
 Add PDF as Header/Footer
 ========================
 
-In Odoo *Sales*, it's possible to add a custom PDF that can be used either as a header or a footer.
-When the PDF quote builder is activated in a quotation, you can then select as many headers and
-footers as you wish to use, these PDF will then also be inserted in the final PDF.
+.. important::
+   Odoo does not permit spaces in PDF field names. Only use letters, numbers, hyphens, or
+   underscores.
 
-To add a custom PDF as header or footer, start by navigating to :menuselection:`Sales app -->
-Configuration --> Headers/Footers`. From this page, either click :guilabel:`New` or
-:guilabel:`Upload`.
+The Odoo **Sales** app can add a custom PDF as a header or footer. The :guilabel:`Quote Builder` tab
+on a quote allows the selection of multiple headers and footers for insertion into the final PDF
+quote.
 
-Clicking :guilabel:`Upload` instantly provides the opportunity to upload the desired document. Then,
-the document can be further configured on the document card, or by clicking the
-:icon:`fa-ellipsis-v` :guilabel:`(vertical ellipsis)` icon in the top right corner of the document
-card, and then clicking :guilabel:`Edit`.
+To add a custom PDF as a header or footer, navigate to :menuselection:`Sales app --> Configuration
+--> Headers/Footers`. On this page, click :guilabel:`New` to create a new header or footer, or click
+:guilabel:`Upload` to add a PDF file.
 
-Clicking :guilabel:`New` reveals a blank documents form, in which the desired PDF can be uploaded
-via the :guilabel:`Upload your file` button on the form, located in the :guilabel:`File Content`
-field.
+Clicking :guilabel:`Upload` allows the user to select the desired PDF from their computer. The
+:guilabel:`Document Type` can be selected on the document card. The :guilabel:`Document Type` field
+determines the order in which the PDF appears in the quote. Click in the field and select either:
+:guilabel:`Header` to place the PDF before the quote or :guilabel:`Footer` to place the PDF after
+the quote.
 
-Various information and configurations related to the uploaded document can be modified here.
+Further configuration can be done by clicking the :icon:`fa-ellipsis-v` :guilabel:`(vertical
+ellipsis)` icon in the top-right corner of the document card and selecting :guilabel:`Edit`.
 
-The first field on the documents form is for the :guilabel:`Name` of the document, and it is
-grayed-out (not clickable) until a document is uploaded. Once a PDF has been uploaded, the
-:guilabel:`Name` field is auto-populated with the name of the PDF, and it can then be edited.
+Click :guilabel:`New` to open a blank document form. In the :guilabel:`File Content` field, click
+the :guilabel:`Upload your file` button, and select the PDF to upload. Once uploaded, Odoo
+automatically names the document after the file name, and the :guilabel:`Name` field becomes
+editable.
 
-Then, in the :guilabel:`Document Type` field, click the drop-down menu, and select either:
-:guilabel:`Header`, or :guilabel:`Footer` to define whether these files would be selectable to be at
-the beginning or at the end of your quote.
+To modify the uploaded file, click the :icon:`fa-pencil` :guilabel:`(Edit)`, :icon:`fa-download`
+:guilabel:`(Download)`, or :icon:`fa-trash` :guilabel:`(Clear)` icon next to the file name.
 
-Under this, in the :guilabel:`Quotation Templates` section, this PDF can be restricted quotation
-templates only.
+If the PDF includes form fields, they are automatically recognized and added as dynamic text fields.
+View and edit these fields by clicking :guilabel:`Configure dynamic fields`. For details, refer to
+:doc:`pdf_quote_builder/dynamic_text`.
+
+The :doc:`quote_template` field assigns the PDF to the selected template, restricting the PDF's use
+to that template.
 
 .. note::
-   Alternatively, you can also navigate to :menuselection:`Sales app --> Configuration --> Quotation
-   Templates`, select a template and directly :guilabel:`Add` or :guilabel:`Upload` a PDF to it in
-   the :guilabel:`Quote Builder` tab.
+   Another method to add a header or footer to a quotation template is navigating to
+   :menuselection:`Sales app --> Configuration --> Quotation Templates`. Select a template and then
+   in the :guilabel:`Quote Builder` tab, :guilabel:`Add` or :guilabel:`Upload` a PDF directly.
 
-Lastly, beside the :guilabel:`File Content` field, you have the possibility to :guilabel:`Configure
-dynamic fields`.
+.. image:: pdf_quote_builder/config-header-pdf.png
+   :alt: A configured document form for a header.
 
 .. toctree::
    :titlesonly:
