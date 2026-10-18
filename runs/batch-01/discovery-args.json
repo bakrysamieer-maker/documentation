@@ -1,0 +1,7 @@
+{
+ "per_segment": 25,
+ "total": 50,
+ "per_agent": 18,
+ "max_topup_rounds": 1,
+ "slices_file": "config/discovery-slices.json"
+}

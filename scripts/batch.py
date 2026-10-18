@@ -41,16 +41,21 @@ def write_json(path, data):
 def agent_results(workflow_dir):
     """Yield (label, result) for each agent of a workflow, in start order.
 
-    The result is the input of the agent's last successful StructuredOutput call, or None.
+    The result is the agent's validated return value from the workflow journal. For an agent the
+    journal has no result for, it falls back to the agent's last successful StructuredOutput call.
     """
     workflow_dir = Path(workflow_dir)
-    order = []
+    order, labels, journal_results = [], {}, {}
     journal = workflow_dir / 'journal.jsonl'
     if journal.exists():
         for line in journal.read_text(encoding='utf-8').splitlines():
             entry = json.loads(line)
-            if entry.get('type') == 'started' and entry.get('agentId') not in order:
-                order.append(entry['agentId'])
+            agent_id = entry.get('agentId')
+            if entry.get('type') == 'started' and agent_id not in order:
+                order.append(agent_id)
+                labels[agent_id] = entry.get('label')
+            elif entry.get('type') == 'result' and agent_id:
+                journal_results[agent_id] = entry.get('result')
     for meta_path in workflow_dir.glob('agent-*.meta.json'):
         agent_id = meta_path.name[len('agent-'):-len('.meta.json')]
         if agent_id not in order:
@@ -58,6 +63,10 @@ def agent_results(workflow_dir):
 
     for agent_id in order:
         meta = read_json(workflow_dir / f'agent-{agent_id}.meta.json', {})
+        label = labels.get(agent_id) or meta.get('description', agent_id)
+        if journal_results.get(agent_id) is not None:
+            yield label, journal_results[agent_id]
+            continue
         transcript = workflow_dir / f'agent-{agent_id}.jsonl'
         if not transcript.exists():
             continue
@@ -76,7 +85,7 @@ def agent_results(workflow_dir):
                 elif block.get('type') == 'tool_result' and block.get('is_error'):
                     failed.add(block.get('tool_use_id'))
         good = [result for call_id, result in calls.items() if call_id not in failed]
-        yield meta.get('description', agent_id), (good[-1] if good else None)
+        yield label, (good[-1] if good else None)
 
 
 def norm(name):
