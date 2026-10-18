@@ -1,0 +1,46 @@
+[
+  {
+    "id": "fabric-zhejiang",
+    "segment": "fabric",
+    "products": "woven apparel fabric: polyester and viscose suiting (TR), shirting, chiffon, georgette, crepe, satin, nida and abaya fabric, thobe fabric, linen and linen blends",
+    "regions": "Zhejiang: Shaoxing Keqiao, Hangzhou Xiaoshan, Huzhou, Jiaxing, Lanxi",
+    "search_ideas": "\"Canton Fair\" thobe fabric manufacturer Shaoxing; \"Canton Fair\" TR suiting fabric mill booth; 广交会 绍兴 梭织面料 生产厂家; made-in-china.com/manufacturers/abaya-fabric.html"
+  },
+  {
+    "id": "fabric-jiangsu-north",
+    "segment": "fabric",
+    "products": "woven apparel fabric: cotton shirting and poplin, twill, denim, canvas, workwear and uniform fabric, yarn-dyed fabric, cotton-linen, TR and wool-blend suiting, thobe fabric",
+    "regions": "Jiangsu (Wujiang Shengze, Changzhou, Wuxi, Jiangyin, Nantong), Shandong (Weifang, Zibo, Binzhou, Qingdao), Hebei (Shijiazhuang)",
+    "search_ideas": "\"Canton Fair\" workwear fabric manufacturer Changzhou; \"Canton Fair\" cotton poplin shirting mill Shandong booth; 广交会 吴江 盛泽 面料 工厂 展位; made-in-china.com/manufacturers/workwear-fabric.html"
+  },
+  {
+    "id": "garment-menswear",
+    "segment": "garment",
+    "products": "woven menswear and workwear: shirts, trousers, chinos, suits and blazers, jeans, jackets and coats, workwear and uniforms, thobes",
+    "regions": "any province, especially Zhejiang (Ningbo, Wenzhou), Jiangsu, Shandong (Qingdao, Jiaxiang), Guangdong, Fujian",
+    "search_ideas": "\"Canton Fair\" men's shirts factory OEM booth; \"Canton Fair\" workwear uniform manufacturer factory; 广交会 男装 衬衫 西裤 服装厂 展位; made-in-china.com/manufacturers/men-shirt.html"
+  },
+  {
+    "id": "garment-womens-kids",
+    "segment": "garment",
+    "products": "woven womenswear and kids' wear: dresses, blouses, skirts, woven trousers, abayas and modest wear, woven outerwear, kids' woven clothing",
+    "regions": "Guangdong (Humen Dongguan, Guangzhou, Zhongshan), Zhejiang (Hangzhou, Huzhou Zhili), Jiangsu (Changshu, Suzhou), Fujian, Hubei",
+    "search_ideas": "\"Canton Fair\" women's dresses garment factory booth; \"Canton Fair\" abaya manufacturer China factory; 广交会 女装 连衣裙 服装厂 展位; made-in-china.com/manufacturers/abaya.html"
+  },
+  {
+    "id": "fabric-south-other",
+    "segment": "fabric",
+    "topup": true,
+    "products": "woven apparel fabric of any kind (shirting, suiting, denim, rayon, polyester, linen, workwear fabric)",
+    "regions": "Guangdong (Foshan, Guangzhou, Kaiping, Xintang), Fujian, Jiangxi, Anhui, Henan, Hubei, plus any cluster not yet covered",
+    "search_ideas": "\"Canton Fair\" denim fabric mill Guangdong booth; \"Canton Fair\" rayon fabric manufacturer weaving; 广交会 牛仔布 面料 工厂"
+  },
+  {
+    "id": "garment-other",
+    "segment": "garment",
+    "topup": true,
+    "products": "any woven garments: jeans and denim garments, woven outerwear and down jackets with woven shells, school and corporate uniforms, casual woven wear",
+    "regions": "Guangdong (Xintang, Kaiping), Shandong, Hebei (Rongcheng), Anhui, Henan, Jiangxi, Hubei, plus any cluster not yet covered",
+    "search_ideas": "\"Canton Fair\" jeans factory Xintang booth; \"Canton Fair\" school uniform manufacturer factory; 广交会 牛仔裤 工厂 展位"
+  }
+]
