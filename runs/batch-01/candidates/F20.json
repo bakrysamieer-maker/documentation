@@ -1,0 +1,25 @@
+{
+ "id": "F20",
+ "name_en": "ZHINK Textile Co., Ltd. (Zhengkai Textile)",
+ "name_cn": "正凯纺织有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Hangzhou (Xiaoshan, Jingjiang Street)",
+ "main_products": "Stretch women's-wear fabrics: cotton/lyocell mechanical-stretch, recycled and fashion fabrics",
+ "woven_evidence": "The group site describes greige weaving (坯布织造) and 'mechanical stretch' cotton/lyocell fabrics, which are normally woven. It does not say woven outright.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": "136th, Oct-Nov 2024 (preliminary allocation)",
+  "booth": null,
+  "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2243/site/attach/0/3685b6b0a29441b0b9d049e7b7184455.pdf",
+  "evidence_note": "The Hangzhou government's preliminary 136th Canton Fair booth plan gives 正凯纺织有限公司 2 booths in the textile raw materials and fabrics zone. It is an allocation list, not a final exhibitor list."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.zhinktex.cc",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_knit"
+ ],
+ "notes": "A subsidiary of Zhejiang Zhengkai (ZHINK) Group, a yarn and fiber group, with GRS and OEKO-TEX 100 claimed. Hotline 0571-82996558. Layer 2 must confirm the stretch fabrics are woven, not knit.",
+ "slice": "fabric-zhejiang"
+}

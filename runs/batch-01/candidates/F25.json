@@ -1,0 +1,27 @@
+{
+ "id": "F25",
+ "name_en": "Shaoxing Rensheng Textile & Garment Co., Ltd.",
+ "name_cn": null,
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Shaoxing (Keqiao)",
+ "main_products": "Chiffon crepe, chiffon silk, charmeuse print, poplin, organdy embroidery",
+ "woven_evidence": "Its main products, chiffon, crepe, poplin, charmeuse and organdy, are woven constructions.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": null,
+  "booth": null,
+  "evidence_url": "https://www.made-in-china.com/showroom/tobby123",
+  "evidence_note": "Its Made-in-China profile says it shows new products at the 'Chinese Export Commodities Fair' (the Canton Fair) every year, without giving a year."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": null,
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/tobby123"
+ ],
+ "flags": [
+  "possible_trader"
+ ],
+ "notes": "It may be the same company as 浙江人生纺织服饰有限公司 (code 160Q913, men's and women's wear zone, Shaoxing 136th list), whose registered scope is distribution and import/export. That link is not confirmed. Its address is an office in Time Square, Keqiao. Contact: Mr. Tobby Zhao.",
+ "slice": "fabric-zhejiang"
+}

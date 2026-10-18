@@ -1,0 +1,27 @@
+{
+ "id": "F04",
+ "name_en": "Zhejiang Huayisheng Textile Co., Ltd.",
+ "name_cn": "浙江华艺盛纺织股份有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Huzhou (Nanxun District)",
+ "main_products": "Plain and high-twist voile, chiffon fabric (greige and printed/dyed); also scarves and Muslim headscarves",
+ "woven_evidence": "Zhejiang CCPIT profile says it has more than 420 looms and makes over 30 million m of greige and 60 million m of printed/dyed voile and chiffon a year. It also led the group standard for woven (机织) headscarves.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, Apr-May 2025",
+  "booth": null,
+  "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3648/site/attach/-1/2503051415361238839.pdf",
+  "evidence_note": "The Huzhou government's booth allocation list for the 137th Canton Fair, Phase 3, gives 浙江华艺盛纺织股份有限公司 2 booths in the textile raw materials and fabrics zone (纺织原料面料)."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://www.1688.com/factory/jcfzcx.html"
+ ],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "Exports to the Middle East and Arab markets (http://www.ccpitzj.gov.cn/art/2024/7/2/art_1229631368_44903.html). A large share of output is scarves and hijabs, which are accessories, so Layer 2 should confirm how much of the business is voile and chiffon dress fabric.",
+ "slice": "fabric-zhejiang"
+}

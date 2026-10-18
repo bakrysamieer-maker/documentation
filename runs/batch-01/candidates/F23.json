@@ -1,0 +1,25 @@
+{
+ "id": "F23",
+ "name_en": "Huafang Co., Ltd.",
+ "name_cn": "华纺股份有限公司",
+ "segment": "fabric",
+ "province": "Shandong",
+ "city": "Binzhou",
+ "main_products": "Printed and dyed woven garment fabrics; home textiles",
+ "woven_evidence": "Its 2025 shareholder materials describe a garment fabric business exporting to the EU and Australia. Woven construction is assumed, not confirmed.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": null,
+  "booth": null,
+  "evidence_url": "https://www.jufair.com/information/297211.html",
+  "evidence_note": "Listed (华纺股份) in a third-party jufair.com Phase 3 exhibitor list, without a session or booth. Its 2025 shareholder materials say trade shows brought in new customers but do not name the Canton Fair."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "A listed company (600448). It has a big home-textile line, so Layer 2 should confirm apparel fabric is the main business.",
+ "slice": "fabric-jiangsu-north"
+}

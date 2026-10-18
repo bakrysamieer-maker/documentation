@@ -1,0 +1,23 @@
+{
+ "id": "F18",
+ "name_en": "Lu Thai Textile Co., Ltd.",
+ "name_cn": "鲁泰纺织股份有限公司",
+ "segment": "fabric",
+ "province": "Shandong",
+ "city": "Zibo",
+ "main_products": "Yarn-dyed shirting, cotton shirting and poplin, piece-dyed fabrics, shirts",
+ "woven_evidence": "Several sources describe it as the world's largest yarn-dyed shirting mill, making 210M+ m of yarn-dyed woven fabric a year.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": null,
+  "booth": null,
+  "evidence_url": "https://www.cftc.org.cn/en/article/10446.html",
+  "evidence_note": "The China Foreign Trade Center's preview of the 123rd Canton Fair (2018) lists Lu Thai among exhibitors. A third-party jufair.com Phase 3 'known exhibitors' list also names 鲁泰纺织, but gives no session."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "A large listed mill (000726.SZ) that supplies premium brands. Its MOQs and prices may be high for KSA buyers. It also makes garments, but fabric is its core business.",
+ "slice": "fabric-jiangsu-north"
+}

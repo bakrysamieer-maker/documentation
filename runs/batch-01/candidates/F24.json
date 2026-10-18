@@ -1,0 +1,28 @@
+{
+ "id": "F24",
+ "name_en": "Changzhou Kailan Textile Co., Ltd.",
+ "name_cn": null,
+ "segment": "fabric",
+ "province": "Jiangsu",
+ "city": "Changzhou (Wujin, Yaoguan)",
+ "main_products": "Denim, stretch denim, T/C denim, cotton-poly-spandex super stretch fabric",
+ "woven_evidence": "It is described as a denim mill, but its MIC title says 'Woven/Knitted' and it lists knitted denim, so it is mainly woven with some knit.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": null,
+  "booth": "14.4H28-29, 14.4I10-11",
+  "evidence_url": "http://www.chinakailan.com/new_en.html",
+  "evidence_note": "The company news page lists a Canton Fair booth in hall 14.4 for a 1-5 May session, with no year. The same page lists 2023 shows, so this is probably 2023 or earlier."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "http://www.chinakailan.com",
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/www33366680/"
+ ],
+ "flags": [
+  "mixed_knit_woven",
+  "possible_knit"
+ ],
+ "notes": "Founded in 2002, with 25,000-30,000 sqm and 300-350 staff (self-reported). It exports to Mexico. The site was down (503) when checked, so the booth details come from a search snippet. Phone 86-519-86321300.",
+ "slice": "fabric-jiangsu-north"
+}

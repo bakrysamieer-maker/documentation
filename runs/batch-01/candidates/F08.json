@@ -1,0 +1,27 @@
+{
+ "id": "F08",
+ "name_en": "Shenze County Shengda Textile Co., Ltd.",
+ "name_cn": "深泽县盛达纺织有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang (Shenze County)",
+ "main_products": "TC, CVC, 100% cotton and TR fabrics for shirting, workwear and uniforms; pocketing; grey and dyed fabric",
+ "woven_evidence": "Its company brochure and other sources describe a mill with 400-950 looms making shirting, workwear and pocketing fabric.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, May 2025 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+  "evidence_note": "Named as a Shijiazhuang exhibitor at the 137th Canton Fair in a texnet.com.cn report."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://szsdtex.goldsupplier.com/about.html"
+ ],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "Registered in 2004 with a factory in the Zhaoba industrial zone of Shenze. Some listings also mention home-textile fabric and yarn, but shirting and workwear lead. Trade data shows exports to Vietnam, Bangladesh and the Philippines.",
+ "slice": "fabric-jiangsu-north"
+}

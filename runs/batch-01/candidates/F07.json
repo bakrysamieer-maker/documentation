@@ -1,0 +1,27 @@
+{
+ "id": "F07",
+ "name_en": "Hebei Hanlin Textile Co., Ltd.",
+ "name_cn": "河北翰林纺织有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang",
+ "main_products": "Shirting fabric, TR uniform and suiting fabric, rayon/viscose, cotton twill, denim, chiffon, yarn-dyed fabric",
+ "woven_evidence": "Its About page lists 200 air-jet, 100 water-jet, 200 shuttle and 100 rapier looms, which are all weaving looms.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, May 2025 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+  "evidence_note": "A texnet.com.cn report on the 137th Canton Fair names 河北翰林纺织有限公司 among the 90+ Shijiazhuang textile exhibitors. The company's own site also says it exhibits at the Canton Fair every year."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.hanlinfabric.com",
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/hanlin1234/"
+ ],
+ "flags": [
+  "mixed_knit_woven"
+ ],
+ "notes": "It claims a factory of more than 100 acres in Gaocheng and an output of 40M+ m a year. It names Saudi Arabia among its markets and has a Dubai office. Its MIC page mentions printed jersey stock held in Shaoxing warehouses (a minor knit line). Contacts: admin@hanlinfabric.com, +86 15830978534 (WeChat and WhatsApp).",
+ "slice": "fabric-jiangsu-north"
+}

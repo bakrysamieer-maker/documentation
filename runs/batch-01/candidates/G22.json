@@ -1,0 +1,23 @@
+{
+ "id": "G22",
+ "name_en": "Hangzhou Haiqiao Textile & Apparel Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "杭州海桥纺织服饰有限公司",
+ "segment": "garment",
+ "province": "Zhejiang",
+ "city": "Hangzhou",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. It is only listed in the 男女装 zone.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+  "evidence_note": "The official 138th Canton Fair joint-exhibitor table lists it as the production company partnered with 东方国际创业浦东服装进出口有限公司 (Shanghai) in the 男女装 zone (4 booths)."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "It is officially classed as a production company that exhibits under a Shanghai trading company's booth. No web profile was found. The English name is a transliteration.",
+ "slice": "garment-womens-kids"
+}

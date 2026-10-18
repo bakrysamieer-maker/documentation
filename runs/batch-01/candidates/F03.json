@@ -1,0 +1,26 @@
+{
+ "id": "F03",
+ "name_en": "Lixin Group Textile (Jiangsu) Co., Ltd.",
+ "name_cn": "立新集团纺织科研（江苏）有限公司",
+ "segment": "fabric",
+ "province": "Jiangsu",
+ "city": "Suzhou (Wujiang Shengze)",
+ "main_products": "Nylon and polyester woven fabrics, breathable down-proof coated fabric, yarn-dyed fabric, T/C fabric, functional outdoor fabric",
+ "woven_evidence": "Its product lines (nylon and polyester taslon, down-proof coated fabric, yarn-dyed and T/C fabric) are woven.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th, Oct-Nov 2024 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://m.jstv.com/news/2024/11/7/1303779403006234624.html",
+  "evidence_note": "A JSTV news report on Shengze companies at the 136th Canton Fair says it showed breathable down-proof coated fabric, and 4 buyers from the US, Canada, Italy and Georgia placed orders on site."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/chrissunpemg/",
+  "http://en.168tex.com/Company/104010/Products.html"
+ ],
+ "flags": [],
+ "notes": "Its fabrics are mainly outdoor and jacket fabrics, which suit jackets and workwear rather than shirting. It also exhibits at Intertextile Shanghai.",
+ "slice": "fabric-jiangsu-north"
+}

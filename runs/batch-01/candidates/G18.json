@@ -1,0 +1,23 @@
+{
+ "id": "G18",
+ "name_en": "Zhejiang Langsha'er Weidi Garment Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "浙江朗莎尔维迪制衣有限公司",
+ "segment": "garment",
+ "province": "Zhejiang",
+ "city": "Shaoxing",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. Its name uses 制衣 (garment making), and it is listed in the 男女装 zone.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, May 2025 (also 135th, May 2024)",
+  "booth": null,
+  "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2247/site/attach/0/f40cf366531945c6bb6a689e445795f3.pdf",
+  "evidence_note": "The official Shaoxing list of 137th Canton Fair exhibitors (第137届广交会参展企业名单 公示) shows it under code 160Q178, Phase 3, zone 男女装, with 4 booths. It is also on the 135th list."
+ },
+ "business_type_claimed": "unknown",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "It has exhibited repeatedly with 4 booths. Shaoxing is in Zhejiang but outside the slice's named cities, so check for overlap with other slices. Its products and woven focus need checking.",
+ "slice": "garment-womens-kids"
+}

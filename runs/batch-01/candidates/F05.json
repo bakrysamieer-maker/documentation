@@ -1,0 +1,25 @@
+{
+ "id": "F05",
+ "name_en": "Shaoxing Kaiming Textiles Co., Ltd.",
+ "name_cn": "绍兴凯明纺织品有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Shaoxing (Yuecheng District, Paojiang)",
+ "main_products": "Woven imitation silk, satin, SPH, imitation acetate, lyocell/modal and recycled fabrics; also knitted and printed fabrics",
+ "woven_evidence": "Its own site lists woven fabric first and says the group owns its own woven and knitted weaving factories, with output above 150 million m a year.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026",
+  "booth": null,
+  "evidence_url": "https://ctn1986.com/index.php?a=show&c=content&id=124674",
+  "evidence_note": "China Textile News (2026-05-06, from Keqiao Daily) names 凯明纺织 among the 246 Keqiao companies exhibiting at Phase 3 of the 139th Canton Fair."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.sxkaiming.com",
+ "b2b_profiles": [],
+ "flags": [
+  "mixed_knit_woven"
+ ],
+ "notes": "Business contacts published on its site: sales@sxkaiming.com and +86-575-85573053. It has a large knit line, so Layer 2 should check that woven is the main share. It names no Middle East markets.",
+ "slice": "fabric-zhejiang"
+}

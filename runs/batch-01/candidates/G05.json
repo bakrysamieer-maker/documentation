@@ -1,0 +1,23 @@
+{
+ "id": "G05",
+ "name_en": "ShaoXing Kailong Trousers Co., Ltd.",
+ "name_cn": "绍兴市凯隆裤业有限公司",
+ "segment": "garment",
+ "province": "Zhejiang",
+ "city": "Shaoxing",
+ "main_products": "Men's dress and casual trousers, T/C cargo pants, suits, vests, shirts, uniforms",
+ "woven_evidence": "It specialises in men's semi-formal and casual trousers, including T/C cargo pants, which are woven bottoms.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th (Oct-Nov 2024) and 137th (Apr-May 2025), Phase 3",
+  "booth": null,
+  "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3009/site/attach/0/f40cf366531945c6bb6a689e445795f3.pdf",
+  "evidence_note": "The Zhejiang (Shaoxing) official 137th fair exhibitor list shows 绍兴市凯隆裤业有限公司, exhibitor code 160F730, Phase 3, Men's & Women's Wear, 1 booth. The 136th list (.../b026be57fdfe4d859d4395272bdd4464.pdf) shows the same entry."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.sxkailongtrousers.com",
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "A directory profile says it was founded in 2007 at No. 2 Tianmu Road, Shaoxing, with 101-300 staff and 91-100% exports. US customs data shows shipments up to 2021. Its website did not resolve when fetched, and it also lists neckties.",
+ "slice": "garment-menswear"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "G15",
+ "name_en": "Guangzhou Maiyishang Apparel Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "广州迈依尚服饰有限公司",
+ "segment": "garment",
+ "province": "Guangdong",
+ "city": "Guangzhou",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. It is only listed in the men's and women's clothing (男女装) zone.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+  "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280D292, zone 男女装, with 4 booths."
+ },
+ "business_type_claimed": "unknown",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "A Chinese web search found no company page. Its products, woven focus and factory status all need checking. The English name is a transliteration.",
+ "slice": "garment-womens-kids"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "F16",
+ "name_en": "Shijiazhuang Jiyu Textile Co., Ltd.",
+ "name_cn": "石家庄冀誉纺织有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang (Zhao County)",
+ "main_products": "Grey fabric, finished woven fabric (poly-cotton), sized yarn, yarn, some garments",
+ "woven_evidence": "Its website reports 100+ automatic looms making about 15M m of grey woven fabric a year.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://www.sjz.gov.cn/columns/839b1981-330e-4901-aba5-6c392154ce03/202605/07/976b38ba-6e73-4eb1-814f-9aa1b4d243f6.html",
+  "evidence_note": "The Shijiazhuang government report on the 139th Canton Fair names it among the yarn and fabric exhibitors showing new functional yarns and fabrics."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": "https://www.textile-jy.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_trader",
+  "possible_non_clothing"
+ ],
+ "notes": "Its site describes a mixed production and trading model, and its finished-fabric menu includes bedding fabric. Layer 2 should confirm how much of its range is apparel fabric.",
+ "slice": "fabric-jiangsu-north"
+}

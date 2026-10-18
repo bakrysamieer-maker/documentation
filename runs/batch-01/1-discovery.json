@@ -1,0 +1,1338 @@
+{
+ "selected": [
+  {
+   "id": "G01",
+   "name_en": "Hebei Loto Garment Co., Ltd.",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Hebei",
+   "city": "Shijiazhuang",
+   "main_products": "Outerwear: down jackets, windbreakers, functional workwear, technical coats, insulated and ski jackets, hunting wear",
+   "woven_evidence": "Its range is outerwear made from waterproof, windproof and breathable technical fabrics (woven shells). It does list T-shirts as a minor category.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th (May 2025) and 138th (Oct-Nov 2025), Phase 3",
+    "booth": "6.1D37-38, E11-12",
+    "evidence_url": "https://www.lotogarment.com/news/custom-outerwear-in-focus-loto-garment-s-stand-85308835.html",
+    "evidence_note": "The company's own news pages announce booth 6.1D37-38, E11-12 at the 138th fair. A second page (lotogarment.com/news/meet-hebei-loto-garment-at-the-137th-canton-fa-84944985.html) gives the same booth for the 137th fair, Phase 3, May 1-5, 2025."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.lotogarment.com",
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "Its China address is an office in Hebei COFCO Plaza, Shijiazhuang. The site also lists factories in Bangladesh and Africa and a UK office, so Layer 2 should check where production actually happens. Published contacts: info@lotogarment.com, +86 15633045017 (WhatsApp).",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G02",
+   "name_en": "Shandong Aoshi Garments Co., Ltd.",
+   "name_cn": "山东傲饰服饰有限公司",
+   "segment": "garment",
+   "province": "Shandong",
+   "city": "Feicheng (Tai'an)",
+   "main_products": "Men's and ladies' suits, uniforms, coats, shirts",
+   "woven_evidence": "Its core products are tailored suits, uniforms and coats, which are woven garments.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, Phase 3 (2025)",
+    "booth": null,
+    "evidence_url": "https://swj.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=1499fdb52193435b922b90ef59d53aed.pdf",
+    "evidence_note": "The Tai'an city commerce bureau's booth allocation table for the 137th fair lists 山东傲饰服饰有限公司 in Phase 3, Men's & Women's Wear (男女装), with 1 standard booth."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://aoshi-garment.en.made-in-china.com/company-SHANDONG-AOSHI-GARMENTS-CO-LTD-.html",
+    "https://sdaoshi.en.alibaba.com/"
+   ],
+   "flags": [],
+   "notes": "Its Made-in-China profile says Manufacturer/Factory, SGS-audited (report QIP-ASR245337) and 461 employees, but its profile text says 1,500+ workers, so the figures conflict. It claims exports to the USA, EU, Australia and Africa.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G03",
+   "name_en": "Beijing Dahua Tiantan Garment Co., Ltd.",
+   "name_cn": "北京大华天坛服装有限公司",
+   "segment": "garment",
+   "province": "Beijing",
+   "city": "Beijing (production park in Liangxiang, Fangshan)",
+   "main_products": "Men's shirts and suits, high-end custom tailoring (TIANTAN, PURE TOUCH brands)",
+   "woven_evidence": "It grew out of the former Beijing Dahua Shirt Factory (founded 1954), has dress shirt and suit workshops, and helped draft the national shirt-size standard.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Phase 3 (Oct-Nov 2025)",
+    "booth": null,
+    "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250806677716135477.pdf",
+    "evidence_note": "The Beijing commerce bureau's 138th fair exhibitor list includes 北京大华天坛服装有限公司 in Phase 3, Men's & Women's Wear, with 1 general booth. The list classifies it as a production enterprise (生产企业)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.dahuafashion.com",
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It is a subsidiary of Beijing Dahua Fashion Technology (北京大华时尚科技发展有限公司). The company says it has a 45,000 m2 industrial park with shirt and suit workshops (self-reported). Published contacts: bg@dahuafashion.com, 010-82631160.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G04",
+   "name_en": "Mailyard Garment Co., Ltd. (Hubei Mailyard)",
+   "name_cn": "美尔雅服饰有限公司",
+   "segment": "garment",
+   "province": "Hubei",
+   "city": "Huangshi",
+   "main_products": "Men's and ladies' suits, coats, workwear/professional wear, casual wear",
+   "woven_evidence": "It is a long-established Western-style suit maker that exports suits and professional wear, mainly to Japan.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, Phase 3 (2025)",
+    "booth": null,
+    "evidence_url": "https://swt.hubei.gov.cn/stdt/tzgg/202501/P020250108626360874234.pdf",
+    "evidence_note": "The Hubei trade delegation's 137th fair offline booth allocation lists 美尔雅服饰有限公司 under Men's & Women's Wear (男女装) with 4 booths."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "http://www.mailyard.com.cn",
+   "b2b_profiles": [
+    "https://www.manufacturer.com/mailyardgarment-supplier"
+   ],
+   "flags": [],
+   "notes": "It is linked to listed company Hubei Mailyard Co., Ltd. (600107). Its 2024 annual report shows export processing revenue down about 22%. Directories say around 2,000 workers and an industrial park in Tuanchengshan, Huangshi, and one directory also lists sweaters as a small line.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G05",
+   "name_en": "ShaoXing Kailong Trousers Co., Ltd.",
+   "name_cn": "绍兴市凯隆裤业有限公司",
+   "segment": "garment",
+   "province": "Zhejiang",
+   "city": "Shaoxing",
+   "main_products": "Men's dress and casual trousers, T/C cargo pants, suits, vests, shirts, uniforms",
+   "woven_evidence": "It specialises in men's semi-formal and casual trousers, including T/C cargo pants, which are woven bottoms.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th (Oct-Nov 2024) and 137th (Apr-May 2025), Phase 3",
+    "booth": null,
+    "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3009/site/attach/0/f40cf366531945c6bb6a689e445795f3.pdf",
+    "evidence_note": "The Zhejiang (Shaoxing) official 137th fair exhibitor list shows 绍兴市凯隆裤业有限公司, exhibitor code 160F730, Phase 3, Men's & Women's Wear, 1 booth. The 136th list (.../b026be57fdfe4d859d4395272bdd4464.pdf) shows the same entry."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.sxkailongtrousers.com",
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "A directory profile says it was founded in 2007 at No. 2 Tianmu Road, Shaoxing, with 101-300 staff and 91-100% exports. US customs data shows shipments up to 2021. Its website did not resolve when fetched, and it also lists neckties.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G06",
+   "name_en": "Jining Aimei Garment Co., Ltd.",
+   "name_cn": "济宁艾美服装服饰有限公司",
+   "segment": "garment",
+   "province": "Shandong",
+   "city": "Jining (Jiaxiang County origin)",
+   "main_products": "Down jackets, outdoor shell jackets, cotton-padded coats",
+   "woven_evidence": "It is a contract maker of down, padded and shell jackets, which use woven shell fabrics.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th, Phase 3 (Oct-Nov 2024)",
+    "booth": null,
+    "evidence_url": "https://business.jining.gov.cn/module/download/downfile.jsp?classid=0&filename=c64b6e0b04c240238f8e074c6af590a9.pdf",
+    "evidence_note": "The Jining commerce bureau's 136th fair general booth notice lists 济宁艾美服装服饰有限公司 under Men's & Women's Wear (男女装) with 5 booths."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "Chinese media (news.sina.cn 2022; pai.com.cn) describe a factory started in 2003 in Jiaxiang with 1,000+ employees and village satellite workshops, selling through Alibaba International. No English name, website or B2B URL was confirmed, so Layer 2 should find them.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G07",
+   "name_en": "Wuhan Fronter (WHfronter)",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Hubei",
+   "city": "Wuhan",
+   "main_products": "Military, police and security uniforms, camouflage combat suits, tactical jackets and pants, workwear, functional outerwear",
+   "woven_evidence": "Its core products are combat uniforms, tactical pants and jackets and workwear, which are woven garments.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th (November 2024, inferred from the date given)",
+    "booth": null,
+    "evidence_url": "https://whfronter.com/canton-fair-2024-uniform-oem",
+    "evidence_note": "The company page says it exhibited uniform OEM solutions at the Canton Fair in November 2024 (tactical jackets, workwear, functional outerwear). It gives no booth number. An earlier page covers the 2019 fair."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://whfronter.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "The legal name was not shown. It claims 27+ years of OEM experience, ISO 9001 and BSCI, and exports to 40+ countries, but gives no factory size. It also sells boots and accessories, which are out of scope. Published contacts: contact@whfronter.com, +86 133 8755 7561.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G08",
+   "name_en": "Zhejiang Jiaxin Silk Corp., Ltd.",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Zhejiang",
+   "city": "Jiaxing",
+   "main_products": "Women's woven silk and fashion apparel: dresses, blouses, shirts, skirts, pants; also silk sleepwear",
+   "woven_evidence": "Its site leads with silk dresses, shirts, blouses, skirts and pants, which are mostly woven silk products. The company does not state its woven vs knit split.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th, Oct-Nov 2024 (also 135th May 2024 and an Autumn 2025 recap)",
+    "booth": "1.1A11-12, B13-14 / 2.1E41-42",
+    "evidence_url": "https://www.chinesesilk.com/news/jiaxin-silk-to-showcase-at-the-136th-canton-fa-81373419.html",
+    "evidence_note": "The company news page says it will exhibit at the 136th Canton Fair, Oct 31-Nov 4, at booths 1.1A11-12 B13-14/2.1E41-42. Another post, 'A Successful Canton Fair 2025 Autumn' (https://www.chinesesilk.com/news/a-successful-canton-fair-2025-autumn-thank-yo-85284045.html, Nov 2025), confirms it also attended the 138th session."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.chinesesilk.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "Says it is a garment manufacturer with factories in China, Cambodia and Myanmar, so Layer 2 should check where production really happens. It also sells silk bedding, pillowcases, scarves and ties, but these are side lines. The sales contacts on its site are frankxu@jxsilk.cn, +86 18257396906 and WhatsApp +86 13905732793. Jiaxing is in Zhejiang but is not one of the slice's named cities.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G09",
+   "name_en": "Honry Kidswear (Honry Apparel)",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Jiangsu",
+   "city": "Nanjing",
+   "main_products": "Kids' wear: woven jackets (ski, quilted, waterproof), jeans, cargo pants, skirts, party and casual dresses, boys' suits, uniforms",
+   "woven_evidence": "Its product list is mostly woven: outerwear, denim, cargo pants, dresses and boys' suits. It also lists leggings and baby sets, which are likely knit.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026",
+    "booth": "1.1F01",
+    "evidence_url": "https://www.honrykidswear.com/fr/join-us-at-the-139th-canton-fair-elevating-kids-fashion-for-2026/",
+    "evidence_note": "The company's own page invites buyers to booth 1.1F01 at Phase 3 of the 139th Canton Fair, May 1-5, 2026."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.honrykidswear.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "The only address it gives is an office in SOHO International Plaza, Nanjing, with no factory address. Sister Honry sites name JIANGSU SOHO HONRY IMPORT & EXPORT CO., LTD, which suggests it is the export arm of a trading group, so Layer 2 should check whether it owns a factory. It claims BSCI, SEDEX, SGS and OEKO-TEX but gives no certificate numbers. Contacts: jackeysun@honrykidswear.com and +86 13813357005 (WhatsApp).",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G10",
+   "name_en": "Fuxin Fuyi Industry Co., Ltd. (Fuyi Group)",
+   "name_cn": "阜新福壹实业有限公司",
+   "segment": "garment",
+   "province": "Liaoning",
+   "city": "Fuxin (branch office in Shaoxing Keqiao)",
+   "main_products": "Medical scrubs, chef and corporate uniforms, hi-vis safety workwear, softshell and fleece jackets",
+   "woven_evidence": "Its main lines are scrubs, chef and corporate uniforms and hi-vis workwear, usually woven poly-cotton, though it also offers fleece jackets.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, Phase 3 (May 1-5, 2026)",
+    "booth": "2.1E25-27 & F18-20",
+    "evidence_url": "https://fuyigroup.com/blog/welcome-to-the-139th-canton-fair-booth-of-fuyi-group/",
+    "evidence_note": "The company blog invites buyers to its booth 2.1E25-27 & F18-20 at the 139th Canton Fair, May 1-5, 2026."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://fuyigroup.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader",
+    "mixed_knit_woven"
+   ],
+   "notes": "The company says all products are made in its own factory in Yangon, Myanmar, not in China, so Layer 2 should decide whether that fits. It calls itself a wholesale uniform company. A related site, fuyiworkwear.com, also mentions the 138th fair. Published WhatsApp: +86 15306753170.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G11",
+   "name_en": "Shandong Renoir Apparel Co., Ltd.",
+   "name_cn": "山东雷诺服饰有限公司",
+   "segment": "garment",
+   "province": "Shandong",
+   "city": "Tai'an",
+   "main_products": "Men's suits, blazers, double-breasted and peak-lapel suits, sport blazers, trousers, coats, uniforms",
+   "woven_evidence": "Tailored suits and blazers are woven garments, and the supplier focuses on suiting.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, Phase 3 (2025)",
+    "booth": null,
+    "evidence_url": "https://swj.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=1499fdb52193435b922b90ef59d53aed.pdf",
+    "evidence_note": "The Tai'an city 137th fair booth allocation table lists 山东雷诺服饰有限公司 under Men's & Women's Wear (男女装), Phase 3, with 1 standard booth."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": null,
+   "b2b_profiles": [
+    "https://renoir18.en.made-in-china.com/company-Shandong-Renoir-Apparel-Co-Ltd-.html",
+    "https://www.made-in-china.com/showroom/vicky0526/"
+   ],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "Made-in-China gives it as Manufacturer & Trading, BV-audited (MIC-ASR2551375), with 512 employees. It reports being a Daiyin Group subsidiary with 12 garment factories, and claims BSCI and ISO 9001. Published contact: Mr. William Zhang.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G12",
+   "name_en": "Hubei Yalida Garment Co., Ltd.",
+   "name_cn": "湖北雅利达制衣有限公司",
+   "segment": "garment",
+   "province": "Hubei",
+   "city": "Wuhan office; factory in Hanchuan (Xiaogan)",
+   "main_products": "Military, police and security uniforms: combat uniforms (ACU, BDU), tactical shirts and pants, M65 jackets, industrial uniforms",
+   "woven_evidence": "Its core products are camouflage combat uniforms, tactical shirts and pants, and jackets, which are woven twill or ripstop garments.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, Phase 3 (2025)",
+    "booth": null,
+    "evidence_url": "https://swt.hubei.gov.cn/stdt/tzgg/202501/P020250108626360874234.pdf",
+    "evidence_note": "The Hubei delegation's 137th fair booth allocation lists 湖北雅利达制衣有限公司 under Men's & Women's Wear (男女装) with 4 booths."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "https://www.yalidahb.com/",
+   "b2b_profiles": [
+    "https://hbyalida.en.made-in-china.com/",
+    "https://hbyalida.en.alibaba.com/"
+   ],
+   "flags": [
+    "possible_trader",
+    "possible_non_clothing"
+   ],
+   "notes": "Made-in-China lists it as a Trading Company, while its intro claims a factory in Hanchuan with 400+ workers. It also sells helmets and body-armour vests, which are out of scope. It says it has made uniforms for the Saudi Royal Guard, which is a KSA bonus but self-reported. Published contact: Mr. Eric.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G13",
+   "name_en": "Guangzhou Yongjia Garment Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "广州市永嘉制衣有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Guangzhou",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is listed in the men's and women's clothing (男女装) zone, and its name uses 制衣 (garment making). Its woven vs knit focus is unknown.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+    "evidence_note": "The Guangzhou Commerce Bureau's list of companies proposed for general booths at the 138th Canton Fair shows it under code 280E732, zone 男女装, with 2 booths. Notice page: http://sw.gz.gov.cn/ztzl/hzcj/gjh/138j/content/post_10369496.html"
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "The only evidence is an official delegation list. No website or product page was found because the search budget ran out, so Layer 2 must confirm its products and whether it is a factory. The English name is a transliteration, not the company's own spelling.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G14",
+   "name_en": "Guangzhou Xilong Apparel Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "广州喜龙服饰有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Guangzhou",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the men's and women's clothing (男女装) zone.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+    "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280C767, zone 男女装, with 4 booths."
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "With 4 booths it is one of the larger private Guangzhou apparel exhibitors on this list. Its products, woven focus and factory status are unverified. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G15",
+   "name_en": "Guangzhou Maiyishang Apparel Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "广州迈依尚服饰有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Guangzhou",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the men's and women's clothing (男女装) zone.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+    "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280D292, zone 男女装, with 4 booths."
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "A Chinese web search found no company page. Its products, woven focus and factory status all need checking. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G16",
+   "name_en": "Guangzhou Yongming Garment Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "广州市永明服装有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Guangzhou",
+   "main_products": "Kids' wear (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the kids' wear (童装) zone.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+    "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280F408, zone 童装 (Y aisle), with 2 booths."
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "This is a kids' wear lead. Guangzhou kids' wear is often knit, so Layer 2 must check its woven share and whether it is a factory. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G17",
+   "name_en": "Guangzhou Tuofuding Garment Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "广州托福鼎服装有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Guangzhou",
+   "main_products": "Kids' wear (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the kids' wear (童装) zone.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+    "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280H057, zone 童装 (Y aisle), with 2 booths."
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "This is a kids' wear lead. Its products, woven share and factory status are unverified. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G18",
+   "name_en": "Zhejiang Langsha'er Weidi Garment Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "浙江朗莎尔维迪制衣有限公司",
+   "segment": "garment",
+   "province": "Zhejiang",
+   "city": "Shaoxing",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. Its name uses 制衣 (garment making), and it is listed in the 男女装 zone.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, May 2025 (also 135th, May 2024)",
+    "booth": null,
+    "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2247/site/attach/0/f40cf366531945c6bb6a689e445795f3.pdf",
+    "evidence_note": "The official Shaoxing list of 137th Canton Fair exhibitors (第137届广交会参展企业名单 公示) shows it under code 160Q178, Phase 3, zone 男女装, with 4 booths. It is also on the 135th list."
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It has exhibited repeatedly with 4 booths. Shaoxing is in Zhejiang but outside the slice's named cities, so check for overlap with other slices. Its products and woven focus need checking.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G19",
+   "name_en": "Shaoxing Harbour Textile & Garments Co., Ltd.",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Zhejiang",
+   "city": "Shaoxing",
+   "main_products": "Men's and women's suit sets, matching fabrics, school wear, warm jackets; also knit and woven fabrics and polo shirts",
+   "woven_evidence": "Its Canton Fair displays were men's and women's suit sets with matching fabrics, which are woven, but it also sells knit fabrics and polos.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "134th to 137th (latest 137th, May 2025)",
+    "booth": "3.1M38 (137th); 2.1K44 (136th)",
+    "evidence_url": "https://www.sxharbour.com/news/",
+    "evidence_note": "The company's news page lists booth 3.1M38 at the 137th fair (May 1-5, 2025), 2.1K44 at the 136th (Oct 31-Nov 4, 2024), 3.1I40 at the 135th and 3.1J44 at the 134th."
+   },
+   "business_type_claimed": "trading",
+   "website": "https://www.sxharbour.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader",
+    "mixed_knit_woven"
+   ],
+   "notes": "Its profile says Trade Company, but one news post calls it a fabric and apparel manufacturer. It lists the Middle East among its main markets and exhibited at IATF Dubai 2025. Layer 2 should check for a factory. Published contact: Angela@harboursx.com.",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G20",
+   "name_en": "Guangzhou Changhong Garment Co., Ltd.",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Guangzhou (Xintang, Zengcheng)",
+   "main_products": "Denim jeans, denim jackets, denim shirts, shorts, overalls",
+   "woven_evidence": "It is a denim specialist (jeans, jackets and shirts made from woven denim) with in-house washing.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": null,
+    "evidence_url": "https://changhongjeans.com/about-us/",
+    "evidence_note": "Its About page shows exhibition photos captioned Canton Fair 2018, 2019, 2020, 2023, 2024 and 2025, with no session or booth number."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://changhongjeans.com",
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It claims a 30,000 m2 factory with 25 lines in Huangshatou Village, Xintang (self-reported). The legal name is written three slightly different ways on its site. Published contacts: Info@changhongjeans.com, +86-18819178348 (WhatsApp).",
+   "slice": "garment-menswear"
+  },
+  {
+   "id": "G21",
+   "name_en": "Hangzhou Gaosheng Garment Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "杭州高盛制衣有限公司",
+   "segment": "garment",
+   "province": "Zhejiang",
+   "city": "Hangzhou",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. Its name uses 制衣 (garment making), and it is listed in the 男女装 zone.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+    "evidence_note": "The official table of approved joint exhibitors (联营参展) for the 138th Canton Fair lists it as the production company (生产企业) partnered with exhibitor 浙江东方集团茂业进出口有限公司, a trading company, in the 男女装 zone (5 booths)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It is officially classed as a production company, but it exhibits under a trading company's booth rather than its own, so buyers may meet the trader first. Its products and woven focus need checking. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G22",
+   "name_en": "Hangzhou Haiqiao Textile & Apparel Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "杭州海桥纺织服饰有限公司",
+   "segment": "garment",
+   "province": "Zhejiang",
+   "city": "Hangzhou",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the 男女装 zone.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+    "evidence_note": "The official 138th Canton Fair joint-exhibitor table lists it as the production company partnered with 东方国际创业浦东服装进出口有限公司 (Shanghai) in the 男女装 zone (4 booths)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It is officially classed as a production company that exhibits under a Shanghai trading company's booth. No web profile was found. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G23",
+   "name_en": "Suzhou Sibowei'er Apparel Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "苏州思博威尔服饰有限公司",
+   "segment": "garment",
+   "province": "Jiangsu",
+   "city": "Suzhou",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the 男女装 zone.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+    "evidence_note": "The official 138th Canton Fair joint-exhibitor table lists it as the production company partnered with 常熟德隆进出口有限责任公司 (Changshu) in the 男女装 zone (3 booths)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It is officially classed as a production company, linked to a Changshu trading company. No web profile was found. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G24",
+   "name_en": "Zhongshan Zuoshilong Apparel Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "中山市佐狮龙服饰有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Zhongshan",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the 男女装 zone, and Zhongshan (Shaxi) is a casual-wear cluster that includes knitwear.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+    "evidence_note": "The official 138th Canton Fair joint-exhibitor table lists it as the production company partnered with 中山长好企业服务有限公司 in the 男女装 zone (3 booths)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It is officially classed as a production company. Because Zhongshan is a casual-wear hub, Layer 2 should check that it is not a knit specialist. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "G25",
+   "name_en": "Dongguan Outeng Garment Co., Ltd. (pinyin; official English name not found)",
+   "name_cn": "东莞市欧腾服装有限公司",
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Dongguan",
+   "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+   "woven_evidence": "Not confirmed. It is only listed in the 男女装 zone.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "138th, Oct-Nov 2025",
+    "booth": null,
+    "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+    "evidence_note": "The official 138th Canton Fair joint-exhibitor table lists it as the production company partnered with 东莞市国欧贸易有限公司 in the 男女装 zone (4 booths)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "It is officially classed as a production company that exhibits under a Dongguan trading company's booth. Its products, woven share and Humen location are unverified. The English name is a transliteration.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "id": "F01",
+   "name_en": "Zhejiang Baofang Printing & Dyeing Co., Ltd.",
+   "name_cn": "浙江宝纺印染有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Shaoxing (Keqiao, Binhai Industrial Zone)",
+   "main_products": "100% cotton real wax and imitation wax printed fabrics (African wax print)",
+   "woven_evidence": "Wax print is printed on woven cotton cloth, and texnet says it makes about 15 million m of cotton wax print a month.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th (Oct 2024), 137th (Apr-May 2025), 139th (May 2026)",
+    "booth": null,
+    "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3009/site/attach/0/b026be57fdfe4d859d4395272bdd4464.pdf",
+    "evidence_note": "The Shaoxing 136th exhibitor list (and the 137th) shows 浙江宝纺印染有限公司 (160Q283) with 4 brand booths in the textile raw materials and fabrics zone. China Textile News also names 宝纺印染 at the 139th."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://zhejiangbaofang.cn.texnet.com.cn/"
+   ],
+   "flags": [],
+   "notes": "A large printing and dyeing mill, but its output goes almost entirely to West Africa. The product is outside this slice's core list (no TR, nida or thobe fabric), so it fits KSA only if the buyer wants printed cotton.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F02",
+   "name_en": "Hebei Gaibo Textile Co., Ltd.",
+   "name_cn": "河北盖帛纺织有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang (Zhao County)",
+   "main_products": "Cotton and TC shirting, cotton and TC workwear fabric, TR shirting and suiting, TC pocketing, voile, TC/CVC yarn",
+   "woven_evidence": "The company says it runs 300 air-jet looms (a weaving loom) making shirting, workwear and suiting fabric.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, May 2025 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+    "evidence_note": "Named as a Shijiazhuang exhibitor at the 137th Canton Fair in a texnet.com.cn report."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.hbgbtextile.com",
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/f587344ac8479a5f/",
+    "https://gaibo.en.alibaba.com/"
+   ],
+   "flags": [],
+   "notes": "It claims 120,000 spindles and 3M m of fabric a month (self-reported, and its staff numbers differ between pages). It appears on the NDRC 2025 cotton import quota applicant list, which supports that it is a real spinning and weaving mill in Zhao County.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F03",
+   "name_en": "Lixin Group Textile (Jiangsu) Co., Ltd.",
+   "name_cn": "立新集团纺织科研（江苏）有限公司",
+   "segment": "fabric",
+   "province": "Jiangsu",
+   "city": "Suzhou (Wujiang Shengze)",
+   "main_products": "Nylon and polyester woven fabrics, breathable down-proof coated fabric, yarn-dyed fabric, T/C fabric, functional outdoor fabric",
+   "woven_evidence": "Its product lines (nylon and polyester taslon, down-proof coated fabric, yarn-dyed and T/C fabric) are woven.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th, Oct-Nov 2024 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://m.jstv.com/news/2024/11/7/1303779403006234624.html",
+    "evidence_note": "A JSTV news report on Shengze companies at the 136th Canton Fair says it showed breathable down-proof coated fabric, and 4 buyers from the US, Canada, Italy and Georgia placed orders on site."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/chrissunpemg/",
+    "http://en.168tex.com/Company/104010/Products.html"
+   ],
+   "flags": [],
+   "notes": "Its fabrics are mainly outdoor and jacket fabrics, which suit jackets and workwear rather than shirting. It also exhibits at Intertextile Shanghai.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F04",
+   "name_en": "Zhejiang Huayisheng Textile Co., Ltd.",
+   "name_cn": "浙江华艺盛纺织股份有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Huzhou (Nanxun District)",
+   "main_products": "Plain and high-twist voile, chiffon fabric (greige and printed/dyed); also scarves and Muslim headscarves",
+   "woven_evidence": "Zhejiang CCPIT profile says it has more than 420 looms and makes over 30 million m of greige and 60 million m of printed/dyed voile and chiffon a year. It also led the group standard for woven (机织) headscarves.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, Apr-May 2025",
+    "booth": null,
+    "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3648/site/attach/-1/2503051415361238839.pdf",
+    "evidence_note": "The Huzhou government's booth allocation list for the 137th Canton Fair, Phase 3, gives 浙江华艺盛纺织股份有限公司 2 booths in the textile raw materials and fabrics zone (纺织原料面料)."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://www.1688.com/factory/jcfzcx.html"
+   ],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "Exports to the Middle East and Arab markets (http://www.ccpitzj.gov.cn/art/2024/7/2/art_1229631368_44903.html). A large share of output is scarves and hijabs, which are accessories, so Layer 2 should confirm how much of the business is voile and chiffon dress fabric.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F05",
+   "name_en": "Shaoxing Kaiming Textiles Co., Ltd.",
+   "name_cn": "绍兴凯明纺织品有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Shaoxing (Yuecheng District, Paojiang)",
+   "main_products": "Woven imitation silk, satin, SPH, imitation acetate, lyocell/modal and recycled fabrics; also knitted and printed fabrics",
+   "woven_evidence": "Its own site lists woven fabric first and says the group owns its own woven and knitted weaving factories, with output above 150 million m a year.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026",
+    "booth": null,
+    "evidence_url": "https://ctn1986.com/index.php?a=show&c=content&id=124674",
+    "evidence_note": "China Textile News (2026-05-06, from Keqiao Daily) names 凯明纺织 among the 246 Keqiao companies exhibiting at Phase 3 of the 139th Canton Fair."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.sxkaiming.com",
+   "b2b_profiles": [],
+   "flags": [
+    "mixed_knit_woven"
+   ],
+   "notes": "Business contacts published on its site: sales@sxkaiming.com and +86-575-85573053. It has a large knit line, so Layer 2 should check that woven is the main share. It names no Middle East markets.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F06",
+   "name_en": "Hebei Henghe Bangxing New Material Co., Ltd. (Changshan Fabric)",
+   "name_cn": null,
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang",
+   "main_products": "Workwear fabric (cotton/poly twill, dyed and coated), cotton lining and garment fabric, woven and dyed functional fabrics, yarn",
+   "woven_evidence": "Its workwear fabric page lists woven poly-cotton specs (16x12 and 20x16 yarn counts, 200-300 gsm, 57/58 inch width), and its 138th Canton Fair news names woven and dyed fabrics.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "138th, Oct-Nov 2025 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://www.changshanfabric.com/news/the-138th-canton-fair.html",
+    "evidence_note": "The company news post announces it will exhibit at Phase 3 of the 138th Canton Fair (Oct 31-Nov 4, 2025) and show woven fabrics and dyed fabrics. It is also named in the texnet.com.cn list of Shijiazhuang exhibitors at the 137th fair."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.changshanfabric.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "Its site links it to the Shijiazhuang Changshan textile group, listed in Shenzhen in 2000, and claims 2 bases and 5,054 staff. The site also sells yarn and home-textile fabric, and the stated address is an office building, so Layer 2 should check whether this company is the mill itself or its export arm. Published contacts: kewin.lee@changshanfabric.com, WhatsApp +86 15931198271.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F07",
+   "name_en": "Hebei Hanlin Textile Co., Ltd.",
+   "name_cn": "河北翰林纺织有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang",
+   "main_products": "Shirting fabric, TR uniform and suiting fabric, rayon/viscose, cotton twill, denim, chiffon, yarn-dyed fabric",
+   "woven_evidence": "Its About page lists 200 air-jet, 100 water-jet, 200 shuttle and 100 rapier looms, which are all weaving looms.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, May 2025 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+    "evidence_note": "A texnet.com.cn report on the 137th Canton Fair names 河北翰林纺织有限公司 among the 90+ Shijiazhuang textile exhibitors. The company's own site also says it exhibits at the Canton Fair every year."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.hanlinfabric.com",
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/hanlin1234/"
+   ],
+   "flags": [
+    "mixed_knit_woven"
+   ],
+   "notes": "It claims a factory of more than 100 acres in Gaocheng and an output of 40M+ m a year. It names Saudi Arabia among its markets and has a Dubai office. Its MIC page mentions printed jersey stock held in Shaoxing warehouses (a minor knit line). Contacts: admin@hanlinfabric.com, +86 15830978534 (WeChat and WhatsApp).",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F08",
+   "name_en": "Shenze County Shengda Textile Co., Ltd.",
+   "name_cn": "深泽县盛达纺织有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang (Shenze County)",
+   "main_products": "TC, CVC, 100% cotton and TR fabrics for shirting, workwear and uniforms; pocketing; grey and dyed fabric",
+   "woven_evidence": "Its company brochure and other sources describe a mill with 400-950 looms making shirting, workwear and pocketing fabric.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, May 2025 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+    "evidence_note": "Named as a Shijiazhuang exhibitor at the 137th Canton Fair in a texnet.com.cn report."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://szsdtex.goldsupplier.com/about.html"
+   ],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "Registered in 2004 with a factory in the Zhaoba industrial zone of Shenze. Some listings also mention home-textile fabric and yarn, but shirting and workwear lead. Trade data shows exports to Vietnam, Bangladesh and the Philippines.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F09",
+   "name_en": "Shijiazhuang Weibaolai Textile Co., Ltd.",
+   "name_cn": "石家庄维宝莱纺织有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang (Zhao County)",
+   "main_products": "Grey and finished woven fabrics (TC, polyester-cotton plain weave, high-density garment fabric, classic dacron 的确良), cotton and TC yarn",
+   "woven_evidence": "It reports 700-1,000 shuttle and air-jet looms, and a stock listing shows a T65/C35 1/1 plain-weave grey fabric.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124686",
+    "evidence_note": "A China Textile News report on the 139th Canton Fair says the company showed 5 product categories and 300+ fabric varieties. It is also named in the Shijiazhuang government report on the 139th fair and in the 137th exhibitor report."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://weibaolai.sinotex.cn/",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "An integrated spinning and weaving mill founded in 2004. Much of its output may be grey fabric and home-textile fabric, so Layer 2 should check how much it sells as finished apparel fabric.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F10",
+   "name_en": "Hebei Baosheng Textile Co., Ltd.",
+   "name_cn": "河北宝盛纺织品有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang",
+   "main_products": "Pocketing fabric, cotton and poly-cotton dyed fabrics, polyester dyed fabric, yarn-dyed fabric, greige",
+   "woven_evidence": "Its site reports 50M m a year of greige fabric, and its product lines (pocketing, poly-cotton dyed and yarn-dyed fabric) are woven.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124686",
+    "evidence_note": "Named in the China Textile News report on the 139th Canton Fair. It is also in the 137th Shijiazhuang exhibitor report, and its own site mentions exhibiting at Phase 3 of the 135th fair."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.boshitex.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "It also lists home textiles and garments. Some site page titles mention non-woven fabric, which may just be SEO wording and needs checking. Its products are OEKO-TEX 100 certified (self-reported).",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F11",
+   "name_en": "Wujiang Pengnuo Textile Co., Ltd.",
+   "name_cn": "吴江市鹏诺纺织有限公司",
+   "segment": "fabric",
+   "province": "Jiangsu",
+   "city": "Suzhou (Wujiang Shengze)",
+   "main_products": "Polyester and nylon woven fabrics: taffeta, oxford, peach skin, suede, spandex stretch, recycled fabrics",
+   "woven_evidence": "Its listed lines (taffeta, oxford, peach skin and suede) are woven filament fabrics typical of Shengze.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124713",
+    "evidence_note": "A China Textile News report on the Shengze delegation (56 companies) at the 139th Canton Fair names 吴江鹏诺纺织有限公司."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "http://www.pengnuotex.com/",
+   "b2b_profiles": [
+    "https://pengnuotex.en.alibaba.com/company_profile.html"
+   ],
+   "flags": [
+    "possible_knit"
+   ],
+   "notes": "Its registered business scope includes knitted textiles, and its addresses differ across sources. It claims a 30-mu site, 80M m a year of capacity and a branch in Bangladesh. Layer 2 should check for a knit line and whether it has its own looms.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F12",
+   "name_en": "Zhejiang Province Changxing Silk Co., Ltd.",
+   "name_cn": "浙江省长兴丝绸有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Huzhou (Changxing, Lijiaxiang)",
+   "main_products": "100% polyester mini matt, satin, bright dazzle, taffeta, net fabric, super poly",
+   "woven_evidence": "The FOB directory lists woven polyester constructions (mini matt, satin, taffeta) among its main products. Bloomberg says it makes woven, warp-knitted and knitted fabrics.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, Apr-May 2025",
+    "booth": null,
+    "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3648/site/attach/-1/2503051415361238839.pdf",
+    "evidence_note": "The Huzhou 137th Canton Fair booth allocation list gives 浙江省长兴丝绸有限公司 4 brand booths in the textile raw materials and fabrics zone."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "http://www.cxsilk.com",
+   "b2b_profiles": [
+    "https://bbs.fobshanghai.com/company/q1603b61q20mx32.html",
+    "https://www.exporthub.com/zhejiang-province-changxing-silk-co-ltd/"
+   ],
+   "flags": [
+    "possible_knit",
+    "mixed_knit_woven"
+   ],
+   "notes": "ExportHub lists it as a warp-knit supplier, so the knit share may be large. Its satin and mini matt fit abaya and lining use.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F13",
+   "name_en": "Shaoxing Shijia Textile Co., Ltd. (production base: Zhuji City Jinshijia Textile Co., Ltd.)",
+   "name_cn": "绍兴世佳纺织有限公司 / 诸暨市金世佳纺织有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Shaoxing (Keqiao office; mill in Fengqiao, Zhuji)",
+   "main_products": "Yarn-dyed shirting (polyester-cotton, 100% polyester), CVC oxford, seersucker, TC spandex, TR yarn-dyed fabric",
+   "woven_evidence": "A directory profile says the Zhuji mill has more than 200 rapier looms, and Keqiao Daily describes it showing yarn-dyed woven fabric (色织布) at the Canton Fair.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th, Oct-Nov 2024 (also on the 137th list)",
+    "booth": null,
+    "evidence_url": "https://info.texnet.com.cn/detail-1005963.html",
+    "evidence_note": "Keqiao Daily (via texnet, 2024-11-06) reports that 世佳纺织 showed more than 100 yarn-dyed woven samples at the 136th Canton Fair, for buyers from Africa and South America. 诸暨市金世佳纺织有限公司 (code 160D233) is in the textile raw materials and fabrics zone on the Shaoxing 136th and 137th exhibitor lists. 绍兴金世佳纺织有限公司 (160Q875) is also listed."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "http://www.shijiatextile.com",
+   "b2b_profiles": [
+    "https://bbs.fobshanghai.com/company/gr160mw36k11866.html"
+   ],
+   "flags": [],
+   "notes": "The Keqiao entity looks like the sales arm and the Zhuji company looks like the weaving mill. Layer 2 should confirm how the two are linked and whether they make shirting and TR suiting in-house.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F14",
+   "name_en": "Shaoxing Keqiao Jiejiegao Import And Export Co., Ltd. (Jiejiegao Textile)",
+   "name_cn": "绍兴柯桥节节高进出口有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Shaoxing (Keqiao)",
+   "main_products": "Linen, ramie, hemp, tencel, modal, cupro and blended natural-fiber fabrics; beachwear fabrics (micro peach, taslon)",
+   "woven_evidence": "Its site shows its own rapier and air-jet weaving workshops, and its range of linen and ramie fabrics is typically woven. The site never mentions knit.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "136th (Oct 2024), 137th (Apr-May 2025), 139th (Apr-May 2026)",
+    "booth": null,
+    "evidence_url": "https://www.jjg-tex.com/news/2/",
+    "evidence_note": "The company's exhibition news page lists the 136th, 137th and 139th Canton Fairs. It is also on the Shaoxing 136th exhibitor list (code 160Q370, textile raw materials and fabrics)."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "https://www.jjg-tex.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "'Import and Export' is in the name, but it claims to be a manufacturer with more than 80 machines and weaving workshops. Its address is an office in the International Trade Mansion, Keqiao. Business contacts from its site: jack@jjg-tex.com, +86 13575549483 (WhatsApp).",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F15",
+   "name_en": "Shijiazhuang Tianquan Textile Co., Ltd.",
+   "name_cn": "石家庄市天泉纺织有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang",
+   "main_products": "Cotton and CVC flannel, TC uniform fabric, poplin, TC pocketing, cotton yarn-dyed fabric, interlining",
+   "woven_evidence": "Its main lines (flannel, poplin, TC uniform, pocketing and yarn-dyed fabric) are woven fabrics.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "137th, May 2025 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+    "evidence_note": "Named as a Shijiazhuang exhibitor (石家庄市天泉纺织有限公司) at the 137th Canton Fair in a texnet.com.cn report."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "http://www.tianquantextile.net.cn/",
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/yangtex",
+    "https://tianquantextile.en.alibaba.com/company_profile.html"
+   ],
+   "flags": [
+    "possible_trader",
+    "possible_non_clothing"
+   ],
+   "notes": "Listings disagree on its founding year (1992 or 2009) and size (51 to 300+ staff). It also sells microfiber towels and scarf voile. The MIC contact is Linda Yang, and a listed phone is 86-311-68129758.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F16",
+   "name_en": "Shijiazhuang Jiyu Textile Co., Ltd.",
+   "name_cn": "石家庄冀誉纺织有限公司",
+   "segment": "fabric",
+   "province": "Hebei",
+   "city": "Shijiazhuang (Zhao County)",
+   "main_products": "Grey fabric, finished woven fabric (poly-cotton), sized yarn, yarn, some garments",
+   "woven_evidence": "Its website reports 100+ automatic looms making about 15M m of grey woven fabric a year.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://www.sjz.gov.cn/columns/839b1981-330e-4901-aba5-6c392154ce03/202605/07/976b38ba-6e73-4eb1-814f-9aa1b4d243f6.html",
+    "evidence_note": "The Shijiazhuang government report on the 139th Canton Fair names it among the yarn and fabric exhibitors showing new functional yarns and fabrics."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "https://www.textile-jy.com",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader",
+    "possible_non_clothing"
+   ],
+   "notes": "Its site describes a mixed production and trading model, and its finished-fabric menu includes bedding fabric. Layer 2 should confirm how much of its range is apparel fabric.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F17",
+   "name_en": "Wujiang Enhao Textile Co., Ltd.",
+   "name_cn": "吴江恩浩纺织品有限公司",
+   "segment": "fabric",
+   "province": "Jiangsu",
+   "city": "Suzhou (Wujiang Shengze)",
+   "main_products": "Polyester taffeta, oxford, satin, nida (abaya fabric), lam lam, bengaline, memory fabric",
+   "woven_evidence": "Its products (taffeta, oxford, satin, nida and bengaline) are woven polyester fabrics.",
+   "canton_fair": {
+    "strength": "strong",
+    "session": "139th, May 2026 (Phase 3)",
+    "booth": null,
+    "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124713",
+    "evidence_note": "Named in the China Textile News report on the Shengze delegation at the 139th Canton Fair."
+   },
+   "business_type_claimed": "unknown",
+   "website": null,
+   "b2b_profiles": [
+    "https://enhaotex.en.alibaba.com/"
+   ],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "Nida is an abaya fabric, which is relevant for KSA. Directories give conflicting founding years and addresses, and one says it belongs to Wujiang Weichang Textile. Layer 2 should confirm it owns looms.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F18",
+   "name_en": "Lu Thai Textile Co., Ltd.",
+   "name_cn": "鲁泰纺织股份有限公司",
+   "segment": "fabric",
+   "province": "Shandong",
+   "city": "Zibo",
+   "main_products": "Yarn-dyed shirting, cotton shirting and poplin, piece-dyed fabrics, shirts",
+   "woven_evidence": "Several sources describe it as the world's largest yarn-dyed shirting mill, making 210M+ m of yarn-dyed woven fabric a year.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": null,
+    "evidence_url": "https://www.cftc.org.cn/en/article/10446.html",
+    "evidence_note": "The China Foreign Trade Center's preview of the 123rd Canton Fair (2018) lists Lu Thai among exhibitors. A third-party jufair.com Phase 3 'known exhibitors' list also names 鲁泰纺织, but gives no session."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [],
+   "notes": "A large listed mill (000726.SZ) that supplies premium brands. Its MOQs and prices may be high for KSA buyers. It also makes garments, but fabric is its core business.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F19",
+   "name_en": "Jiangsu Sunshine Co., Ltd.",
+   "name_cn": "江苏阳光股份有限公司",
+   "segment": "fabric",
+   "province": "Jiangsu",
+   "city": "Wuxi (Jiangyin)",
+   "main_products": "Worsted wool and wool-blend suiting, wool coating fabric, cotton/linen fabric, men's suits",
+   "woven_evidence": "It describes itself as a vertical wool mill making 35M m of worsted suiting fabric a year, and worsted suiting is woven.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": null,
+    "evidence_url": "https://www.jufair.com/information/297211.html",
+    "evidence_note": "Listed (江苏阳光) in a third-party jufair.com Phase 3 known-exhibitor list, without a session or booth."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/yurentiantang/"
+   ],
+   "flags": [],
+   "notes": "Fits the wool-blend suiting part of the slice. It also makes suits, but fabric is its core. Global Sources names a sales manager, Wendy Xu, but that site was not opened.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F20",
+   "name_en": "ZHINK Textile Co., Ltd. (Zhengkai Textile)",
+   "name_cn": "正凯纺织有限公司",
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Hangzhou (Xiaoshan, Jingjiang Street)",
+   "main_products": "Stretch women's-wear fabrics: cotton/lyocell mechanical-stretch, recycled and fashion fabrics",
+   "woven_evidence": "The group site describes greige weaving (坯布织造) and 'mechanical stretch' cotton/lyocell fabrics, which are normally woven. It does not say woven outright.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "136th, Oct-Nov 2024 (preliminary allocation)",
+    "booth": null,
+    "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2243/site/attach/0/3685b6b0a29441b0b9d049e7b7184455.pdf",
+    "evidence_note": "The Hangzhou government's preliminary 136th Canton Fair booth plan gives 正凯纺织有限公司 2 booths in the textile raw materials and fabrics zone. It is an allocation list, not a final exhibitor list."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://www.zhinktex.cc",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_knit"
+   ],
+   "notes": "A subsidiary of Zhejiang Zhengkai (ZHINK) Group, a yarn and fiber group, with GRS and OEKO-TEX 100 claimed. Hotline 0571-82996558. Layer 2 must confirm the stretch fabrics are woven, not knit.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F21",
+   "name_en": "Shaoxing Yilin Textile Co., Ltd.",
+   "name_cn": null,
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Shaoxing",
+   "main_products": "Rayon (viscose), polyester, linen, cotton and yarn-dyed fabrics; some knitting and embroidery fabric",
+   "woven_evidence": "Its site says it has its own weaving factory, and its main lines (rayon, linen, cotton, yarn-dyed) are woven.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "2024 (session not stated)",
+    "booth": null,
+    "evidence_url": "https://yilinfabric.com/pages/exhibition",
+    "evidence_note": "In search results, the company's exhibition page lists 'Canton Fair 2024'. I could not open the page (HTTP 429), so I have not confirmed the session or booth."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "https://yilinfabric.com",
+   "b2b_profiles": [
+    "https://yilintextile.en.alibaba.com/"
+   ],
+   "flags": [
+    "mixed_knit_woven"
+   ],
+   "notes": "Printing and dyeing are done by a partner factory. Profiles disagree on its age: incorporated in 2019 per its site, 7 years per Alibaba, founded 2011 per ExportHub. It also lists knitting fabric.",
+   "slice": "fabric-zhejiang"
+  },
+  {
+   "id": "F22",
+   "name_en": "Shandong Weiqiao Textile Co., Ltd.",
+   "name_cn": null,
+   "segment": "fabric",
+   "province": "Shandong",
+   "city": "Binzhou (Zouping)",
+   "main_products": "Cotton grey and finished woven fabric, denim, cotton yarn",
+   "woven_evidence": "Directory listings describe it as a maker of cotton yarn and cotton fabric. The woven share still needs confirming.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": null,
+    "evidence_url": "https://www.jufair.com/information/297211.html",
+    "evidence_note": "A third-party jufair.com Phase 3 exhibitor guide lists 山东魏桥 among its known textile and apparel exhibitors, without a session or booth."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [
+    "https://qiaoliya.en.ec21.com/"
+   ],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "A very large group whose output is heavily yarn and grey fabric. The EC21 listing is old (last login 2008). The Canton Fair evidence is weak-to-medium.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F23",
+   "name_en": "Huafang Co., Ltd.",
+   "name_cn": "华纺股份有限公司",
+   "segment": "fabric",
+   "province": "Shandong",
+   "city": "Binzhou",
+   "main_products": "Printed and dyed woven garment fabrics; home textiles",
+   "woven_evidence": "Its 2025 shareholder materials describe a garment fabric business exporting to the EU and Australia. Woven construction is assumed, not confirmed.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": null,
+    "evidence_url": "https://www.jufair.com/information/297211.html",
+    "evidence_note": "Listed (华纺股份) in a third-party jufair.com Phase 3 exhibitor list, without a session or booth. Its 2025 shareholder materials say trade shows brought in new customers but do not name the Canton Fair."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": null,
+   "b2b_profiles": [],
+   "flags": [
+    "possible_non_clothing"
+   ],
+   "notes": "A listed company (600448). It has a big home-textile line, so Layer 2 should confirm apparel fabric is the main business.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F24",
+   "name_en": "Changzhou Kailan Textile Co., Ltd.",
+   "name_cn": null,
+   "segment": "fabric",
+   "province": "Jiangsu",
+   "city": "Changzhou (Wujin, Yaoguan)",
+   "main_products": "Denim, stretch denim, T/C denim, cotton-poly-spandex super stretch fabric",
+   "woven_evidence": "It is described as a denim mill, but its MIC title says 'Woven/Knitted' and it lists knitted denim, so it is mainly woven with some knit.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": "14.4H28-29, 14.4I10-11",
+    "evidence_url": "http://www.chinakailan.com/new_en.html",
+    "evidence_note": "The company news page lists a Canton Fair booth in hall 14.4 for a 1-5 May session, with no year. The same page lists 2023 shows, so this is probably 2023 or earlier."
+   },
+   "business_type_claimed": "manufacturer",
+   "website": "http://www.chinakailan.com",
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/www33366680/"
+   ],
+   "flags": [
+    "mixed_knit_woven",
+    "possible_knit"
+   ],
+   "notes": "Founded in 2002, with 25,000-30,000 sqm and 300-350 staff (self-reported). It exports to Mexico. The site was down (503) when checked, so the booth details come from a search snippet. Phone 86-519-86321300.",
+   "slice": "fabric-jiangsu-north"
+  },
+  {
+   "id": "F25",
+   "name_en": "Shaoxing Rensheng Textile & Garment Co., Ltd.",
+   "name_cn": null,
+   "segment": "fabric",
+   "province": "Zhejiang",
+   "city": "Shaoxing (Keqiao)",
+   "main_products": "Chiffon crepe, chiffon silk, charmeuse print, poplin, organdy embroidery",
+   "woven_evidence": "Its main products, chiffon, crepe, poplin, charmeuse and organdy, are woven constructions.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": null,
+    "booth": null,
+    "evidence_url": "https://www.made-in-china.com/showroom/tobby123",
+    "evidence_note": "Its Made-in-China profile says it shows new products at the 'Chinese Export Commodities Fair' (the Canton Fair) every year, without giving a year."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": null,
+   "b2b_profiles": [
+    "https://www.made-in-china.com/showroom/tobby123"
+   ],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "It may be the same company as 浙江人生纺织服饰有限公司 (code 160Q913, men's and women's wear zone, Shaoxing 136th list), whose registered scope is distribution and import/export. That link is not confirmed. Its address is an office in Time Square, Keqiao. Contact: Mr. Tobby Zhao.",
+   "slice": "fabric-zhejiang"
+  }
+ ],
+ "extras": [
+  {
+   "name_en": "Hubei Begreat Fashion Co., Ltd. (with Wuhan Bocherer Trading Co., Ltd.)",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Hubei",
+   "city": "Wuhan",
+   "main_products": "Women's dresses, jackets, coats, suits, pants, blouses, skirts",
+   "woven_evidence": "Its range centres on dresses, coats, suits, blouses and skirts, which are typically woven womenswear. Fabric construction is not stated.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "126th, Oct-Nov 2019 (also 127th and 128th online, 2020)",
+    "booth": "3.1G39-40",
+    "evidence_url": "https://www.topgarment.cn/news/Company-News.htm",
+    "evidence_note": "Its company news page has a '126th Canton Fair Invitation' (booth 3.1G39-40, Oct 31-Nov 4, 2019) and notices for the 127th and 128th online fairs in 2020. No news newer than 2020 was found."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "https://www.topgarment.cn",
+   "b2b_profiles": [],
+   "flags": [
+    "possible_trader"
+   ],
+   "notes": "It says it has a production factory and a trading company in Hubei plus a design office in Shanghai, and the site shows both a trading and a fashion entity. Its Canton Fair evidence is old (2019-2020), so Layer 2 should check whether it still exhibits.",
+   "slice": "garment-womens-kids"
+  },
+  {
+   "name_en": "Dongguan Humen Yihao Clothing Co., Ltd.",
+   "name_cn": null,
+   "segment": "garment",
+   "province": "Guangdong",
+   "city": "Dongguan (Humen)",
+   "main_products": "Women's dresses, blouses, skirts, jackets, pants; also T-shirts, tank tops, hoodies",
+   "woven_evidence": "Its profile says it makes 'women's knitted and woven clothing' and lists dresses, blouses, jackets and pants. Its woven share is not stated.",
+   "canton_fair": {
+    "strength": "medium",
+    "session": "2024 (session not stated)",
+    "booth": null,
+    "evidence_url": "https://www.exporthub.com/dongguan-humen-yihao-clothing-co-ltd/",
+    "evidence_note": "Its ExportHub B2B profile lists the Canton Fair, 2024, under trade shows attended. No booth number is given."
+   },
+   "business_type_claimed": "manufacturer_and_trading",
+   "website": "http://www.yihaofashion.cn",
+   "b2b_profiles": [
+    "https://www.exporthub.com/dongguan-humen-yihao-clothing-co-ltd/"
+   ],
+   "flags": [
+    "mixed_knit_woven",
+    "possible_knit"
+   ],
+   "notes": "Its profile claims 8 production lines, 101-200 staff and a factory address at No. 8 Jiuzhai, Jiumenzhai Zone, Humen. Its knit lines (T-shirts, hoodies, tanks) may be large, so Layer 2 must check the knit vs woven split. The listed sales contact is Mr. Liuwu Peng.",
+   "slice": "garment-womens-kids"
+  }
+ ],
+ "search_notes": [
+  {
+   "slice": "fabric-zhejiang",
+   "notes": "I returned 9 candidates, fewer than the 18 asked for. Many results either had no Canton Fair evidence or were knit-led, so I left them out.\n\nWhat worked best: Zhejiang government exhibitor and booth-allocation PDFs on zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn. Shaoxing has lists for the 134th, 136th and 137th sessions, Huzhou for the 137th, Hangzhou for the 136th and Jiaxing (Pinghu) for the 137th. WebFetch could not read them, but pdftotext could. Keqiao Daily and China Textile News reports on the 136th and 139th fairs also helped. The Shaoxing government page for the 138th list (sx.gov.cn) returned 503.\n\nMost names on the Shaoxing lists are small 进出口 or 贸易 (trading) companies, or knit mills, and most have no web footprint I could match.\n\nExcluded:\n- Knit-led: Shaoxing Sanzhi, Mianguan, Suerte, Zhejiang ESSE/Real Textile, Huzhou Tianyi (mainly warp knit), Qida, Fumeida, Qingsong (home textile and warp knit).\n- Traders or converters: Harbour Textile & Garments (Trade Company with 5-50 staff; its 138th booth showed suits), Linen Origin (Trading Company), Fantasy/凡特思.\n- Outside the slice's regions: Hebei and Guangzhou mills.\n\nShaoxing Newwuhuan Textiles fits the slice very well (TR suiting, thobe fabric, Middle East exports), but I found no Canton Fair evidence for it, so it is not included. Layer 2 could look for it separately.\n\nI found no Lanxi exhibitors. I found no Shaoxing nida or thobe mills with Canton Fair evidence.\n\nPages I could not open: yilinfabric.com (HTTP 429), harboursx.com and chinacaidie.com (HTTP 503). I avoided growsmilingly.cn because its pages look like a mirror of Canton Fair data."
+  },
+  {
+   "slice": "fabric-jiangsu-north",
+   "notes": "I found 16 candidates (the quota was 18). 11 have strong Canton Fair evidence and 5 have medium. Nine of the strong ones are in Shijiazhuang or Shengze.\n\nWhat worked:\n- Chinese news reports were the best source. Shijiazhuang reports on the 137th and 139th fairs (texnet.com.cn, ctn1986.com, sjz.gov.cn) and Shengze delegation reports on the 136th and 139th fairs (jstv.com, ctn1986.com) gave named exhibitor lists.\n- One company news post (Changshan Fabric, 138th fair) also gave strong evidence.\n\nWhat didn't:\n- English searches that combined product, city and \"Canton Fair\" mostly returned generic guides.\n- Made-in-China showroom pages I checked (Jiangsu James, Changzhou Hengji, Jiangyin Changxu, Hebei Wohua, Hebei Xingye) list no trade shows, so they were dropped.\n- I found no Canton Fair evidence for any mill in Changzhou (except the denim mill Kailan), Nantong, Wuxi city, Weifang or Qingdao.\n- Shandong mills (Lu Thai, Weiqiao, Huafang) and Jiangsu Sunshine only appear in an undated third-party \"known exhibitors\" list (jufair.com) or an old 123rd-fair preview, so they are rated medium.\n\nExcluded:\n- Changzhou Kingcason (fleece/knit).\n- Hebei Textiles Imp. & Exp. (hbtex.com), a trading company that also has home textiles.\n- Jiangsu Redsun, Changshu Zhengfangyi and Qiansifang (home textiles).\n- Wujiang Mingsike Trading and Suzhou Laiouwei Imp. & Exp. (trading names).\n- Shijiazhuang Shuncheng Buye: named at the 137th fair, but I found nothing on its products or factory.\n\nGaps:\n- No booth numbers were found for the 2024-2026 sessions.\n- Several company websites (chinakailan.com, boshitex.com, textile-jy.com, jshfcl.com) returned 503 errors.\n\nI never opened cantonfair.org.cn, LinkedIn, Baidu or Global Sources."
+  },
+  {
+   "slice": "garment-menswear",
+   "notes": "What worked best was official government exhibitor lists for recent sessions, published by city and provincial commerce bureaus. These are strong third-party evidence and are not on cantonfair.org.cn. I used: Zhejiang/Shaoxing (136th, 137th), Tai'an (137th), Hubei (137th), Beijing (138th), Jining (136th), Wenzhou Lucheng (138th) and Fuzhou (139th). Company news pages with booth numbers also worked (Loto, Fuyi, Shaoxing Harbour). Generic English searches like \"Canton Fair + men's shirts/suits/jeans\" mostly returned guides, booth builders and knit or polo makers. Some government PDFs (Quanzhou 138th, the Gansu and Beijing 138th/139th joint-exhibitor lists, Huai'an 137th) were blocked or reset and could not be read. I did not open cantonfair.co, a third-party exhibitor directory, because it may mirror official fair data. Not included because products or woven focus could not be confirmed: Wenzhou Xusheng/Ouyiwei/Yuanda/Sunday (138th Lucheng list), Fujian Jiachen, Fuzhou Haoshijia (139th Fuzhou list), Zhejiang Langshaer Weidi (4 booths, 136th/137th), Feicheng Ouyali, Shandong Jintaida and Tai'an Hongbang (137th Tai'an list). Layer 2 or a later run could research these. Excluded: Zhejiang Welkang (international trading company), Joyord (polo/knit), Fuzhou Xingmao (rainwear), Shaoxing Ruiqin (mainly womenswear) and Shaoxing Huaerjie (listed as wholesaler/trader). No Ningbo shirt factory with Canton Fair evidence was found. The shared web search budget ran out before the Tai'an and Wenzhou names could be researched further, so the list has 12 candidates, not 18."
+  },
+  {
+   "slice": "garment-womens-kids",
+   "notes": "I found 15 candidates for the womenswear and kids' wear slice, short of the 18 asked for. Only 4 have their own company page or B2B profile behind them. My web searches ran out (the turn limit of 200 searches was reached), so I stopped there. Running more searches would need a follow-up run.\n\nWhat worked:\n- **Company news pages:** Jiaxin Silk (136th and 138th sessions), Honry Kidswear (139th, booth 1.1F01) and Begreat (old sessions only).\n- **Official exhibitor lists from local governments:** these gave the most Canton Fair evidence.\n  - Guangzhou Commerce Bureau list of companies proposed for 138th general booths (xlsx).\n  - Shaoxing lists of 135th and 137th exhibitors (PDF).\n  - National table of approved joint exhibitors for the 138th session (PDF, hosted by the Beijing Commerce Bureau). It pairs trading companies with their production partners.\n\nWhat did not work:\n- **Abaya and modest-wear makers:** I found no Canton Fair evidence for any of them. Made-in-China and Alibaba suppliers such as Hangzhou Weimei Garments, AY Collection and Guangzhou Shanel list no trade shows, so I left them out.\n- **Product + Canton Fair searches** for Humen, Zhongshan, Changshu, Fujian and Huzhou Zhili mostly returned guides or companies outside scope (outerwear makers in Hebei, military uniforms, lingerie). The Zhili kids' wear group at the 136th session names only brands (优淘, 花田彩, 趣趣么么), with no legal company details.\n\nGaps for Layer 2:\n- Ten of the candidates come only from the official lists. They have no confirmed English name (I give a pinyin transliteration) and no product or woven evidence.\n- The 5 joint-exhibition production companies (rated medium) exhibit under a trading company's booth rather than their own.\n\nExcluded:\n- Zhejiang Welkang and Veken: trading companies.\n- Hebei Loto: outside the slice's regions.\n- Wuhan Corhunter/TACEAG: military uniforms, not this slice.\n- Sutex Apparel (Nanjing): mixed knit and mostly menswear.\n- Changshu Hongyu: leather garments.\n\nI never opened cantonfair.org.cn, and every search call blocked that domain."
+  }
+ ],
+ "stats": {
+  "found": 52,
+  "garment_found": 27,
+  "fabric_found": 25,
+  "selected_garment": 25,
+  "selected_fabric": 25
+ }
+}

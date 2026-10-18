@@ -1,0 +1,23 @@
+{
+ "id": "G03",
+ "name_en": "Beijing Dahua Tiantan Garment Co., Ltd.",
+ "name_cn": "北京大华天坛服装有限公司",
+ "segment": "garment",
+ "province": "Beijing",
+ "city": "Beijing (production park in Liangxiang, Fangshan)",
+ "main_products": "Men's shirts and suits, high-end custom tailoring (TIANTAN, PURE TOUCH brands)",
+ "woven_evidence": "It grew out of the former Beijing Dahua Shirt Factory (founded 1954), has dress shirt and suit workshops, and helped draft the national shirt-size standard.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "138th, Phase 3 (Oct-Nov 2025)",
+  "booth": null,
+  "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250806677716135477.pdf",
+  "evidence_note": "The Beijing commerce bureau's 138th fair exhibitor list includes 北京大华天坛服装有限公司 in Phase 3, Men's & Women's Wear, with 1 general booth. The list classifies it as a production enterprise (生产企业)."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.dahuafashion.com",
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "It is a subsidiary of Beijing Dahua Fashion Technology (北京大华时尚科技发展有限公司). The company says it has a 45,000 m2 industrial park with shirt and suit workshops (self-reported). Published contacts: bg@dahuafashion.com, 010-82631160.",
+ "slice": "garment-menswear"
+}

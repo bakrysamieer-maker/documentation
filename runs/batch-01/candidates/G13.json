@@ -1,0 +1,23 @@
+{
+ "id": "G13",
+ "name_en": "Guangzhou Yongjia Garment Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "广州市永嘉制衣有限公司",
+ "segment": "garment",
+ "province": "Guangdong",
+ "city": "Guangzhou",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. It is listed in the men's and women's clothing (男女装) zone, and its name uses 制衣 (garment making). Its woven vs knit focus is unknown.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+  "evidence_note": "The Guangzhou Commerce Bureau's list of companies proposed for general booths at the 138th Canton Fair shows it under code 280E732, zone 男女装, with 2 booths. Notice page: http://sw.gz.gov.cn/ztzl/hzcj/gjh/138j/content/post_10369496.html"
+ },
+ "business_type_claimed": "unknown",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "The only evidence is an official delegation list. No website or product page was found because the search budget ran out, so Layer 2 must confirm its products and whether it is a factory. The English name is a transliteration, not the company's own spelling.",
+ "slice": "garment-womens-kids"
+}

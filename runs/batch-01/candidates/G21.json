@@ -1,0 +1,23 @@
+{
+ "id": "G21",
+ "name_en": "Hangzhou Gaosheng Garment Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "杭州高盛制衣有限公司",
+ "segment": "garment",
+ "province": "Zhejiang",
+ "city": "Hangzhou",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. Its name uses 制衣 (garment making), and it is listed in the 男女装 zone.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+  "evidence_note": "The official table of approved joint exhibitors (联营参展) for the 138th Canton Fair lists it as the production company (生产企业) partnered with exhibitor 浙江东方集团茂业进出口有限公司, a trading company, in the 男女装 zone (5 booths)."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "It is officially classed as a production company, but it exhibits under a trading company's booth rather than its own, so buyers may meet the trader first. Its products and woven focus need checking. The English name is a transliteration.",
+ "slice": "garment-womens-kids"
+}

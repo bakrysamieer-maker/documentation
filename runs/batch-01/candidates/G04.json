@@ -1,0 +1,25 @@
+{
+ "id": "G04",
+ "name_en": "Mailyard Garment Co., Ltd. (Hubei Mailyard)",
+ "name_cn": "美尔雅服饰有限公司",
+ "segment": "garment",
+ "province": "Hubei",
+ "city": "Huangshi",
+ "main_products": "Men's and ladies' suits, coats, workwear/professional wear, casual wear",
+ "woven_evidence": "It is a long-established Western-style suit maker that exports suits and professional wear, mainly to Japan.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, Phase 3 (2025)",
+  "booth": null,
+  "evidence_url": "https://swt.hubei.gov.cn/stdt/tzgg/202501/P020250108626360874234.pdf",
+  "evidence_note": "The Hubei trade delegation's 137th fair offline booth allocation lists 美尔雅服饰有限公司 under Men's & Women's Wear (男女装) with 4 booths."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "http://www.mailyard.com.cn",
+ "b2b_profiles": [
+  "https://www.manufacturer.com/mailyardgarment-supplier"
+ ],
+ "flags": [],
+ "notes": "It is linked to listed company Hubei Mailyard Co., Ltd. (600107). Its 2024 annual report shows export processing revenue down about 22%. Directories say around 2,000 workers and an industrial park in Tuanchengshan, Huangshi, and one directory also lists sweaters as a small line.",
+ "slice": "garment-menswear"
+}

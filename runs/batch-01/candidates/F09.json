@@ -1,0 +1,25 @@
+{
+ "id": "F09",
+ "name_en": "Shijiazhuang Weibaolai Textile Co., Ltd.",
+ "name_cn": "石家庄维宝莱纺织有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang (Zhao County)",
+ "main_products": "Grey and finished woven fabrics (TC, polyester-cotton plain weave, high-density garment fabric, classic dacron 的确良), cotton and TC yarn",
+ "woven_evidence": "It reports 700-1,000 shuttle and air-jet looms, and a stock listing shows a T65/C35 1/1 plain-weave grey fabric.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124686",
+  "evidence_note": "A China Textile News report on the 139th Canton Fair says the company showed 5 product categories and 300+ fabric varieties. It is also named in the Shijiazhuang government report on the 139th fair and in the 137th exhibitor report."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://weibaolai.sinotex.cn/",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "An integrated spinning and weaving mill founded in 2004. Much of its output may be grey fabric and home-textile fabric, so Layer 2 should check how much it sells as finished apparel fabric.",
+ "slice": "fabric-jiangsu-north"
+}

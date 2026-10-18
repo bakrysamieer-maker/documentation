@@ -1,0 +1,26 @@
+{
+ "id": "F02",
+ "name_en": "Hebei Gaibo Textile Co., Ltd.",
+ "name_cn": "河北盖帛纺织有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang (Zhao County)",
+ "main_products": "Cotton and TC shirting, cotton and TC workwear fabric, TR shirting and suiting, TC pocketing, voile, TC/CVC yarn",
+ "woven_evidence": "The company says it runs 300 air-jet looms (a weaving loom) making shirting, workwear and suiting fabric.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, May 2025 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+  "evidence_note": "Named as a Shijiazhuang exhibitor at the 137th Canton Fair in a texnet.com.cn report."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.hbgbtextile.com",
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/f587344ac8479a5f/",
+  "https://gaibo.en.alibaba.com/"
+ ],
+ "flags": [],
+ "notes": "It claims 120,000 spindles and 3M m of fabric a month (self-reported, and its staff numbers differ between pages). It appears on the NDRC 2025 cotton import quota applicant list, which supports that it is a real spinning and weaving mill in Zhao County.",
+ "slice": "fabric-jiangsu-north"
+}

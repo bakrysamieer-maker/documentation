@@ -1,0 +1,25 @@
+{
+ "id": "F10",
+ "name_en": "Hebei Baosheng Textile Co., Ltd.",
+ "name_cn": "河北宝盛纺织品有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang",
+ "main_products": "Pocketing fabric, cotton and poly-cotton dyed fabrics, polyester dyed fabric, yarn-dyed fabric, greige",
+ "woven_evidence": "Its site reports 50M m a year of greige fabric, and its product lines (pocketing, poly-cotton dyed and yarn-dyed fabric) are woven.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124686",
+  "evidence_note": "Named in the China Textile News report on the 139th Canton Fair. It is also in the 137th Shijiazhuang exhibitor report, and its own site mentions exhibiting at Phase 3 of the 135th fair."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.boshitex.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "It also lists home textiles and garments. Some site page titles mention non-woven fabric, which may just be SEO wording and needs checking. Its products are OEKO-TEX 100 certified (self-reported).",
+ "slice": "fabric-jiangsu-north"
+}

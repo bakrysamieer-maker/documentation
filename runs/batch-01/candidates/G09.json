@@ -1,0 +1,25 @@
+{
+ "id": "G09",
+ "name_en": "Honry Kidswear (Honry Apparel)",
+ "name_cn": null,
+ "segment": "garment",
+ "province": "Jiangsu",
+ "city": "Nanjing",
+ "main_products": "Kids' wear: woven jackets (ski, quilted, waterproof), jeans, cargo pants, skirts, party and casual dresses, boys' suits, uniforms",
+ "woven_evidence": "Its product list is mostly woven: outerwear, denim, cargo pants, dresses and boys' suits. It also lists leggings and baby sets, which are likely knit.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026",
+  "booth": "1.1F01",
+  "evidence_url": "https://www.honrykidswear.com/fr/join-us-at-the-139th-canton-fair-elevating-kids-fashion-for-2026/",
+  "evidence_note": "The company's own page invites buyers to booth 1.1F01 at Phase 3 of the 139th Canton Fair, May 1-5, 2026."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.honrykidswear.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_trader"
+ ],
+ "notes": "The only address it gives is an office in SOHO International Plaza, Nanjing, with no factory address. Sister Honry sites name JIANGSU SOHO HONRY IMPORT & EXPORT CO., LTD, which suggests it is the export arm of a trading group, so Layer 2 should check whether it owns a factory. It claims BSCI, SEDEX, SGS and OEKO-TEX but gives no certificate numbers. Contacts: jackeysun@honrykidswear.com and +86 13813357005 (WhatsApp).",
+ "slice": "garment-womens-kids"
+}

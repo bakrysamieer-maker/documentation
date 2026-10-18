@@ -1,0 +1,29 @@
+{
+ "id": "F15",
+ "name_en": "Shijiazhuang Tianquan Textile Co., Ltd.",
+ "name_cn": "石家庄市天泉纺织有限公司",
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang",
+ "main_products": "Cotton and CVC flannel, TC uniform fabric, poplin, TC pocketing, cotton yarn-dyed fabric, interlining",
+ "woven_evidence": "Its main lines (flannel, poplin, TC uniform, pocketing and yarn-dyed fabric) are woven fabrics.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, May 2025 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://info.texnet.com.cn/detail-1028758.html",
+  "evidence_note": "Named as a Shijiazhuang exhibitor (石家庄市天泉纺织有限公司) at the 137th Canton Fair in a texnet.com.cn report."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": "http://www.tianquantextile.net.cn/",
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/yangtex",
+  "https://tianquantextile.en.alibaba.com/company_profile.html"
+ ],
+ "flags": [
+  "possible_trader",
+  "possible_non_clothing"
+ ],
+ "notes": "Listings disagree on its founding year (1992 or 2009) and size (51 to 300+ staff). It also sells microfiber towels and scarf voile. The MIC contact is Linda Yang, and a listed phone is 86-311-68129758.",
+ "slice": "fabric-jiangsu-north"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "G06",
+ "name_en": "Jining Aimei Garment Co., Ltd.",
+ "name_cn": "济宁艾美服装服饰有限公司",
+ "segment": "garment",
+ "province": "Shandong",
+ "city": "Jining (Jiaxiang County origin)",
+ "main_products": "Down jackets, outdoor shell jackets, cotton-padded coats",
+ "woven_evidence": "It is a contract maker of down, padded and shell jackets, which use woven shell fabrics.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th, Phase 3 (Oct-Nov 2024)",
+  "booth": null,
+  "evidence_url": "https://business.jining.gov.cn/module/download/downfile.jsp?classid=0&filename=c64b6e0b04c240238f8e074c6af590a9.pdf",
+  "evidence_note": "The Jining commerce bureau's 136th fair general booth notice lists 济宁艾美服装服饰有限公司 under Men's & Women's Wear (男女装) with 5 booths."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "Chinese media (news.sina.cn 2022; pai.com.cn) describe a factory started in 2003 in Jiaxiang with 1,000+ employees and village satellite workshops, selling through Alibaba International. No English name, website or B2B URL was confirmed, so Layer 2 should find them.",
+ "slice": "garment-menswear"
+}

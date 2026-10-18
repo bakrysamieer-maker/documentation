@@ -1,0 +1,27 @@
+{
+ "id": "F11",
+ "name_en": "Wujiang Pengnuo Textile Co., Ltd.",
+ "name_cn": "吴江市鹏诺纺织有限公司",
+ "segment": "fabric",
+ "province": "Jiangsu",
+ "city": "Suzhou (Wujiang Shengze)",
+ "main_products": "Polyester and nylon woven fabrics: taffeta, oxford, peach skin, suede, spandex stretch, recycled fabrics",
+ "woven_evidence": "Its listed lines (taffeta, oxford, peach skin and suede) are woven filament fabrics typical of Shengze.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124713",
+  "evidence_note": "A China Textile News report on the Shengze delegation (56 companies) at the 139th Canton Fair names 吴江鹏诺纺织有限公司."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "http://www.pengnuotex.com/",
+ "b2b_profiles": [
+  "https://pengnuotex.en.alibaba.com/company_profile.html"
+ ],
+ "flags": [
+  "possible_knit"
+ ],
+ "notes": "Its registered business scope includes knitted textiles, and its addresses differ across sources. It claims a 30-mu site, 80M m a year of capacity and a branch in Bangladesh. Layer 2 should check for a knit line and whether it has its own looms.",
+ "slice": "fabric-jiangsu-north"
+}

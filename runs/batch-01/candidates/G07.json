@@ -1,0 +1,25 @@
+{
+ "id": "G07",
+ "name_en": "Wuhan Fronter (WHfronter)",
+ "name_cn": null,
+ "segment": "garment",
+ "province": "Hubei",
+ "city": "Wuhan",
+ "main_products": "Military, police and security uniforms, camouflage combat suits, tactical jackets and pants, workwear, functional outerwear",
+ "woven_evidence": "Its core products are combat uniforms, tactical pants and jackets and workwear, which are woven garments.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th (November 2024, inferred from the date given)",
+  "booth": null,
+  "evidence_url": "https://whfronter.com/canton-fair-2024-uniform-oem",
+  "evidence_note": "The company page says it exhibited uniform OEM solutions at the Canton Fair in November 2024 (tactical jackets, workwear, functional outerwear). It gives no booth number. An earlier page covers the 2019 fair."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://whfronter.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "The legal name was not shown. It claims 27+ years of OEM experience, ISO 9001 and BSCI, and exports to 40+ countries, but gives no factory size. It also sells boots and accessories, which are out of scope. Published contacts: contact@whfronter.com, +86 133 8755 7561.",
+ "slice": "garment-menswear"
+}

@@ -1,0 +1,28 @@
+{
+ "id": "G11",
+ "name_en": "Shandong Renoir Apparel Co., Ltd.",
+ "name_cn": "山东雷诺服饰有限公司",
+ "segment": "garment",
+ "province": "Shandong",
+ "city": "Tai'an",
+ "main_products": "Men's suits, blazers, double-breasted and peak-lapel suits, sport blazers, trousers, coats, uniforms",
+ "woven_evidence": "Tailored suits and blazers are woven garments, and the supplier focuses on suiting.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, Phase 3 (2025)",
+  "booth": null,
+  "evidence_url": "https://swj.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=1499fdb52193435b922b90ef59d53aed.pdf",
+  "evidence_note": "The Tai'an city 137th fair booth allocation table lists 山东雷诺服饰有限公司 under Men's & Women's Wear (男女装), Phase 3, with 1 standard booth."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": null,
+ "b2b_profiles": [
+  "https://renoir18.en.made-in-china.com/company-Shandong-Renoir-Apparel-Co-Ltd-.html",
+  "https://www.made-in-china.com/showroom/vicky0526/"
+ ],
+ "flags": [
+  "possible_trader"
+ ],
+ "notes": "Made-in-China gives it as Manufacturer & Trading, BV-audited (MIC-ASR2551375), with 512 employees. It reports being a Daiyin Group subsidiary with 12 garment factories, and claims BSCI and ISO 9001. Published contact: Mr. William Zhang.",
+ "slice": "garment-menswear"
+}

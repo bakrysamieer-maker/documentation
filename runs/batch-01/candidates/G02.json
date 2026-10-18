@@ -1,0 +1,26 @@
+{
+ "id": "G02",
+ "name_en": "Shandong Aoshi Garments Co., Ltd.",
+ "name_cn": "山东傲饰服饰有限公司",
+ "segment": "garment",
+ "province": "Shandong",
+ "city": "Feicheng (Tai'an)",
+ "main_products": "Men's and ladies' suits, uniforms, coats, shirts",
+ "woven_evidence": "Its core products are tailored suits, uniforms and coats, which are woven garments.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, Phase 3 (2025)",
+  "booth": null,
+  "evidence_url": "https://swj.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=1499fdb52193435b922b90ef59d53aed.pdf",
+  "evidence_note": "The Tai'an city commerce bureau's booth allocation table for the 137th fair lists 山东傲饰服饰有限公司 in Phase 3, Men's & Women's Wear (男女装), with 1 standard booth."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://aoshi-garment.en.made-in-china.com/company-SHANDONG-AOSHI-GARMENTS-CO-LTD-.html",
+  "https://sdaoshi.en.alibaba.com/"
+ ],
+ "flags": [],
+ "notes": "Its Made-in-China profile says Manufacturer/Factory, SGS-audited (report QIP-ASR245337) and 461 employees, but its profile text says 1,500+ workers, so the figures conflict. It claims exports to the USA, EU, Australia and Africa.",
+ "slice": "garment-menswear"
+}

@@ -1,0 +1,25 @@
+{
+ "id": "F19",
+ "name_en": "Jiangsu Sunshine Co., Ltd.",
+ "name_cn": "江苏阳光股份有限公司",
+ "segment": "fabric",
+ "province": "Jiangsu",
+ "city": "Wuxi (Jiangyin)",
+ "main_products": "Worsted wool and wool-blend suiting, wool coating fabric, cotton/linen fabric, men's suits",
+ "woven_evidence": "It describes itself as a vertical wool mill making 35M m of worsted suiting fabric a year, and worsted suiting is woven.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": null,
+  "booth": null,
+  "evidence_url": "https://www.jufair.com/information/297211.html",
+  "evidence_note": "Listed (江苏阳光) in a third-party jufair.com Phase 3 known-exhibitor list, without a session or booth."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://www.made-in-china.com/showroom/yurentiantang/"
+ ],
+ "flags": [],
+ "notes": "Fits the wool-blend suiting part of the slice. It also makes suits, but fabric is its core. Global Sources names a sales manager, Wendy Xu, but that site was not opened.",
+ "slice": "fabric-jiangsu-north"
+}

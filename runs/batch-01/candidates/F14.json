@@ -1,0 +1,25 @@
+{
+ "id": "F14",
+ "name_en": "Shaoxing Keqiao Jiejiegao Import And Export Co., Ltd. (Jiejiegao Textile)",
+ "name_cn": "绍兴柯桥节节高进出口有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Shaoxing (Keqiao)",
+ "main_products": "Linen, ramie, hemp, tencel, modal, cupro and blended natural-fiber fabrics; beachwear fabrics (micro peach, taslon)",
+ "woven_evidence": "Its site shows its own rapier and air-jet weaving workshops, and its range of linen and ramie fabrics is typically woven. The site never mentions knit.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th (Oct 2024), 137th (Apr-May 2025), 139th (Apr-May 2026)",
+  "booth": null,
+  "evidence_url": "https://www.jjg-tex.com/news/2/",
+  "evidence_note": "The company's exhibition news page lists the 136th, 137th and 139th Canton Fairs. It is also on the Shaoxing 136th exhibitor list (code 160Q370, textile raw materials and fabrics)."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": "https://www.jjg-tex.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_trader"
+ ],
+ "notes": "'Import and Export' is in the name, but it claims to be a manufacturer with more than 80 machines and weaving workshops. Its address is an office in the International Trade Mansion, Keqiao. Business contacts from its site: jack@jjg-tex.com, +86 13575549483 (WhatsApp).",
+ "slice": "fabric-zhejiang"
+}

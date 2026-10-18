@@ -1,0 +1,23 @@
+{
+ "id": "G14",
+ "name_en": "Guangzhou Xilong Apparel Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "广州喜龙服饰有限公司",
+ "segment": "garment",
+ "province": "Guangdong",
+ "city": "Guangzhou",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. It is only listed in the men's and women's clothing (男女装) zone.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+  "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280C767, zone 男女装, with 4 booths."
+ },
+ "business_type_claimed": "unknown",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "With 4 booths it is one of the larger private Guangzhou apparel exhibitors on this list. Its products, woven focus and factory status are unverified. The English name is a transliteration.",
+ "slice": "garment-womens-kids"
+}

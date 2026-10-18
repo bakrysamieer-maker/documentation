@@ -1,0 +1,27 @@
+{
+ "id": "F21",
+ "name_en": "Shaoxing Yilin Textile Co., Ltd.",
+ "name_cn": null,
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Shaoxing",
+ "main_products": "Rayon (viscose), polyester, linen, cotton and yarn-dyed fabrics; some knitting and embroidery fabric",
+ "woven_evidence": "Its site says it has its own weaving factory, and its main lines (rayon, linen, cotton, yarn-dyed) are woven.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": "2024 (session not stated)",
+  "booth": null,
+  "evidence_url": "https://yilinfabric.com/pages/exhibition",
+  "evidence_note": "In search results, the company's exhibition page lists 'Canton Fair 2024'. I could not open the page (HTTP 429), so I have not confirmed the session or booth."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://yilinfabric.com",
+ "b2b_profiles": [
+  "https://yilintextile.en.alibaba.com/"
+ ],
+ "flags": [
+  "mixed_knit_woven"
+ ],
+ "notes": "Printing and dyeing are done by a partner factory. Profiles disagree on its age: incorporated in 2019 per its site, 7 years per Alibaba, founded 2011 per ExportHub. It also lists knitting fabric.",
+ "slice": "fabric-zhejiang"
+}

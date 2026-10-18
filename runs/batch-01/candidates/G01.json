@@ -1,0 +1,23 @@
+{
+ "id": "G01",
+ "name_en": "Hebei Loto Garment Co., Ltd.",
+ "name_cn": null,
+ "segment": "garment",
+ "province": "Hebei",
+ "city": "Shijiazhuang",
+ "main_products": "Outerwear: down jackets, windbreakers, functional workwear, technical coats, insulated and ski jackets, hunting wear",
+ "woven_evidence": "Its range is outerwear made from waterproof, windproof and breathable technical fabrics (woven shells). It does list T-shirts as a minor category.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th (May 2025) and 138th (Oct-Nov 2025), Phase 3",
+  "booth": "6.1D37-38, E11-12",
+  "evidence_url": "https://www.lotogarment.com/news/custom-outerwear-in-focus-loto-garment-s-stand-85308835.html",
+  "evidence_note": "The company's own news pages announce booth 6.1D37-38, E11-12 at the 138th fair. A second page (lotogarment.com/news/meet-hebei-loto-garment-at-the-137th-canton-fa-84944985.html) gives the same booth for the 137th fair, Phase 3, May 1-5, 2025."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.lotogarment.com",
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "Its China address is an office in Hebei COFCO Plaza, Shijiazhuang. The site also lists factories in Bangladesh and Africa and a UK office, so Layer 2 should check where production actually happens. Published contacts: info@lotogarment.com, +86 15633045017 (WhatsApp).",
+ "slice": "garment-menswear"
+}

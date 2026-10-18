@@ -1,0 +1,26 @@
+{
+ "id": "G10",
+ "name_en": "Fuxin Fuyi Industry Co., Ltd. (Fuyi Group)",
+ "name_cn": "阜新福壹实业有限公司",
+ "segment": "garment",
+ "province": "Liaoning",
+ "city": "Fuxin (branch office in Shaoxing Keqiao)",
+ "main_products": "Medical scrubs, chef and corporate uniforms, hi-vis safety workwear, softshell and fleece jackets",
+ "woven_evidence": "Its main lines are scrubs, chef and corporate uniforms and hi-vis workwear, usually woven poly-cotton, though it also offers fleece jackets.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, Phase 3 (May 1-5, 2026)",
+  "booth": "2.1E25-27 & F18-20",
+  "evidence_url": "https://fuyigroup.com/blog/welcome-to-the-139th-canton-fair-booth-of-fuyi-group/",
+  "evidence_note": "The company blog invites buyers to its booth 2.1E25-27 & F18-20 at the 139th Canton Fair, May 1-5, 2026."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://fuyigroup.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_trader",
+  "mixed_knit_woven"
+ ],
+ "notes": "The company says all products are made in its own factory in Yangon, Myanmar, not in China, so Layer 2 should decide whether that fits. It calls itself a wholesale uniform company. A related site, fuyiworkwear.com, also mentions the 138th fair. Published WhatsApp: +86 15306753170.",
+ "slice": "garment-menswear"
+}

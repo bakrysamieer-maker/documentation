@@ -1,0 +1,29 @@
+{
+ "id": "G12",
+ "name_en": "Hubei Yalida Garment Co., Ltd.",
+ "name_cn": "湖北雅利达制衣有限公司",
+ "segment": "garment",
+ "province": "Hubei",
+ "city": "Wuhan office; factory in Hanchuan (Xiaogan)",
+ "main_products": "Military, police and security uniforms: combat uniforms (ACU, BDU), tactical shirts and pants, M65 jackets, industrial uniforms",
+ "woven_evidence": "Its core products are camouflage combat uniforms, tactical shirts and pants, and jackets, which are woven twill or ripstop garments.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, Phase 3 (2025)",
+  "booth": null,
+  "evidence_url": "https://swt.hubei.gov.cn/stdt/tzgg/202501/P020250108626360874234.pdf",
+  "evidence_note": "The Hubei delegation's 137th fair booth allocation lists 湖北雅利达制衣有限公司 under Men's & Women's Wear (男女装) with 4 booths."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": "https://www.yalidahb.com/",
+ "b2b_profiles": [
+  "https://hbyalida.en.made-in-china.com/",
+  "https://hbyalida.en.alibaba.com/"
+ ],
+ "flags": [
+  "possible_trader",
+  "possible_non_clothing"
+ ],
+ "notes": "Made-in-China lists it as a Trading Company, while its intro claims a factory in Hanchuan with 400+ workers. It also sells helmets and body-armour vests, which are out of scope. It says it has made uniforms for the Saudi Royal Guard, which is a KSA bonus but self-reported. Published contact: Mr. Eric.",
+ "slice": "garment-menswear"
+}

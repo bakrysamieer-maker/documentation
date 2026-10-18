@@ -1,0 +1,29 @@
+{
+ "id": "F12",
+ "name_en": "Zhejiang Province Changxing Silk Co., Ltd.",
+ "name_cn": "浙江省长兴丝绸有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Huzhou (Changxing, Lijiaxiang)",
+ "main_products": "100% polyester mini matt, satin, bright dazzle, taffeta, net fabric, super poly",
+ "woven_evidence": "The FOB directory lists woven polyester constructions (mini matt, satin, taffeta) among its main products. Bloomberg says it makes woven, warp-knitted and knitted fabrics.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "137th, Apr-May 2025",
+  "booth": null,
+  "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3648/site/attach/-1/2503051415361238839.pdf",
+  "evidence_note": "The Huzhou 137th Canton Fair booth allocation list gives 浙江省长兴丝绸有限公司 4 brand booths in the textile raw materials and fabrics zone."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "http://www.cxsilk.com",
+ "b2b_profiles": [
+  "https://bbs.fobshanghai.com/company/q1603b61q20mx32.html",
+  "https://www.exporthub.com/zhejiang-province-changxing-silk-co-ltd/"
+ ],
+ "flags": [
+  "possible_knit",
+  "mixed_knit_woven"
+ ],
+ "notes": "ExportHub lists it as a warp-knit supplier, so the knit share may be large. Its satin and mini matt fit abaya and lining use.",
+ "slice": "fabric-zhejiang"
+}

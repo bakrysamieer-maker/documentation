@@ -1,0 +1,27 @@
+{
+ "id": "F17",
+ "name_en": "Wujiang Enhao Textile Co., Ltd.",
+ "name_cn": "吴江恩浩纺织品有限公司",
+ "segment": "fabric",
+ "province": "Jiangsu",
+ "city": "Suzhou (Wujiang Shengze)",
+ "main_products": "Polyester taffeta, oxford, satin, nida (abaya fabric), lam lam, bengaline, memory fabric",
+ "woven_evidence": "Its products (taffeta, oxford, satin, nida and bengaline) are woven polyester fabrics.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "139th, May 2026 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://www.ctn1986.com/index.php?c=content&a=show&id=124713",
+  "evidence_note": "Named in the China Textile News report on the Shengze delegation at the 139th Canton Fair."
+ },
+ "business_type_claimed": "unknown",
+ "website": null,
+ "b2b_profiles": [
+  "https://enhaotex.en.alibaba.com/"
+ ],
+ "flags": [
+  "possible_trader"
+ ],
+ "notes": "Nida is an abaya fabric, which is relevant for KSA. Directories give conflicting founding years and addresses, and one says it belongs to Wujiang Weichang Textile. Layer 2 should confirm it owns looms.",
+ "slice": "fabric-jiangsu-north"
+}

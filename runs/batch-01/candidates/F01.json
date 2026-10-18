@@ -1,0 +1,25 @@
+{
+ "id": "F01",
+ "name_en": "Zhejiang Baofang Printing & Dyeing Co., Ltd.",
+ "name_cn": "浙江宝纺印染有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Shaoxing (Keqiao, Binhai Industrial Zone)",
+ "main_products": "100% cotton real wax and imitation wax printed fabrics (African wax print)",
+ "woven_evidence": "Wax print is printed on woven cotton cloth, and texnet says it makes about 15 million m of cotton wax print a month.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th (Oct 2024), 137th (Apr-May 2025), 139th (May 2026)",
+  "booth": null,
+  "evidence_url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3009/site/attach/0/b026be57fdfe4d859d4395272bdd4464.pdf",
+  "evidence_note": "The Shaoxing 136th exhibitor list (and the 137th) shows 浙江宝纺印染有限公司 (160Q283) with 4 brand booths in the textile raw materials and fabrics zone. China Textile News also names 宝纺印染 at the 139th."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://zhejiangbaofang.cn.texnet.com.cn/"
+ ],
+ "flags": [],
+ "notes": "A large printing and dyeing mill, but its output goes almost entirely to West Africa. The product is outside this slice's core list (no TR, nida or thobe fabric), so it fits KSA only if the buyer wants printed cotton.",
+ "slice": "fabric-zhejiang"
+}

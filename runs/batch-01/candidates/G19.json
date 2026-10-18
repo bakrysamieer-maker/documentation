@@ -1,0 +1,26 @@
+{
+ "id": "G19",
+ "name_en": "Shaoxing Harbour Textile & Garments Co., Ltd.",
+ "name_cn": null,
+ "segment": "garment",
+ "province": "Zhejiang",
+ "city": "Shaoxing",
+ "main_products": "Men's and women's suit sets, matching fabrics, school wear, warm jackets; also knit and woven fabrics and polo shirts",
+ "woven_evidence": "Its Canton Fair displays were men's and women's suit sets with matching fabrics, which are woven, but it also sells knit fabrics and polos.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "134th to 137th (latest 137th, May 2025)",
+  "booth": "3.1M38 (137th); 2.1K44 (136th)",
+  "evidence_url": "https://www.sxharbour.com/news/",
+  "evidence_note": "The company's news page lists booth 3.1M38 at the 137th fair (May 1-5, 2025), 2.1K44 at the 136th (Oct 31-Nov 4, 2024), 3.1I40 at the 135th and 3.1J44 at the 134th."
+ },
+ "business_type_claimed": "trading",
+ "website": "https://www.sxharbour.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_trader",
+  "mixed_knit_woven"
+ ],
+ "notes": "Its profile says Trade Company, but one news post calls it a fabric and apparel manufacturer. It lists the Middle East among its main markets and exhibited at IATF Dubai 2025. Layer 2 should check for a factory. Published contact: Angela@harboursx.com.",
+ "slice": "garment-menswear"
+}

@@ -1,0 +1,25 @@
+{
+ "id": "F06",
+ "name_en": "Hebei Henghe Bangxing New Material Co., Ltd. (Changshan Fabric)",
+ "name_cn": null,
+ "segment": "fabric",
+ "province": "Hebei",
+ "city": "Shijiazhuang",
+ "main_products": "Workwear fabric (cotton/poly twill, dyed and coated), cotton lining and garment fabric, woven and dyed functional fabrics, yarn",
+ "woven_evidence": "Its workwear fabric page lists woven poly-cotton specs (16x12 and 20x16 yarn counts, 200-300 gsm, 57/58 inch width), and its 138th Canton Fair news names woven and dyed fabrics.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "138th, Oct-Nov 2025 (Phase 3)",
+  "booth": null,
+  "evidence_url": "https://www.changshanfabric.com/news/the-138th-canton-fair.html",
+  "evidence_note": "The company news post announces it will exhibit at Phase 3 of the 138th Canton Fair (Oct 31-Nov 4, 2025) and show woven fabrics and dyed fabrics. It is also named in the texnet.com.cn list of Shijiazhuang exhibitors at the 137th fair."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": "https://www.changshanfabric.com",
+ "b2b_profiles": [],
+ "flags": [
+  "possible_trader"
+ ],
+ "notes": "Its site links it to the Shijiazhuang Changshan textile group, listed in Shenzhen in 2000, and claims 2 bases and 5,054 staff. The site also sells yarn and home-textile fabric, and the stated address is an office building, so Layer 2 should check whether this company is the mill itself or its export arm. Published contacts: kewin.lee@changshanfabric.com, WhatsApp +86 15931198271.",
+ "slice": "fabric-jiangsu-north"
+}

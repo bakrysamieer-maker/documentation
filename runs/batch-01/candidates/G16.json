@@ -1,0 +1,23 @@
+{
+ "id": "G16",
+ "name_en": "Guangzhou Yongming Garment Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "广州市永明服装有限公司",
+ "segment": "garment",
+ "province": "Guangdong",
+ "city": "Guangzhou",
+ "main_products": "Kids' wear (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. It is only listed in the kids' wear (童装) zone.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "http://sw.gz.gov.cn/attachment/7/7851/7851037/10369496.xlsx",
+  "evidence_note": "It is on the Guangzhou delegation's list of companies proposed for 138th Canton Fair general booths, under code 280F408, zone 童装 (Y aisle), with 2 booths."
+ },
+ "business_type_claimed": "unknown",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "This is a kids' wear lead. Guangzhou kids' wear is often knit, so Layer 2 must check its woven share and whether it is a factory. The English name is a transliteration.",
+ "slice": "garment-womens-kids"
+}

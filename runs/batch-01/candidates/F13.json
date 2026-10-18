@@ -1,0 +1,25 @@
+{
+ "id": "F13",
+ "name_en": "Shaoxing Shijia Textile Co., Ltd. (production base: Zhuji City Jinshijia Textile Co., Ltd.)",
+ "name_cn": "绍兴世佳纺织有限公司 / 诸暨市金世佳纺织有限公司",
+ "segment": "fabric",
+ "province": "Zhejiang",
+ "city": "Shaoxing (Keqiao office; mill in Fengqiao, Zhuji)",
+ "main_products": "Yarn-dyed shirting (polyester-cotton, 100% polyester), CVC oxford, seersucker, TC spandex, TR yarn-dyed fabric",
+ "woven_evidence": "A directory profile says the Zhuji mill has more than 200 rapier looms, and Keqiao Daily describes it showing yarn-dyed woven fabric (色织布) at the Canton Fair.",
+ "canton_fair": {
+  "strength": "strong",
+  "session": "136th, Oct-Nov 2024 (also on the 137th list)",
+  "booth": null,
+  "evidence_url": "https://info.texnet.com.cn/detail-1005963.html",
+  "evidence_note": "Keqiao Daily (via texnet, 2024-11-06) reports that 世佳纺织 showed more than 100 yarn-dyed woven samples at the 136th Canton Fair, for buyers from Africa and South America. 诸暨市金世佳纺织有限公司 (code 160D233) is in the textile raw materials and fabrics zone on the Shaoxing 136th and 137th exhibitor lists. 绍兴金世佳纺织有限公司 (160Q875) is also listed."
+ },
+ "business_type_claimed": "manufacturer_and_trading",
+ "website": "http://www.shijiatextile.com",
+ "b2b_profiles": [
+  "https://bbs.fobshanghai.com/company/gr160mw36k11866.html"
+ ],
+ "flags": [],
+ "notes": "The Keqiao entity looks like the sales arm and the Zhuji company looks like the weaving mill. Layer 2 should confirm how the two are linked and whether they make shirting and TR suiting in-house.",
+ "slice": "fabric-zhejiang"
+}

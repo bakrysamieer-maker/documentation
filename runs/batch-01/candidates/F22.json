@@ -1,0 +1,27 @@
+{
+ "id": "F22",
+ "name_en": "Shandong Weiqiao Textile Co., Ltd.",
+ "name_cn": null,
+ "segment": "fabric",
+ "province": "Shandong",
+ "city": "Binzhou (Zouping)",
+ "main_products": "Cotton grey and finished woven fabric, denim, cotton yarn",
+ "woven_evidence": "Directory listings describe it as a maker of cotton yarn and cotton fabric. The woven share still needs confirming.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": null,
+  "booth": null,
+  "evidence_url": "https://www.jufair.com/information/297211.html",
+  "evidence_note": "A third-party jufair.com Phase 3 exhibitor guide lists 山东魏桥 among its known textile and apparel exhibitors, without a session or booth."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [
+  "https://qiaoliya.en.ec21.com/"
+ ],
+ "flags": [
+  "possible_non_clothing"
+ ],
+ "notes": "A very large group whose output is heavily yarn and grey fabric. The EC21 listing is old (last login 2008). The Canton Fair evidence is weak-to-medium.",
+ "slice": "fabric-jiangsu-north"
+}

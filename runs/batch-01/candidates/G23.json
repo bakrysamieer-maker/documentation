@@ -1,0 +1,23 @@
+{
+ "id": "G23",
+ "name_en": "Suzhou Sibowei'er Apparel Co., Ltd. (pinyin; official English name not found)",
+ "name_cn": "苏州思博威尔服饰有限公司",
+ "segment": "garment",
+ "province": "Jiangsu",
+ "city": "Suzhou",
+ "main_products": "Men's and women's clothing (Canton Fair category). Exact products not found.",
+ "woven_evidence": "Not confirmed. It is only listed in the 男女装 zone.",
+ "canton_fair": {
+  "strength": "medium",
+  "session": "138th, Oct-Nov 2025",
+  "booth": null,
+  "evidence_url": "https://sw.beijing.gov.cn/zt/gjh/tztg/202508/P020250821580354804172.pdf",
+  "evidence_note": "The official 138th Canton Fair joint-exhibitor table lists it as the production company partnered with 常熟德隆进出口有限责任公司 (Changshu) in the 男女装 zone (3 booths)."
+ },
+ "business_type_claimed": "manufacturer",
+ "website": null,
+ "b2b_profiles": [],
+ "flags": [],
+ "notes": "It is officially classed as a production company, linked to a Changshu trading company. No web profile was found. The English name is a transliteration.",
+ "slice": "garment-womens-kids"
+}
