@@ -1,0 +1,21 @@
+# DRAFT weights for the per-cell candidate score (step 11). Edit freely.
+# Each layer is rescaled to 0-1 inside the corridor before weighting; weights are
+# normalised to sum to 1, so only their ratios matter.
+
+weights:
+  wadi_terminus: 0.20        # clue 3: near a wadi end under dunes, or on its projected buried course
+  spring_minerals: 0.20      # clue 1: carbonate/gypsum (ASTER; Sentinel-2 proxy is down-weighted x0.5)
+  groundwater_lows: 0.10     # clue 5: closed lows on the sub-dune base surface along the Dhofar->NE path
+  tracks_alignments: 0.15    # clues 2+4: near extended track/trilith alignment lines from Shisr
+  geometric_anomalies: 0.20  # clue 4: rectilinear/circular anomaly density (+ ML similarity if trained)
+  thin_sand: 0.15            # clue 6: thin or recently mobile sand cover
+
+# Masks applied after weighting (multiplicative). These suppress known modern look-alikes.
+masks:
+  modern_infrastructure_buffer_m: 300   # mapped roads, tracks, pipelines, wells, settlements
+  centre_pivot_and_fields: 0.0          # score multiplier inside detected farms (0 = exclude)
+  seismic_grid_multiplier: 0.5          # cells dominated by regular straight-line grids
+
+candidates:
+  top_n: 20
+  min_spacing_km: 5

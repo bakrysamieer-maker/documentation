@@ -194,16 +194,19 @@ folium.GeoJson(c.geometry.__geo_interface__,
 
 pts = folium.FeatureGroup(name="Reference points (with positional uncertainty)")
 colors = {"known_site": "red", "natural_reference": "blue"}
+# image-identified positions (this study, not published) are drawn green
+refs["role_draw"] = np.where(refs["position_quality"] == "image_identified", "image", refs["role"])
+colors["image"] = "green"
 for _, r in refs.dropna(subset=["lat"]).iterrows():
     html = (f"<b>{r['name']}</b> {r['name_ar'] if isinstance(r['name_ar'], str) else ''}<br>"
             f"{r['lat']:.4f} N, {r['lon']:.4f} E &nbsp;(±{r['uncertainty_km']} km, {r['position_quality']})<br>"
             f"<i>{r['notes']}</i><br>Source: <a href='{r['source_url']}' target='_blank'>{r['source']}</a>")
     folium.Marker([r["lat"], r["lon"]], popup=folium.Popup(html, max_width=380),
                   tooltip=r["name"],
-                  icon=folium.Icon(color=colors.get(r["role"], "gray"),
+                  icon=folium.Icon(color=colors.get(r["role_draw"], "gray"),
                                    icon="star" if r["role"] == "known_site" else "info-sign")).add_to(pts)
     folium.Circle([r["lat"], r["lon"]], radius=float(r["uncertainty_km"]) * 1000,
-                  color=colors.get(r["role"], "gray"), weight=1, fill=False, dash_array="3 3").add_to(pts)
+                  color=colors.get(r["role_draw"], "gray"), weight=1, fill=False, dash_array="3 3").add_to(pts)
 folium.CircleMarker([low_pt[1], low_pt[0]], radius=7, color="#6a3d9a", fill=True,
                     tooltip=f"Lowest point of 15 km-smoothed DEM north of 19.5N (~{low_pt[2]:.0f} m): "
                             "regional depression the groundwater path heads for (data-derived)").add_to(pts)
@@ -243,13 +246,17 @@ for a in axes:
     borders.plot(ax=a, color="white", lw=1.6, ls="--")
     boxes[boxes["name"] == "download_bbox"].boundary.plot(ax=a, color="#ff7f00", lw=1.8)
     corr[corr["name"] == "corridor"].boundary.plot(ax=a, color="#e31a1c", lw=2.2)
+    short = {"muqshin": "Muqshin (Wikipedia coord.)", "muqshin_alt": None,
+             "muqshin_s2": "Muqshin village (located on S2)"}
     for _, r in refs.dropna(subset=["lat"]).iterrows():
-        a.plot(r["lon"], r["lat"], marker="*" if r["role"] == "known_site" else "o",
-               ms=13 if r["role"] == "known_site" else 7,
-               color="red" if r["role"] == "known_site" else "#1f4e9c", mec="white", mew=0.8)
-        a.annotate(r["name"].split(" (")[0], (r["lon"], r["lat"]), xytext=(6, 4),
-                   textcoords="offset points", fontsize=8.5, color="black",
-                   bbox=dict(boxstyle="round,pad=0.15", fc="white", alpha=0.75, lw=0))
+        style = {"known_site": ("*", 13, "red"), "image": ("D", 7, "#1a9641")}.get(
+            r["role_draw"], ("o", 7, "#1f4e9c"))
+        a.plot(r["lon"], r["lat"], marker=style[0], ms=style[1], color=style[2], mec="white", mew=0.8)
+        label = short.get(r["id"], r["name"].split(" (")[0])
+        if label:
+            a.annotate(label, (r["lon"], r["lat"]), xytext=(6, 4),
+                       textcoords="offset points", fontsize=8.5, color="black",
+                       bbox=dict(boxstyle="round,pad=0.15", fc="white", alpha=0.75, lw=0))
     a.plot(low_pt[0], low_pt[1], marker="v", ms=9, color="#6a3d9a", mec="white")
     a.annotate("smoothed-DEM low", (low_pt[0], low_pt[1]), xytext=(6, -12), textcoords="offset points",
                fontsize=8, color="#6a3d9a")

@@ -40,7 +40,7 @@ plan = {
     "muqshin_s2": (5, 10, "vegetation"),
     "umm_al_heesh": (8, 10, "wetland"),
     "hamidan": (16, 30, None),
-    "umm_as_samim": (25, 60, None),
+    "umm_as_samim": (7, 20, None),   # point lies in a 9.8 km tile-overlap strip: keep the window small
 }
 
 
@@ -149,6 +149,7 @@ for _, r in refs.dropna(subset=["lat"]).iterrows():
                         "verified": f"{kind} cluster found {d:.1f} km from published point"})
         else:
             rec.update({"target": kind, "verified": f"no {kind} cluster in window"})
+    ax.set_xlim(-half_km, half_km); ax.set_ylim(-half_km, half_km)   # clip large uncertainty circles
     ax.set_xlabel("km east of published coordinate"); ax.set_ylabel("km north")
     ax.set_title(f"{r['name']}\npublished {r['lat']:.4f}N {r['lon']:.4f}E (yellow +, ±{r['uncertainty_km']} km)\n"
                  f"{sc.scene_id}  {res_m} m", fontsize=9)
@@ -159,3 +160,15 @@ for _, r in refs.dropna(subset=["lat"]).iterrows():
 
 ver = refs.merge(pd.DataFrame(records), on="id", how="left")
 ver.to_csv(REFERENCE / "reference_points_verified.csv", index=False)
+
+# one-page montage of the chips
+order = ["shisr", "umm_al_heesh", "hamidan", "muqshin", "muqshin_alt", "muqshin_s2", "umm_as_samim"]
+imgs = [plt.imread(OUT / f"{k}.png") for k in order if (OUT / f"{k}.png").exists()]
+fig, axs = plt.subplots(2, 4, figsize=(22, 11.5), constrained_layout=True)
+for ax in axs.flat:
+    ax.axis("off")
+for ax, im in zip(axs.flat, imgs):
+    ax.imshow(im)
+fig.suptitle("Reference coordinates checked on Sentinel-2 L2A (yellow + = published coordinate, dashed = stated "
+             "uncertainty; cyan/green outlines = detected water/vegetation)", fontsize=13)
+fig.savefig(FIGURES / "01_reference_checks.png", dpi=85)
