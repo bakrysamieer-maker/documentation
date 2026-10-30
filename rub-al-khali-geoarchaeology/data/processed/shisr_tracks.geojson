@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "shisr_tracks",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "bearing_deg": 3.4, "segments": 11, "segment_km": 3.5, "detected_to_km": 54.1, "mapped_modern_fraction": 0.02, "part": "detected" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.649671056997306, 18.27303371004529 ], [ 53.669688577412771, 18.742591195240401 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 3.4, "segments": 11, "segment_km": 3.5, "detected_to_km": 54.1, "mapped_modern_fraction": 0.02, "part": "extension_40km" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.669688577412771, 18.742591195240401 ], [ 53.684988395055051, 19.103260816318528 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 17.4, "segments": 20, "segment_km": 6.7, "detected_to_km": 40.5, "mapped_modern_fraction": 0.06, "part": "detected" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.654211382402735, 18.272320753074485 ], [ 53.756689468894862, 18.606004472157789 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 17.4, "segments": 20, "segment_km": 6.7, "detected_to_km": 40.5, "mapped_modern_fraction": 0.06, "part": "extension_40km" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.756689468894862, 18.606004472157789 ], [ 53.863395876819439, 18.952413082854093 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 43.1, "segments": 8, "segment_km": 4.2, "detected_to_km": 57.6, "mapped_modern_fraction": 0.16, "part": "detected" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.661548275813978, 18.268406417417612 ], [ 54.014242155705858, 18.641195949589967 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 43.1, "segments": 8, "segment_km": 4.2, "detected_to_km": 57.6, "mapped_modern_fraction": 0.16, "part": "extension_40km" }, "geometry": { "type": "LineString", "coordinates": [ [ 54.014242155705858, 18.641195949589967 ], [ 54.268702276423603, 18.908880053107204 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 274.8, "segments": 6, "segment_km": 3.7, "detected_to_km": 55.7, "mapped_modern_fraction": 0.07, "part": "detected" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.63005084354949, 18.256191105943088 ], [ 53.124153036954638, 18.287449317933923 ] ] } },
+{ "type": "Feature", "properties": { "bearing_deg": 274.8, "segments": 6, "segment_km": 3.7, "detected_to_km": 55.7, "mapped_modern_fraction": 0.07, "part": "extension_40km" }, "geometry": { "type": "LineString", "coordinates": [ [ 53.124153036954638, 18.287449317933923 ], [ 52.747254846680484, 18.309845302937759 ] ] } }
+]
+}

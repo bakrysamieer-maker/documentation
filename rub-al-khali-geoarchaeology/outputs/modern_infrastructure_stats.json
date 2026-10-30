@@ -1,0 +1,56 @@
+{
+  "roads_tracks": {
+    "features": 3407,
+    "top_classes": {
+      "residential": 1067,
+      "track": 833,
+      "unclassified": 571,
+      "service": 549,
+      "trunk": 198,
+      "tertiary": 132,
+      "unknown": 26,
+      "footway": 23
+    }
+  },
+  "buildings": {
+    "features": 9442,
+    "top_classes": {
+      "mosque": 10,
+      "roof": 5,
+      "residential": 5,
+      "service": 1,
+      "farm": 1,
+      "bunker": 1,
+      "hospital": 1,
+      "carport": 1
+    }
+  },
+  "infrastructure": {
+    "features": 7784,
+    "top_classes": {
+      "power_tower": 4155,
+      "power_pole": 2976,
+      "wall": 103,
+      "power_line": 84,
+      "fence": 67,
+      "parking": 45,
+      "gate": 35,
+      "communication_tower": 32
+    }
+  },
+  "land_use": {
+    "features": 675,
+    "top_classes": {
+      "farmland": 354,
+      "farmyard": 83,
+      "industrial": 65,
+      "residential": 31,
+      "meadow": 28,
+      "orchard": 24,
+      "plant_nursery": 21,
+      "quarry": 16
+    }
+  },
+  "farm_cells_30m": 92001,
+  "farm_area_km2": 82.8
+}

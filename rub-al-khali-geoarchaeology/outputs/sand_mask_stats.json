@@ -1,0 +1,6 @@
+{
+  "otsu_redness": 2.342,
+  "redness_low_threshold": 1.774,
+  "relief_threshold_m": 2.15,
+  "sand_fraction_of_corridor": 0.447
+}

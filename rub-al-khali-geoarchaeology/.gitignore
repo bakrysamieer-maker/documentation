@@ -3,3 +3,4 @@ data/raw/
 data/interim/
 __pycache__/
 *.part
+outputs/presentation/slides_png/

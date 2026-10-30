@@ -95,7 +95,7 @@ tr.cand:hover { background: var(--page); cursor: pointer; }
     <div class="ctrl"><select id="view"></select>
       <label>opacity <input type="range" id="opacity" min="20" max="100" value="85" style="width:90px"></label></div>
     <div class="ramp" aria-hidden="true"></div>
-    <div class="legend-grid"><span>low</span><span style="text-align:right">high (relative)</span></div>
+    <div class="legend-grid"><span id="ramp-lo">corridor median</span><span id="ramp-hi" style="text-align:right">highest score</span></div>
     <div id="hover" aria-live="polite">Hover over the corridor to read cell values.</div>
 
     <h2>Top candidates</h2>
@@ -229,10 +229,18 @@ function computeScore() {
 }
 function render() {
   const view = el("view").value;
-  let mx = 1e-9; if (view === "score") for (const v of score) if (v > mx) mx = v;
+  // the score is shown from the corridor median (transparent) to the maximum (darkest), so the
+  // upper half of the distribution - where candidates come from - uses the whole ramp
+  let lo = 0, mx = 1;
+  if (view === "score") {
+    const vals = []; for (let k = 0; k < score.length; k++) if (score[k] >= 0) vals.push(score[k]);
+    vals.sort((a, b) => a - b); lo = vals[Math.floor(vals.length * 0.5)] || 0; mx = vals[vals.length - 1] || 1;
+  }
+  el("ramp-lo").textContent = view === "score" ? "corridor median" : "0";
+  el("ramp-hi").textContent = view === "score" ? "highest score" : "1";
   for (let p = 0; p < pix.length; p++) {
     const k = pix[p], o = p * 4;
-    const v = k < 0 ? 0 : (view === "score" ? score[k] / mx : A[view][k] / 255);
+    const v = k < 0 ? 0 : (view === "score" ? (score[k] - lo) / Math.max(mx - lo, 1e-9) : A[view][k] / 255);
     if (!(v > 0.02)) { img.data[o + 3] = 0; continue; }
     const c = LUT[Math.min(255, Math.round(v * 255))];
     img.data[o] = c[0]; img.data[o + 1] = c[1]; img.data[o + 2] = c[2]; img.data[o + 3] = Math.round(255 * Math.min(1, 0.2 + 0.8 * v));

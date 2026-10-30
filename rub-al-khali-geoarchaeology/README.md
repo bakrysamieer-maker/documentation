@@ -12,17 +12,50 @@ north-draining wadis from the Dhofar plateau run into the sands of the Rub' al-K
   research only**: no field-visit planning, access routes or logistics.
 - Downloads over 5 GB need approval first.
 
+## Results and outputs
+
+| Output | File |
+|---|---|
+| **Arabic presentation of the findings (PDF, 19 slides)** | [`outputs/presentation/rub_al_khali_findings_ar.pdf`](outputs/presentation/rub_al_khali_findings_ar.pdf) |
+| Interactive map: all layers, live weight sliders, top-N re-ranking, CSV export | [`outputs/maps/rub_al_khali_candidates.html`](outputs/maps/rub_al_khali_candidates.html) (download and open in a browser) |
+| Top-20 candidate table: coordinates, score, clues, natural explanations | [`outputs/candidates/top20_candidates.csv`](outputs/candidates/top20_candidates.csv) |
+| Candidate snapshots (4 × 4 km, six panels each) | [`outputs/candidates/snapshots/`](outputs/candidates/snapshots/) |
+| Report: method, limitations, false-positive risks | [`reports/report.md`](reports/report.md) |
+
+**Headline:** free 10–90 m data show **no conclusive evidence** of settlements. The 20 candidates cluster in three
+settings:
+
+1. the sand front 30–90 km north and north-west of Shisr, where wadis end under the dunes;
+2. the north-west fan near the Maitan Neolithic sites;
+3. sabkhas east of Umm Al Heesh.
+
+Their strongest signals are natural ones. See the report.
+
 ## Status
 
 | Step | Script | State |
 |---|---|---|
-| 1. Study area, tile inventory and download sizes | `01_define_aoi.py` | done |
-| 2. Preview data: 90 m DEM and Sentinel-2 overview mosaic (~290 MB) | `02_fetch_preview_data.py` | done |
-| 3. Study-area map (HTML + PNG) | `03_map_study_area.py` | done |
-| 4. Reference coordinates checked on 10 m Sentinel-2 | `04_verify_reference_points.py` | done |
-| 5–12. Analysis | see *Planned analysis* | **waiting for study-area approval** |
+| 1–4. Study area, preview data, study-area map, reference checks | `01`–`04` | done |
+| 5. 30 m DEM and UTM 40N analysis grids | `05_fetch_dem30_grids.py` | done |
+| 6. Sentinel-2 corridor bands (one date per orbit, cross-orbit matching) | `06_fetch_sentinel2.py` | done |
+| 7. Indices, sand mask, pale-crust proxy | `07_sand_minerals.py` | done |
+| 8. Drainage, wadi ends under dunes, sub-dune base surface, buried courses | `08_hydrology_dunes.py` | done |
+| 9. Sentinel-1 backscatter and coherence | `09_sentinel1.py` | done |
+| 10. Landsat-1 MSS 1972–73 vs Sentinel-2 sand change | `10_landsat_sand_change.py` | done |
+| 11. Modern infrastructure masks | `11_modern_infrastructure.py` | done |
+| 12. Line, corner and circle anomalies; Shisr tracks | `12_anomalies_tracks.py` | done |
+| 13. ASTER indices via Earth Engine | `13_aster_gee.py` | **written, not run** (needs `EE_SERVICE_ACCOUNT_JSON`) |
+| 14. Published site coordinates (Zenodo/OSF) | `14_published_sites.py` | **written, not run** (needs zenodo.org, osf.io, files.osf.io allowed) |
+| 15. Weighted score and top-20 candidates | `15_score_candidates.py` | done |
+| 16. Candidate snapshots | `16_snapshots.py` | done |
+| 17. Interactive map | `17_interactive_map.py` | done (tested in headless Chromium) |
+| 18–19. Arabic presentation figures and PDF | `18_presentation_figures.py`, `19_presentation_pdf.py` | done |
 
-## Study area (proposal, not yet approved)
+**Data volume:** about 10.4 GB was transferred in total, above the 4–5 GB estimated at the checkpoint, though no
+single download exceeded 5 GB. The excess came from a second Sentinel-2 corridor read, needed to remove date seams,
+plus preview iterations and verification chips.
+
+## Study area (approved)
 
 ![study area](outputs/figures/00_study_area.png)
 
@@ -96,7 +129,7 @@ Nothing above needs a key except ASTER and full-resolution Sentinel-1. Pick one 
 For published site coordinates, also allow `zenodo.org`, `osf.io` and `files.osf.io`
 (Dellmour et al. 2026 data and code), and `journals.plos.org` (2025 Dhofar monument survey).
 
-## Planned analysis (after approval)
+## Analysis method
 
 Regional layers are built at 20–30 m inside the corridor and summarised on a 1 km grid in
 UTM 40N. 10 m Sentinel-2 is then read only around the highest-scoring cells.
@@ -117,13 +150,18 @@ UTM 40N. 10 m Sentinel-2 is then read only around the highest-scoring cells.
 ```bash
 python3 -m venv ~/venvs/geoarch && ~/venvs/geoarch/bin/pip install -r requirements.txt
 cd scripts
-~/venvs/geoarch/bin/python 01_define_aoi.py            # study area + tile inventory
-~/venvs/geoarch/bin/python 02_fetch_preview_data.py    # ~290 MB
-~/venvs/geoarch/bin/python 03_map_study_area.py
-~/venvs/geoarch/bin/python 04_verify_reference_points.py
+for s in 01_define_aoi 02_fetch_preview_data 03_map_study_area 04_verify_reference_points \
+         05_fetch_dem30_grids 06_fetch_sentinel2 07_sand_minerals 08_hydrology_dunes 09_sentinel1 \
+         10_landsat_sand_change 11_modern_infrastructure 12_anomalies_tracks \
+         15_score_candidates 16_snapshots 17_interactive_map 18_presentation_figures 19_presentation_pdf; do
+  ~/venvs/geoarch/bin/python $s.py || break
+done
+# optional, once access exists: 13_aster_gee.py and 14_published_sites.py, then re-run 15-19
 ```
 
-Edit [`config/aoi.yaml`](config/aoi.yaml) to change the corridor, then re-run from step 1.
+- Step 19 renders the PDF with Node and the pre-installed Playwright Chromium (`scripts/render_pdf.js`).
+- Edit [`config/aoi.yaml`](config/aoi.yaml) to change the corridor, then re-run from step 1.
+- Edit [`config/weights.yaml`](config/weights.yaml) to change the weights, then re-run from step 15.
 
 ## Folder layout
 
@@ -136,8 +174,10 @@ data/processed/    study-area vectors and other small derived layers
 scripts/           numbered pipeline steps plus helpers (common.py, s2_catalog.py)
 outputs/maps/      interactive HTML maps
 outputs/figures/   static figures and image chips
-outputs/candidates/ candidate tables and snapshots (later steps)
-reports/           method, limitations and false-positive report (final step)
+outputs/candidates/ candidate table and snapshots
+outputs/presentation/ Arabic PDF deck, its HTML source and figures
+reports/           method, limitations and false-positive report
+data/reference/fonts/ Noto Sans Arabic (SIL Open Font License) for the Arabic deck
 ```
 
 ## References used so far
@@ -152,5 +192,7 @@ reports/           method, limitations and false-positive report (final step)
 - Al Kindi, M., Pickford, M., Gommery, D. & Qatan, A. (2021). Stratigraphy, palaeoclimatic context and fossils of the Southern Rub Al Khali: results of a geo-archaeological survey around the area of Maitan. *Historical Biology* 33(9), 1534–1555.
 - Rose, J.I. et al. (2011). The Nubian Complex of Dhofar, Oman. *PLoS ONE* 6(11), e28239.
 - Blom, R.G., Crippen, R., Elachi, C. et al. JPL work on Ubar/Shisr caravan tracks with Landsat, SPOT and shuttle radar (1990s; 2000 IEEE IGARSS paper on SRTM and frankincense routes).
+- Kellndorfer, J. et al. (2022). Global seasonal Sentinel-1 interferometric coherence and backscatter data set. *Scientific Data* 9, 73.
+- Ninomiya, Y. (2002, 2003). ASTER TIR and SWIR lithologic and mineral indices (quartz, carbonate, calcite, OH indices).
 - Wikipedia: Archaeological site of Shisr; Muqshin; Umm al Samim. Arabic Wikipedia: بحيرات أم الحيش.
 - Data: Copernicus DEM GLO-30/90 (ESA, © DLR/Airbus, distributed by ESA); Sentinel-2 L2A Collection 1 (ESA/Copernicus, via Element 84 AWS Open Data); Natural Earth 1:10m boundaries.

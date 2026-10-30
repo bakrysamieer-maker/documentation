@@ -10,6 +10,7 @@ Output: outputs/candidates/snapshots/C##.png (+ small JPEG thumbnails for the ma
 from __future__ import annotations
 
 import json
+import textwrap
 
 import geopandas as gpd
 import matplotlib
@@ -20,12 +21,13 @@ import mgrs
 import numpy as np
 import pandas as pd
 import rasterio
+import rasterio.warp
 from matplotlib.colors import LightSource
 from PIL import Image
 from pyproj import Transformer
 from rasterio.windows import from_bounds
 
-from common import CANDIDATES, INTERIM, OUTPUTS, PROCESSED, RAW, UTM
+from common import CANDIDATES, INTERIM, OUTPUTS, PROCESSED, UTM
 import s2_catalog
 
 HALF = 2000                                   # 4 x 4 km window
@@ -55,8 +57,23 @@ def stretch(rgb):
     return np.clip((rgb - lo) / max(hi - lo, 1e-6), 0, 1)
 
 
+CHIPS = INTERIM / "chips_10m"
+CHIPS.mkdir(parents=True, exist_ok=True)
+
+
 def s2_true_colour_10m(lat, lon, b):
-    """Fresh 10 m read from the scene used for the tile that contains the point."""
+    """10 m true colour from the scene used for the tile that contains the point (cached)."""
+    key = CHIPS / f"{lat:.5f}_{lon:.5f}.npz"
+    if key.exists():
+        z = np.load(key)
+        return z["rgb"], str(z["sid"])
+    arr, sid = _read_true_colour(lat, lon, b)
+    if arr is not None:
+        np.savez_compressed(key, rgb=arr, sid=sid)
+    return arr, sid
+
+
+def _read_true_colour(lat, lon, b):
     tiles = {m.toMGRS(lat + dy, lon + dx, MGRSPrecision=0)[:5] for dy in (-0.05, 0, 0.05) for dx in (-0.05, 0, 0.05)}
     for t in tiles & set(scenes["tiles"]):
         for s in scenes["tiles"][t]:
@@ -88,7 +105,8 @@ for _, c in cand.iterrows():
     tc, sid = s2_true_colour_10m(c["lat"], c["lon"], b)
     if tc is not None:
         ax[0].imshow(stretch(tc) ** 0.85, extent=ext)
-    ax[0].set_title(f"Sentinel-2 true colour 10 m\n{sid or 'not available'}", fontsize=8)
+    ax[0].set_title(f"Sentinel-2 true colour 10 m ({sid or 'not available'})\n"
+                    "lime dotted: track line from Shisr (if any)", fontsize=8)
 
     sw = crop(INTERIM / "s2_30m.tif", [6, 5, 1], b) / 1e4
     ax[1].imshow(stretch(np.transpose(sw, (1, 2, 0))), extent=ext)
@@ -101,9 +119,9 @@ for _, c in cand.iterrows():
                     "blue: wadis, cyan: projected courses, red ▲: wadi termini", fontsize=8)
 
     old = crop(INTERIM / "sand_change_60m.tif", [4], b)[0]       # quantile-mapped 1972 ratio
-    mss = list((RAW / "landsat").glob("*_B5.TIF"))
     ax[3].imshow(stretch(old), cmap="gray", extent=ext)
-    ax[3].set_title("Landsat-1 MSS 1972-73: red/green ratio (60 m, matched to 2025)", fontsize=8)
+    ax[3].set_title("Landsat-1 MSS 1972-73: red/green ratio (60 m, matched to 2025)\n"
+                    "horizontal banding = MSS detector striping; black = masked cloud", fontsize=8)
     new = crop(INTERIM / "sand_change_60m.tif", [5], b)[0]
     ax[4].imshow(stretch(new), cmap="gray", extent=ext)
     ax[4].set_title("Sentinel-2 2024-25: red/green ratio (60 m)", fontsize=8)
@@ -137,10 +155,10 @@ for _, c in cand.iterrows():
         a.set_xlim(ext[0], ext[1]); a.set_ylim(ext[2], ext[3])
         a.add_patch(plt.Rectangle((-0.5, -0.5), 1, 1, fill=False, color="white", lw=1.2, ls="--"))
         a.tick_params(labelsize=7)
-    fig.suptitle(f"{c['candidate_id']} (CANDIDATE, not a discovery) {c['lat']:.4f}N {c['lon']:.4f}E  "
-                 f"score {c['score']:.3f}  clues: {c['clues_satisfied'] or 'none >= 0.5'}\n"
-                 f"possible natural/modern explanations: {c['natural_or_modern_explanations']}",
-                 fontsize=9.5)
+    expl = textwrap.fill("Possible natural/modern explanations: " + c["natural_or_modern_explanations"], 170)
+    fig.suptitle(f"{c['candidate_id']} - CANDIDATE, not a discovery - {c['lat']:.4f} N {c['lon']:.4f} E "
+                 f"({c['country_approx']}), score {c['score']:.3f}\nclues >= 0.5: {c['clues_satisfied'] or 'none'}"
+                 f"\n{expl}", fontsize=9)
     fig.savefig(OUT / f"{c['candidate_id']}.png", dpi=85)
     plt.close(fig)
     im = Image.open(OUT / f"{c['candidate_id']}.png").convert("RGB")

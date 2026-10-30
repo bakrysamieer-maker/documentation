@@ -1,0 +1,25 @@
+{
+  "spring_minerals_source": "Sentinel-2 pale-crust PROXY (bright + SWIR-absorbing + not iron-stained), x0.5 because it cannot separate carbonate, gypsum, calcrete or sabkha salt",
+  "shisr_tracks_used": [
+    3.4,
+    17.4,
+    43.1,
+    274.8
+  ],
+  "ml": "no published site table yet (step 14 not run): no classifier trained",
+  "weights": {
+    "wadi_terminus": 0.2,
+    "spring_minerals": 0.2,
+    "groundwater_lows": 0.1,
+    "tracks_alignments": 0.15,
+    "geometric_anomalies": 0.2,
+    "thin_sand": 0.15
+  },
+  "masks": {
+    "modern_infrastructure_buffer_m": 300,
+    "centre_pivot_and_fields": 0.0,
+    "seismic_grid_multiplier": 0.5
+  },
+  "n_candidates": 20,
+  "corridor_cells_1km": 57149
+}

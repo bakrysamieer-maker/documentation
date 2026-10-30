@@ -31,7 +31,7 @@ from matplotlib.colors import LightSource
 from rasterio.warp import Resampling
 
 from common import CANDIDATES, INTERIM, MAPS, OUTPUTS, PROCESSED, REFERENCE, UTM, grid, load_yaml, read_raster
-from maputil import data_uri, to_mercator
+from maputil import block_max, data_uri, to_mercator
 
 cfg = load_yaml("weights.yaml")
 info = json.loads((OUTPUTS / "score_info.json").read_text())
@@ -106,8 +106,8 @@ dh, tr = layer(INTERIM / "dune_height_30m.tif", 1, 4)
 images["dune"] = overlay(rgba_ramp(dh, 0, 60), tr, "Dune height above sub-dune base, 0-60 m (clue 6)")
 
 with rasterio.open(INTERIM / "s2_indices_30m.tif") as src:
-    i_p = list(src.descriptions).index("pale_crust") + 1
-pale, tr = layer(INTERIM / "s2_indices_30m.tif", i_p, 4, Resampling.max)
+    pale = block_max(src.read(list(src.descriptions).index("pale_crust") + 1), 4)
+    tr = src.transform * src.transform.scale(4, 4)
 images["pale"] = overlay(rgba_ramp(pale, 1, 5), tr, "Pale-crust proxy, Sentinel-2 (clue 1, non-specific)")
 
 with rasterio.open(INTERIM / "s1_g90.tif") as src:

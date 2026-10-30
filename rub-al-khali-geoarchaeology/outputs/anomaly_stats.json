@@ -1,0 +1,15 @@
+{
+  "segments": 21735,
+  "long_straight_segments": 27,
+  "long_straight_lines": 4,
+  "radial_segments": 155,
+  "shisr_track_bearings": [
+    3.4,
+    17.4,
+    43.1,
+    274.8
+  ],
+  "corners": 11,
+  "circles": 861,
+  "circles_near_modern": 522
+}

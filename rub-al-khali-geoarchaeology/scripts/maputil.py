@@ -36,6 +36,15 @@ def to_mercator(arr, src_t, src_crs="EPSG:4326", bands_first=False, resampling=R
     return out, [[la0, lo0], [la1, lo1]]
 
 
+def block_max(arr: np.ndarray, f: int) -> np.ndarray:
+    """Downsample by an integer factor keeping the block maximum (NaN-aware). Rasterio reads
+    cannot use 'max' resampling, and averaging would wash out sparse bright features."""
+    h, w = (arr.shape[0] // f) * f, (arr.shape[1] // f) * f
+    blocks = arr[:h, :w].reshape(h // f, f, w // f, f)
+    with np.errstate(all="ignore"):
+        return np.nanmax(np.nanmax(blocks, axis=3), axis=1)
+
+
 def data_uri(img_array: np.ndarray, fmt="PNG", max_px=2200, quality=85):
     """Encode an (H, W, 3|4) uint8 array; WebP keeps transparency at a fraction of PNG size."""
     img = Image.fromarray(img_array)

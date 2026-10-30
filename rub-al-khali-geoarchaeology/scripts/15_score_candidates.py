@@ -32,8 +32,8 @@ from pyproj import Transformer
 from rasterio.warp import Resampling, reproject
 from shapely import distance as sdist, points
 
-from common import (CANDIDATES, INTERIM, OUTPUTS, PROCESSED, REFERENCE, UTM, grid, load_yaml,
-                    read_raster, write_json, write_raster)
+from common import (CANDIDATES, INTERIM, OUTPUTS, PROCESSED, RAW, REFERENCE, UTM, download, grid,
+                    load_yaml, read_raster, write_json, write_raster)
 
 cfg = load_yaml("weights.yaml")
 t1, W1, H1 = grid("g1km")
@@ -233,7 +233,11 @@ for idx in order:
 
 to_ll = Transformer.from_crs(UTM, 4326, always_xy=True)
 ref = pd.read_csv(REFERENCE / "reference_points.csv").dropna(subset=["lat"])
-borders = gpd.read_file(REFERENCE / "ne_10m_admin_0_boundary_lines_land.geojson")
+# country of each candidate (Natural Earth 1:10m polygons, about +/-1 km near borders)
+ne_countries = RAW / "ne_10m_admin_0_countries.geojson"
+download("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/"
+         "ne_10m_admin_0_countries.geojson", ne_countries)
+countries = gpd.read_file(ne_countries)[["ADMIN", "geometry"]]
 infra = gpd.read_file(PROCESSED / "modern_infrastructure.geojson").to_crs(UTM)
 pipes = infra[infra["class"].isin(["pipeline", "power_line", "minor_line", "storage_tank"])]
 lsl = gpd.read_file(PROCESSED / "long_straight_lines.geojson").to_crs(UTM)
@@ -272,7 +276,10 @@ for rank, (r, c) in enumerate(chosen, start=1):
     dref = {row["name"].split(" (")[0].split(" - ")[0]: np.hypot(*(np.array(Transformer.from_crs(
         4326, UTM, always_xy=True).transform(row["lon"], row["lat"])) - [x, y])) / 1000 for _, row in ref.iterrows()}
     near = min(dref, key=dref.get)
+    hit = countries[countries.contains(points([[lon, lat]])[0])]
+    country = hit["ADMIN"].iloc[0] if len(hit) else "unknown"
     rows.append({"rank": rank, "candidate_id": f"C{rank:02d}", "lat": round(lat, 5), "lon": round(lon, 5),
+                 "country_approx": country,
                  "score": round(float(score[r, c]), 3), **{k: round(v, 2) for k, v in cs.items()},
                  "mask_multiplier": round(float(mask[r, c]), 2), "clues_satisfied": "; ".join(sat),
                  "n_clues": len(sat), "natural_or_modern_explanations": "; ".join(nat) or "none flagged automatically",

@@ -1,0 +1,260 @@
+{
+  "chosen_dates": {
+    "early": "2025-02-26",
+    "late": "2024-12-06"
+  },
+  "primary_orbit": "early",
+  "normalisation": {
+    "B02": {
+      "gain": 1.0686,
+      "offset": 183.2,
+      "overlap_cells": 6206823
+    },
+    "B03": {
+      "gain": 1.0505,
+      "offset": 90.1,
+      "overlap_cells": 6207007
+    },
+    "B04": {
+      "gain": 0.8354,
+      "offset": 821.9,
+      "overlap_cells": 6207007
+    },
+    "B8A": {
+      "gain": 0.8485,
+      "offset": 978.5,
+      "overlap_cells": 6206850
+    },
+    "B11": {
+      "gain": 0.8894,
+      "offset": 1092.3,
+      "overlap_cells": 6206850
+    },
+    "B12": {
+      "gain": 0.9229,
+      "offset": 1079.0,
+      "overlap_cells": 6206850
+    },
+    "B04_20m": {
+      "gain": 0.7893,
+      "offset": 1008.2,
+      "overlap_cells": 13947773
+    }
+  },
+  "tiles": {
+    "39QXA": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QXA_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:38.020000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 86.908728,
+        "sun_elevation": 53.6,
+        "fallback": false
+      },
+      {
+        "orbit": "late",
+        "scene": "S2A_T39QXA_20241206T070257_L2A",
+        "datetime": "2024-12-06T07:14:29.972000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.0,
+        "sun_elevation": 45.8,
+        "fallback": false
+      }
+    ],
+    "39QXB": [
+      {
+        "orbit": "late",
+        "scene": "S2A_T39QXB_20241206T070257_L2A",
+        "datetime": "2024-12-06T07:14:15.528000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.0,
+        "sun_elevation": 45.0,
+        "fallback": false
+      }
+    ],
+    "39QYA": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QYA_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:33.746000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.922489,
+        "sun_elevation": 54.3,
+        "fallback": false
+      }
+    ],
+    "39QYB": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QYB_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:19.182000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 14.758302,
+        "sun_elevation": 53.6,
+        "fallback": false
+      },
+      {
+        "orbit": "late",
+        "scene": "S2A_T39QYB_20241206T070257_L2A",
+        "datetime": "2024-12-06T07:14:12.150000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 52.184582,
+        "sun_elevation": 45.3,
+        "fallback": false
+      }
+    ],
+    "39QYC": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QYC_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:04.508000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 33.468938,
+        "sun_elevation": 52.9,
+        "fallback": false
+      },
+      {
+        "orbit": "late",
+        "scene": "S2A_T39QYC_20241206T070257_L2A",
+        "datetime": "2024-12-06T07:13:57.421000Z",
+        "cloud_pct": 0.016827,
+        "nodata_pct": 32.15411,
+        "sun_elevation": 44.4,
+        "fallback": false
+      }
+    ],
+    "39QYV": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QYV_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:48.211000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.0,
+        "sun_elevation": 54.9,
+        "fallback": false
+      }
+    ],
+    "39QZA": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QZA_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:30.877000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.0,
+        "sun_elevation": 54.9,
+        "fallback": false
+      }
+    ],
+    "39QZB": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QZB_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:16.175000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.0,
+        "sun_elevation": 54.2,
+        "fallback": false
+      }
+    ],
+    "39QZC": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QZC_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:01.749000Z",
+        "cloud_pct": 0.005345,
+        "nodata_pct": 0.0,
+        "sun_elevation": 53.4,
+        "fallback": false
+      }
+    ],
+    "39QZV": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T39QZV_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:45.252000Z",
+        "cloud_pct": 0.000182,
+        "nodata_pct": 0.0,
+        "sun_elevation": 55.6,
+        "fallback": false
+      }
+    ],
+    "40QBE": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QBE_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:43.858000Z",
+        "cloud_pct": 0.003411,
+        "nodata_pct": 0.0,
+        "sun_elevation": 55.8,
+        "fallback": false
+      }
+    ],
+    "40QBF": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QBF_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:29.379000Z",
+        "cloud_pct": 3.6e-05,
+        "nodata_pct": 0.0,
+        "sun_elevation": 55.0,
+        "fallback": false
+      }
+    ],
+    "40QBG": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QBG_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:15.043000Z",
+        "cloud_pct": 0.0,
+        "nodata_pct": 0.0,
+        "sun_elevation": 54.3,
+        "fallback": false
+      }
+    ],
+    "40QBH": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QBH_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:00.511000Z",
+        "cloud_pct": 0.019509,
+        "nodata_pct": 0.0,
+        "sun_elevation": 53.6,
+        "fallback": false
+      }
+    ],
+    "40QBJ": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QBJ_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:03:46.098000Z",
+        "cloud_pct": 0.158646,
+        "nodata_pct": 0.0,
+        "sun_elevation": 52.8,
+        "fallback": false
+      }
+    ],
+    "40QCG": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QCG_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:04:11.049000Z",
+        "cloud_pct": 4e-06,
+        "nodata_pct": 21.111228,
+        "sun_elevation": 54.9,
+        "fallback": false
+      }
+    ],
+    "40QCH": [
+      {
+        "orbit": "early",
+        "scene": "S2B_T40QCH_20250226T065540_L2A",
+        "datetime": "2025-02-26T07:03:56.666000Z",
+        "cloud_pct": 0.0003,
+        "nodata_pct": 2.574636,
+        "sun_elevation": 54.1,
+        "fallback": false
+      }
+    ]
+  }
+}

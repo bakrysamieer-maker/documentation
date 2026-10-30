@@ -1,0 +1,12 @@
+{
+  "years": 52.2,
+  "change_cells_60m": {
+    "stable_ground": 9589504,
+    "stable_sand": 2506182,
+    "sand_gained": 1204841,
+    "sand_lost": 1204392
+  },
+  "displacement_windows": 4163,
+  "median_shift_m": 375.3,
+  "p90_shift_m": 1444.6
+}

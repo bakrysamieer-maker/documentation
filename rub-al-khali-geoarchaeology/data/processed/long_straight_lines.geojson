@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "long_straight_lines",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "azimuth_deg": 0, "extent_km": 10.2, "detected_km": 3.9 }, "geometry": { "type": "LineString", "coordinates": [ [ 54.061464694730731, 18.176848508459308 ], [ 54.059916175268228, 18.269008816312237 ] ] } },
+{ "type": "Feature", "properties": { "azimuth_deg": 90, "extent_km": 4.4, "detected_km": 3.2 }, "geometry": { "type": "LineString", "coordinates": [ [ 54.829662033618511, 21.073696527129837 ], [ 54.872470662471052, 21.074238656128749 ] ] } },
+{ "type": "Feature", "properties": { "azimuth_deg": 90, "extent_km": 11.4, "detected_km": 8.7 }, "geometry": { "type": "LineString", "coordinates": [ [ 53.921203836035886, 18.691758447947521 ], [ 54.028790213684424, 18.693494931361649 ] ] } },
+{ "type": "Feature", "properties": { "azimuth_deg": 90, "extent_km": 8.3, "detected_km": 3.1 }, "geometry": { "type": "LineString", "coordinates": [ [ 53.924661462102392, 18.673398952691695 ], [ 54.002879536334206, 18.67466504009769 ] ] } }
+]
+}

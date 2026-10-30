@@ -39,6 +39,44 @@ from common import INTERIM, OUTPUTS, PROCESSED, REFERENCE, UTM, grid, load_yaml,
 
 TILE, HALO = 2048, 64
 B04 = INTERIM / "s2_b04_20m.tif"
+SEAMS = INTERIM / "s2_seams_20m.tif"
+
+
+def build_seam_mask():
+    """Sentinel-2 tile edges and the orbit boundary, buffered ~100 m, on the 20 m grid.
+
+    Atmospheric correction runs per tile, so tiny brightness steps follow tile edges (exactly
+    N-S / E-W in UTM 40N) and would otherwise be detected as long straight lines."""
+    from rasterio.features import rasterize
+    from shapely.geometry import box as sbox
+    from shapely.ops import transform as stransform
+    from pyproj import Transformer
+    import s2_catalog
+
+    with rasterio.open(B04) as src:
+        H20, W20, t20 = src.height, src.width, src.transform
+    scenes = json.loads((OUTPUTS / "s2_corridor_scenes.json").read_text())["tiles"]
+    edges = []
+    for tile, used in scenes.items():
+        for s in used:
+            sc = s2_catalog.Scene(tile, s["scene"], "", "", 0, 0, 0, 0)
+            parts = s["scene"].split("_")
+            folder = (f"{s2_catalog.PREFIX}/{s2_catalog.tile_path(tile)}/{int(parts[2][:4])}/"
+                      f"{int(parts[2][4:6])}/{s['scene']}/")
+            sc.folder = folder
+            with rasterio.open("/vsicurl/" + sc.href("B04.tif")) as src:
+                to_utm = Transformer.from_crs(src.crs, UTM, always_xy=True).transform
+                edges.append(stransform(to_utm, sbox(*src.bounds).boundary.segmentize(500)))
+    seam = rasterize([(g.buffer(100), 1) for g in edges], out_shape=(H20, W20), transform=t20,
+                     fill=0, dtype="uint8")
+    orb, t30_ = read_raster(INTERIM / "s2_orbit_30m.tif")
+    ob = (ndimage.binary_dilation(orb == 1, iterations=1) & (orb == 2)).astype("uint8")
+    ob20 = np.zeros((H20, W20), np.uint8)
+    reproject(ob, ob20, src_transform=t30_, src_crs=UTM, dst_transform=t20, dst_crs=UTM,
+              resampling=Resampling.max)
+    seam |= ndimage.binary_dilation(ob20 > 0, iterations=5).astype("uint8")
+    write_raster(SEAMS, seam, t20, nodata=255, descriptions=["s2 tile edges + orbit boundary"])
+    print(f"seam mask: {seam.mean() * 100:.2f}% of the 20 m grid", flush=True)
 
 
 def process_tile(args):
@@ -63,9 +101,11 @@ def process_tile(args):
         b = rasterio.transform.array_bounds(img.shape[0], img.shape[1], tr)
         farm = msrc.read(2, window=rasterio.windows.from_bounds(*b, transform=msrc.transform),
                          out_shape=img.shape, boundless=True, fill_value=0) > 0
+        with rasterio.open(SEAMS) as ssrc:
+            seam = ssrc.read(1, window=win, boundless=True, fill_value=0) == 1
     dark = img < np.percentile(img[valid], 2)
     blobs = ndimage.binary_opening(dark, iterations=2)                # compact dark objects only
-    exclude = ndimage.binary_dilation(farm | blobs, iterations=4)
+    exclude = ndimage.binary_dilation(farm | blobs, iterations=4) | seam
     hp = img - ndimage.gaussian_filter(img, 10)                       # remove > ~200 m trends
     ridge = np.maximum(sato(hp, sigmas=[0.8, 1.5], black_ridges=False),
                        sato(hp, sigmas=[0.8, 1.5], black_ridges=True))
@@ -126,28 +166,36 @@ def fit_alignments(points_xy: np.ndarray, tol_m=500.0, min_pts=3, extend_m=40000
 
 
 if __name__ == "__main__":
+    import os
+
     cfg = load_yaml("aoi.yaml")
-    with rasterio.open(B04) as src:
-        H20, W20, t20 = src.height, src.width, src.transform
     m30, t30 = read_raster(INTERIM / "corridor_mask_g30.tif")
-    starts = []
-    for r0 in range(0, H20, TILE):
-        for c0 in range(0, W20, TILE):
-            # corridor coverage of this tile from the 30 m mask
-            rr = slice(int(r0 / 1.5), int(min(H20, r0 + TILE) / 1.5))
-            cc = slice(int(c0 / 1.5), int(min(W20, c0 + TILE) / 1.5))
-            if m30[rr, cc].mean() > 0.01:
-                starts.append((r0, c0))
-    print(f"{len(starts)} tiles to process", flush=True)
-    seg_list, circ_list = [], []
-    with ProcessPoolExecutor(4) as ex:
-        for i, (s, c) in enumerate(ex.map(process_tile, starts)):
-            seg_list.append(s); circ_list.append(c)
-            if i % 10 == 0:
-                print(f"  tile {i + 1}/{len(starts)}: {sum(len(x) for x in seg_list):,} segments", flush=True)
-    segs = np.vstack(seg_list)
-    circles = np.vstack(circ_list)
-    np.save(INTERIM / "segments.npy", segs)
+    if os.environ.get("REUSE_TILES") == "1" and (INTERIM / "circles.npy").exists():
+        # re-run only the corridor-wide post-processing on cached tile results
+        segs, circles = np.load(INTERIM / "segments.npy"), np.load(INTERIM / "circles.npy")
+    else:
+        build_seam_mask()
+        with rasterio.open(B04) as src:
+            H20, W20, t20 = src.height, src.width, src.transform
+        starts = []
+        for r0 in range(0, H20, TILE):
+            for c0 in range(0, W20, TILE):
+                # corridor coverage of this tile from the 30 m mask
+                rr = slice(int(r0 / 1.5), int(min(H20, r0 + TILE) / 1.5))
+                cc = slice(int(c0 / 1.5), int(min(W20, c0 + TILE) / 1.5))
+                if m30[rr, cc].mean() > 0.01:
+                    starts.append((r0, c0))
+        print(f"{len(starts)} tiles to process", flush=True)
+        seg_list, circ_list = [], []
+        with ProcessPoolExecutor(4) as ex:
+            for i, (s, c) in enumerate(ex.map(process_tile, starts)):
+                seg_list.append(s); circ_list.append(c)
+                if i % 10 == 0:
+                    print(f"  tile {i + 1}/{len(starts)}: {sum(len(x) for x in seg_list):,} segments", flush=True)
+        segs = np.vstack(seg_list)
+        circles = np.vstack(circ_list)
+        np.save(INTERIM / "segments.npy", segs)
+        np.save(INTERIM / "circles.npy", circles)
 
     # ------------------------------------------------------------------ segment attributes
     x0, y0, x1, y1 = segs[:, 0], segs[:, 1], segs[:, 2], segs[:, 3]
@@ -172,7 +220,11 @@ if __name__ == "__main__":
                        "along": mx * np.sin(th) + my * np.cos(th)})
     g = df.groupby(["kt", "kr"]).agg(total=("len", "sum"), lo=("along", "min"), hi=("along", "max"),
                                      n=("len", "size"))
-    straight_bins = g[(g["total"] > 2000) & ((g["hi"] - g["lo"]) > 4000) & (g["n"] >= 4)].index
+    # long, continuous straight lines: >= 4 km extent, >= 2 km detected, and the detected pieces
+    # cover >= 25% of the extent (otherwise unrelated collinear segments across the corridor)
+    extent = g["hi"] - g["lo"]
+    straight_bins = g[(g["total"] > 2000) & (extent > 4000) & (g["n"] >= 4)
+                      & (g["total"] >= 0.25 * extent)].index
     sb = set(map(tuple, straight_bins))
     long_straight = np.array([(a, b) in sb for a, b in zip(key_t, key_r)])
     ls_rows = []

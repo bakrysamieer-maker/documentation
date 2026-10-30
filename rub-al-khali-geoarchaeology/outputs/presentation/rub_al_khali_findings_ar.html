@@ -1,0 +1,293 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rub' al-Khali Findings (Arabic)</title><style>
+@font-face { font-family: "Noto Sans Arabic"; src: url("file:///home/user/documentation/rub-al-khali-geoarchaeology/data/reference/fonts/NotoSansArabic%5Bwdth%2Cwght%5D.ttf") format("truetype"); font-weight: 100 900; }
+@page { size: 1280px 720px; margin: 0; }
+:root { --ink: #0b0b0b; --ink2: #52514e; --muted: #898781; --surface: #fcfcfb; --panel: #f3f2ee; --line: #e1e0d9;
+  --accent: #2a78d6; --warn: #d03b3b; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d6cf; }
+body { font-family: "Noto Sans Arabic", "DejaVu Sans", sans-serif; color: var(--ink); direction: rtl; }
+.slide { width: 1280px; height: 720px; position: relative; overflow: hidden; background: var(--surface);
+  padding: 44px 56px 56px; page-break-after: always; break-after: page; margin: 0 auto; }
+.slide::after { content: "مواقع مرشَّحة — ليست اكتشافات · دراسة مكتبية فقط"; position: absolute; bottom: 18px; right: 56px;
+  font-size: 13px; color: var(--muted); }
+.slide::before { content: attr(data-n) " / 19"; position: absolute; bottom: 18px; left: 56px; font-size: 13px;
+  color: var(--muted); direction: ltr; }
+h1 { font-size: 46px; line-height: 1.35; margin: 0 0 14px; font-weight: 700; }
+h2 { font-size: 29px; line-height: 1.35; margin: 0 0 16px; font-weight: 700; }
+p, li { font-size: 18px; line-height: 1.65; color: var(--ink); }
+ul, ol { margin: 0; padding-right: 22px; padding-left: 0; }
+li { margin-bottom: 6px; }
+.ltr { direction: ltr; unicode-bidi: isolate; }
+.lead { font-size: 18px; color: var(--ink2); margin: 0 0 14px; }
+.small, .small li { font-size: 14.5px; color: var(--ink2); line-height: 1.6; }
+.caveat { color: var(--ink2); font-style: italic; }
+.title-slide { display: flex; flex-direction: column; justify-content: center; padding: 70px 90px;
+  background: linear-gradient(135deg, #fcfcfb 55%, #f6e7dc); }
+.kicker { font-size: 18px; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
+.subtitle { font-size: 26px; color: var(--ink2); margin: 0 0 10px; }
+.meta { font-size: 18px; color: var(--muted); margin: 0 0 30px; }
+.callout { background: var(--panel); border-right: 5px solid var(--accent); padding: 14px 18px; border-radius: 6px;
+  font-size: 16.5px; line-height: 1.65; margin-top: 14px; }
+.callout.warn { border-right-color: var(--warn); font-size: 18px; }
+table.grid { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+table.grid th { text-align: right; color: var(--ink2); font-weight: 600; border-bottom: 2px solid var(--line); padding: 8px 10px; }
+table.grid td { border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; line-height: 1.5; }
+table.grid.compact td, table.grid.compact th { padding: 5px 8px; font-size: 15px; }
+table.grid.dense td, table.grid.dense th { padding: 3px 7px; font-size: 12.5px; line-height: 1.35; }
+td.num { text-align: left; font-variant-numeric: tabular-nums; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: start; }
+.two .text { min-width: 0; }
+.two figure { margin: 0; height: 620px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.two figure img { max-width: 100%; max-height: 585px; object-fit: contain; border-radius: 4px; }
+.two-even { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+.two-even li { font-size: 16.5px; }
+figure { margin: 0; }
+figcaption { font-size: 13.5px; color: var(--ink2); line-height: 1.55; margin-top: 6px; }
+.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.three figure img { width: 100%; max-height: 430px; object-fit: contain; border-radius: 4px; background: #fff; }
+.two-figs { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.two-figs img { width: 100%; max-height: 430px; object-fit: contain; }
+figure.wide img { width: 100%; max-height: 360px; object-fit: contain; }
+.two-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 12px; font-size: 16.5px; line-height: 1.65; }
+.two-notes .nat { background: var(--panel); padding: 10px 14px; border-radius: 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 12px; font-size: 14px; color: var(--ink2); }
+.sw { display: inline-block; width: 14px; height: 10px; border-radius: 2px; margin-left: 6px; vertical-align: middle; }
+.ln { display: inline-block; width: 22px; border-top: 3px solid; margin-left: 6px; vertical-align: middle; }
+.ln.dash { border-top-style: dashed; }
+ol.flow { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin: 6px 0 24px; }
+ol.flow li { background: var(--panel); border-radius: 8px; padding: 12px 10px; font-size: 14.5px; line-height: 1.5; min-height: 132px;
+  position: relative; margin: 0; }
+ol.flow .num { display: block; font-size: 22px; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+ul.cols li { font-size: 16.5px; }
+ol.findings li { font-size: 17px; margin-bottom: 10px; }
+ul.refs { padding-left: 22px; padding-right: 0; }
+ul.refs li { font-size: 13.5px; line-height: 1.5; text-align: left; font-family: "DejaVu Sans", sans-serif; color: var(--ink2); }
+@media screen { .slide { margin: 16px auto; box-shadow: 0 1px 4px rgba(0,0,0,.15); } }
+</style></head><body>
+<section data-n="1" class="slide title-slide">
+  <div class="kicker">نتائج أولية · دراسة مكتبية بالاستشعار عن بُعد</div>
+  <h1>فحص جنوب الربع الخالي ببيانات الأقمار الصناعية المجانية</h1>
+  <p class="subtitle">مواقع مرشَّحة لمستوطنات قديمة حيث تنتهي أودية ظفار في الرمال</p>
+  <p class="meta">ممر شصر – بحيرات أم الحيش · سلطنة عُمان والمملكة العربية السعودية · أكتوبر <span class="ltr">2026</span></p>
+  <div class="callout warn"><b>⚠ تنبيه:</b> كل ما في هذا العرض <b>مواقع مرشَّحة</b> لمراجعة المختصين وليست اكتشافات.
+  الدراسة مكتبية فقط في منطقة حدودية حساسة، ولا تتضمن أي تخطيط لزيارات ميدانية.</div>
+</section>
+<section data-n="2" class="slide">
+  <h2>الفرضية والقرائن الست</h2>
+  <p class="lead">تفترض الفرضية أن مستوطنات قديمة — ربما مرتبطة بقوم عاد المذكورين في القرآن الكريم — قد تقع عند الحافة
+  الجنوبية للربع الخالي، حيث تنتهي الأودية المنحدرة شمالاً من هضبة ظفار وحضرموت في الرمال. حوّلنا كل قرينة إلى طبقة قابلة للقياس:</p>
+  <table class="grid">
+    <thead><tr><th>القرينة</th><th>ما قسناه</th><th>البيانات</th></tr></thead>
+    <tbody>
+      <tr><td>١ جنّات وعيون</td><td>رواسب ينابيع أحفورية (كربونات وجبس)</td><td>ASTER (لم يتوفر بعد) ← مؤشر بديل من Sentinel-2</td></tr>
+      <tr><td>٢ أعلام حجرية على الطرق والمرتفعات</td><td>خطوط ومحاذاة، وصفوف الأحجار الثلاثية</td><td>Sentinel-2 · إحداثيات المواقع المنشورة (لم تتوفر بعد)</td></tr>
+      <tr><td>٣ أودية تنفتح شمالاً على الرمال</td><td>نهايات الأودية تحت الكثبان ومجاريها المدفونة المتوقعة</td><td>نموذج الارتفاع Copernicus</td></tr>
+      <tr><td>٤ طرق القوافل</td><td>مسارات تنطلق من شصر وامتدادها في الرمال؛ أشكال مستطيلة ودائرية</td><td>Sentinel-2 بدقة <span class="ltr">20</span> م</td></tr>
+      <tr><td>٥ مياه جوفية نحو أم الحيش والمعترضة</td><td>منخفضات على «سطح ما تحت الكثبان» وأسطح رطبة</td><td>نموذج الارتفاع + Sentinel-2</td></tr>
+      <tr><td>٦ دفن سطحي فقط</td><td>رمال رقيقة أو حديثة</td><td>نموذج الارتفاع · Landsat <span class="ltr">1972</span> · Sentinel-1</td></tr>
+    </tbody>
+  </table>
+</section>
+<section data-n="3" class="slide two">
+  <div class="text">
+    <h2>منطقة الدراسة</h2>
+    <ul>
+      <li>ممر بعرض <span class="ltr">150</span> كم يبدأ من شصر (<span class="ltr">18.255°</span> ش،<span class="ltr"> 53.649°</span> ق) باتجاه <span class="ltr">22.6°</span>
+      نحو بحيرات أم الحيش (<span class="ltr">20.70°</span> ش،<span class="ltr"> 54.73°</span> ق) بطول <span class="ltr">293.5</span> كم.</li>
+      <li>مروحة بنصف قطر <span class="ltr">140</span> كم شمال غرب شصر لتغطية المسارات الداخلة إلى الرمال ومنطقة مَيتان.</li>
+      <li>المساحة المحللة: <span class="ltr">56,349</span> كم²؛ صندوق التنزيل: خطوط الطول
+      <span class="ltr">52.35–55.50°</span> ق ودوائر العرض <span class="ltr">17.80–21.15°</span> ش.</li>
+      <li>أدنى نقطة في نموذج الارتفاع المنعَّم شمال <span class="ltr">19.5°</span> ش تقع على بعد <span class="ltr">8</span> كم من موقع سبخة أم السميم المنشور
+      (<span class="ltr">61</span> م فوق سطح البحر) — تأكيد مستقل لمنخفض المعترضة – أم السميم.</li>
+      <li>الحدود الدولية تقريبية (Natural Earth بمقياس <span class="ltr">1:10m</span>).</li>
+    </ul>
+  </div>
+  <figure><img src="figures/overview.png" alt="خريطة منطقة الدراسة"><figcaption>صورة Sentinel-2 (شتاء <span class="ltr">2024–2025</span>) · الأحمر: الممر المحلل · المتقطع الأبيض: الحدود</figcaption></figure>
+</section>
+<section data-n="4" class="slide">
+  <h2>التحقق من الإحداثيات المنشورة على صور Sentinel-2 بدقة <span class="ltr">10</span> م</h2>
+  <div class="three">
+    <figure><img src="figures/check_shisr.png" alt=""><figcaption><b>شصر:</b> الإحداثي يقع وسط القرية، وتحيط به حقول ري محوري ومسارات حديثة —
+    أشباه حديثة لقرينتي «الدوائر» و«المسارات المتشعبة من شصر».</figcaption></figure>
+    <figure><img src="figures/check_umm_al_heesh.png" alt=""><figcaption><b>أم الحيش:</b> بحيرة وأرض رطبة على بعد <span class="ltr">0.3–1.5</span> كم شمال الإحداثي.
+    ماؤها الحالي مصدره بئر نفطية استكشافية مسرّبة (Kazak وآخرون <span class="ltr">2025</span>) — ماء حديث لا يدل على عيون قديمة.</figcaption></figure>
+    <figure><img src="figures/check_muqshin_s2.png" alt=""><figcaption><b>مقشن:</b> إحداثي ويكيبيديا الإنجليزية يقع على رمال جرداء؛ القرية الفعلية
+    ووادٍ نباتي على حافة الرمال عند <span class="ltr">19.560°</span> ش،<span class="ltr"> 54.885°</span> ق — أي على بعد نحو <span class="ltr">30</span> كم.</figcaption></figure>
+  </div>
+</section>
+<section data-n="5" class="slide">
+  <h2>البيانات المستخدمة (مجانية بالكامل)</h2>
+  <table class="grid">
+    <thead><tr><th>المصدر</th><th>التاريخ</th><th>الدقة</th><th>الاستخدام</th></tr></thead>
+    <tbody>
+      <tr><td>نموذج الارتفاع Copernicus GLO-30 / GLO-90</td><td><span class="ltr">2011–2015</span></td><td><span class="ltr">30 / 90</span> م</td><td>الأودية، الكثبان، المنخفضات</td></tr>
+      <tr><td>Sentinel-2 L2A (Collection 1)، <span class="ltr">17</span> مربعاً</td><td><span class="ltr">2024-12-06</span> و<span class="ltr">2025-02-26</span></td><td><span class="ltr">10–20</span> م</td><td>الرمال، المعادن (بديل)، الخطوط</td></tr>
+      <tr><td>Sentinel-1 (البيانات الموسمية العالمية، Kellndorfer <span class="ltr">2022</span>)</td><td><span class="ltr">2019–2020</span></td><td><span class="ltr">~90</span> م</td><td>خشونة السطح وحركة الرمال</td></tr>
+      <tr><td>Landsat-1 MSS، <span class="ltr">7</span> مشاهد</td><td><span class="ltr">1972–1973</span></td><td><span class="ltr">60</span> م</td><td>تغير الغطاء الرملي خلال <span class="ltr">52.2</span> سنة</td></tr>
+      <tr><td>OpenStreetMap عبر Overture Maps</td><td><span class="ltr">2026</span></td><td>متجهات</td><td>أقنعة المنشآت الحديثة</td></tr>
+    </tbody>
+  </table>
+  <div class="callout"><b>لم يتوفر في هذه الجلسة:</b> بيانات ASTER (تحتاج حساب Google Earth Engine أو NASA Earthdata) وإحداثيات المواقع الأثرية المنشورة
+  (نطاقات Zenodo وOSF محجوبة في إعدادات الشبكة). حُضِّرت الشيفرة لتعمل فور إتاحتها.</div>
+  <p class="small">حجم البيانات المنقولة في الجلسة كلها نحو <span class="ltr">10.4 GB</span> (يشمل إعادة قراءة Sentinel-2 لإزالة خطوط التماس)، ولم يتجاوز أي تنزيل منفرد <span class="ltr">5 GB</span>.</p>
+</section>
+<section data-n="6" class="slide">
+  <h2>المنهجية</h2>
+  <ol class="flow"><li><span class="num">1</span>تحديد الممر والتحقق من الإحداثيات</li><li><span class="num">2</span>تنزيل البيانات المفتوحة وتوحيد الإسقاط (UTM 40N)</li><li><span class="num">3</span>بناء طبقات القرائن الست</li><li><span class="num">4</span>أقنعة المنشآت الحديثة والمزارع وخطوط المسح الزلزالي</li><li><span class="num">5</span>درجة مرجّحة لكل خلية <span class="ltr">1</span> كم</li><li><span class="num">6</span>أعلى 20 موقعاً مع تفسيرات طبيعية لكل منها</li><li><span class="num">7</span>خريطة تفاعلية بأوزان قابلة للتعديل، وهذا العرض</li></ol>
+  <ul class="cols">
+    <li>تاريخ واحد لكل مدار للقمر Sentinel-2 مع مطابقة إشعاعية للمدار الثاني، لأن خلط التواريخ أنتج «خطوط تماس» زائفة.</li>
+    <li>استبعاد حواف المزارع وحدود مربعات Sentinel-2 قبل رصد الخطوط، لأنها كانت تطغى على المسارات الباهتة.</li>
+    <li>كل خطوة شيفرة Python قابلة لإعادة التشغيل في مجلد المشروع، وجميع المصادر موثقة.</li>
+  </ul>
+</section>
+<section data-n="7" class="slide two">
+  <div class="text">
+    <h2>القرينة ٣: أودية تختفي تحت الكثبان</h2>
+    <ul>
+      <li><b><span class="ltr">132</span></b> نهاية وادٍ تدخل الرمال (حوض تجميع <span class="ltr">≥ 20</span> كم²، وحوض علوي خالٍ من الرمال بنسبة <span class="ltr">≥ 70%</span>، ويظل الوادي تحت الرمال <span class="ltr">2.7</span> كم على الأقل).</li>
+      <li><b><span class="ltr">129</span></b> مجرى مدفوناً متوقعاً حتى <span class="ltr">40</span> كم، محسوباً على «سطح ما تحت الكثبان» (أرضيات ما بين الكثبان) لا على قمم الكثبان.</li>
+      <li>تتركز النهايات على جبهة الرمال القطرية من الجنوب الغربي إلى الشمال الشرقي، ومجموعة ثانية حيث تدخل أودية شرقية حقول الكثبان قرب أم الحيش.</li>
+      <li class="caveat">هذه ظواهر هيدرولوجية طبيعية؛ وجودها شرط ملائم للاستيطان لكنه ليس دليلاً عليه.</li>
+    </ul>
+    <div class="legend"><span><i class="sw" style="background:#2a78d6"></i>وادٍ (حوض <span class="ltr">≥ 50</span> كم²)</span>
+    <span><i class="sw" style="background:#e34948"></i>نهاية وادٍ تحت الكثبان</span>
+    <span><i class="ln dash" style="border-color:#5be0ff"></i>مجرى مدفون متوقع</span></div>
+  </div>
+  <figure><img src="figures/drainage.png" alt=""></figure>
+</section>
+<section data-n="8" class="slide">
+  <h2>القرينة ٦: أين الرمال رقيقة أو حديثة؟</h2>
+  <div class="three">
+    <figure><img src="figures/dune_height.png" alt=""><figcaption><b>ارتفاع الكثبان</b> فوق سطح ما تحتها: الوسيط <span class="ltr">6.4</span> م، المئين 90: <span class="ltr">48</span> م، المئين 99: <span class="ltr">98</span> م.</figcaption></figure>
+    <figure><img src="figures/sand_change.png" alt=""><figcaption><b><span class="ltr">1972–1973</span> مقابل <span class="ltr">2024–2025</span>:</b>
+    <i class="sw" style="background:#eb6834"></i>رمال اكتسبت <i class="sw" style="background:#2a78d6"></i>رمال انحسرت <i class="sw" style="background:#1baf7a"></i>رمال ثابتة.
+    إزاحة الكثبان: وسيط <span class="ltr">375</span> م في <span class="ltr">52.2</span> سنة (مؤشر فقط).</figcaption></figure>
+    <figure><img src="figures/radar_mobility.png" alt=""><figcaption><b>حركة الرمال بالرادار</b> (١ − ترابط Sentinel-1 لـ <span class="ltr">12</span> يوماً): وسيط الترابط <span class="ltr">0.63</span>؛ الداكن = رمال نشطة.</figcaption></figure>
+  </div>
+  <p class="small">الرمال تغطي <span class="ltr">44.7%</span> من الممر. صور MSS لعام <span class="ltr">1972</span> فيها تشوّه خطوط أفقية من المستشعر، لذا قورنت كل منطقة بنفسها (مطابقة توزيعات) وتبقى نتائج التغير نسبية؛
+  والكتل المستطيلة الحادة في خريطة التغير تتبع حدود مشاهد Landsat، فهي على الأرجح تشوّه في المعالجة وليست تغيراً حقيقياً.</p>
+</section>
+<section data-n="9" class="slide two">
+  <div class="text">
+    <h2>القرينتان ٢ و٤: المسارات والأشكال الهندسية</h2>
+    <ul>
+      <li>رُصد <span class="ltr">21,735</span> مقطعاً خطياً بدقة <span class="ltr">20</span> م في الممر.</li>
+      <li>اتجاهات ضعيفة تتلاقى في شصر: <b><span class="ltr">3°</span>،<span class="ltr"> 17°</span>،<span class="ltr"> 43°</span>،<span class="ltr"> 275°</span></b> — لكل منها <span class="ltr">3.5–6.7</span> كم فقط من المقاطع، و<span class="ltr">2–16%</span> منها على طرق حديثة مُخرَّطة. امتدت خطوطها <span class="ltr">40</span> كم داخل الرمال.</li>
+      <li>خطوط مستقيمة متوازية شرق–غرب بتباعد <span class="ltr">2–2.5</span> كم على بعد نحو <span class="ltr">45</span> كم شمال-شمال شرق شصر: نمط خطوط مسح زلزالي نفطي — إيجابية كاذبة مُعلَّمة.</li>
+      <li><span class="ltr">11</span> «زاوية قائمة» فقط في كامل الممر: الجدران والمباني القديمة أصغر من دقة <span class="ltr">10–20</span> م.</li>
+      <li><span class="ltr">861</span> شكلاً دائرياً، منها <span class="ltr">522</span> عند مزارع أو منشآت حديثة.</li>
+      <li>محاذاة الأحجار الثلاثية: تحتاج إحداثيات منشورة لم تتوفر بعد.</li>
+    </ul>
+    <div class="legend"><span><i class="ln" style="border-color:#1baf7a"></i>مسار من شصر (المتقطع: الامتداد)</span>
+    <span><i class="ln" style="border-color:#eda100"></i>مقطع خطي مرصود</span><span><i class="ln" style="border-color:#e34948"></i>طريق حديث مُخرَّط</span>
+    <span><i class="ln dash" style="border-color:#9a9a9a"></i>خط مستقيم طويل (زلزالي محتمل)</span></div>
+  </div>
+  <figure><img src="figures/shisr_tracks.png" alt=""></figure>
+</section>
+<section data-n="10" class="slide">
+  <h2>القرينتان ١ و٥: المعادن والمنخفضات المائية</h2>
+  <div class="two-figs">
+    <figure><img src="figures/pale_crust.png" alt=""><figcaption><b>مؤشر «القشرة الفاتحة» (بديل):</b> سطح فاتح يمتص الأشعة تحت الحمراء القصيرة وغير مصبوغ بالحديد.
+    لا يميز الكربونات عن الجبس أو الكالكريت أو أملاح السبخات، لذا وُزن بنصف القيمة ولا يمكنه وحده «إثبات» قرينة الينابيع.</figcaption></figure>
+    <figure><img src="figures/groundwater_lows.png" alt=""><figcaption><b>المنخفضات المائية:</b> منخفضات مغلقة على سطح ما تحت الكثبان، وانخفاض إقليمي، وأسطح رطبة.
+    أبرزها سبخات بين الكثبان شرق أم الحيش (جهة منخفض المعترضة) — مناطق تصريف طبيعي للمياه الجوفية.</figcaption></figure>
+  </div>
+  <p class="small">عند توفر حساب Earth Engine يُستبدل المؤشر البديل بمؤشرات ASTER: الكالسيت (<span class="ltr">2.33</span> ميكرومتر)، والكربونات والكبريتات من الأشعة الحرارية، ودرجة الحرارة الليلية.</p>
+</section>
+<section data-n="11" class="slide two">
+  <div class="text">
+    <h2>الدرجة المرجَّحة وأعلى 20 موقعاً مرشحاً</h2>
+    <table class="grid compact"><thead><tr><th>القرينة</th><th>الوزن</th></tr></thead><tbody><tr><td>٣ نهاية وادٍ تحت الكثبان</td><td class='num'><span class="ltr">20%</span></td></tr><tr><td>١ معادن الينابيع (بديل × 0.5)</td><td class='num'><span class="ltr">20%</span></td></tr><tr><td>٥ منخفض على مسار المياه الجوفية</td><td class='num'><span class="ltr">10%</span></td></tr><tr><td>٢/٤ مسارات ومحاذاة</td><td class='num'><span class="ltr">15%</span></td></tr><tr><td>٤ شذوذ هندسي</td><td class='num'><span class="ltr">20%</span></td></tr><tr><td>٦ رمال رقيقة أو حديثة</td><td class='num'><span class="ltr">15%</span></td></tr></tbody></table>
+    <ul class="small">
+      <li>تُحجب المنشآت الحديثة بمسافة <span class="ltr">300</span> م، وتُستبعد المزارع، وتُضرب خلايا خطوط المسح الزلزالي في <span class="ltr">0.5</span>.</li>
+      <li>يفصل بين المواقع <span class="ltr">5</span> كم على الأقل. التوزيع: <span class="ltr">14</span> في عُمان و<span class="ltr">6</span> في السعودية (تقريبياً).</li>
+      <li>يمكن تعديل الأوزان والأقنعة مباشرة في الخريطة التفاعلية فيُعاد الترتيب فوراً.</li>
+    </ul>
+    <div class="legend"><span><i class="sw" style="background:linear-gradient(90deg,#cde2fb,#3987e5,#0d366b)"></i>الدرجة (منخفضة ← مرتفعة)</span></div>
+  </div>
+  <figure><img src="figures/score_candidates.png" alt=""></figure>
+</section>
+<section data-n="12" class="slide">
+  <h2>جدول أعلى 20 موقعاً مرشحاً (وليست اكتشافات)</h2>
+  <table class="grid dense"><thead><tr><th>الرمز</th><th>العرض °ش</th><th>الطول °ق</th><th>الدولة</th><th>الدرجة</th><th>القرائن المتحققة (<span class="ltr">≥ 0.5</span>)</th><th>أقرب مرجع</th></tr></thead>
+  <tbody><tr><td><span class="ltr">C01</span></td><td class='num'><span class="ltr">20.6746</span></td><td class='num'><span class="ltr">54.9408</span></td><td>السعودية</td><td class='num'><span class="ltr">0.615</span></td><td>٣ نهاية وادٍ، ٥ منخفض مائي، ٤ شذوذ هندسي</td><td>بحيرات أم الحيش (<span class="ltr">22</span> كم)</td></tr><tr><td><span class="ltr">C02</span></td><td class='num'><span class="ltr">20.6769</span></td><td class='num'><span class="ltr">55.1424</span></td><td>السعودية</td><td class='num'><span class="ltr">0.593</span></td><td>٣ نهاية وادٍ، ٥ منخفض مائي، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>بحيرات أم الحيش (<span class="ltr">43</span> كم)</td></tr><tr><td><span class="ltr">C03</span></td><td class='num'><span class="ltr">18.6602</span></td><td class='num'><span class="ltr">53.6685</span></td><td>عُمان</td><td class='num'><span class="ltr">0.587</span></td><td>٣ نهاية وادٍ، ٢/٤ مسار، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">45</span> كم)</td></tr><tr><td><span class="ltr">C04</span></td><td class='num'><span class="ltr">18.6712</span></td><td class='num'><span class="ltr">53.7820</span></td><td>عُمان</td><td class='num'><span class="ltr">0.583</span></td><td>٣ نهاية وادٍ، ٢/٤ مسار، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">48</span> كم)</td></tr><tr><td><span class="ltr">C05</span></td><td class='num'><span class="ltr">20.4080</span></td><td class='num'><span class="ltr">55.3468</span></td><td>عُمان</td><td class='num'><span class="ltr">0.570</span></td><td>٣ نهاية وادٍ، ٥ منخفض مائي، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>تركيب الحميدان (<span class="ltr">67</span> كم)</td></tr><tr><td><span class="ltr">C06</span></td><td class='num'><span class="ltr">18.6075</span></td><td class='num'><span class="ltr">53.7548</span></td><td>عُمان</td><td class='num'><span class="ltr">0.559</span></td><td>٢/٤ مسار، ٤ شذوذ هندسي</td><td>شصر (<span class="ltr">41</span> كم)</td></tr><tr><td><span class="ltr">C07</span></td><td class='num'><span class="ltr">18.9250</span></td><td class='num'><span class="ltr">53.8435</span></td><td>عُمان</td><td class='num'><span class="ltr">0.557</span></td><td>٣ نهاية وادٍ، ٢/٤ مسار، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">77</span> كم)</td></tr><tr><td><span class="ltr">C08</span></td><td class='num'><span class="ltr">20.3879</span></td><td class='num'><span class="ltr">53.8818</span></td><td>السعودية</td><td class='num'><span class="ltr">0.549</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>تركيب الحميدان (<span class="ltr">92</span> كم)</td></tr><tr><td><span class="ltr">C09</span></td><td class='num'><span class="ltr">19.1730</span></td><td class='num'><span class="ltr">54.1048</span></td><td>عُمان</td><td class='num'><span class="ltr">0.548</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي</td><td>مقشن (<span class="ltr">86</span> كم)</td></tr><tr><td><span class="ltr">C10</span></td><td class='num'><span class="ltr">18.5519</span></td><td class='num'><span class="ltr">53.6707</span></td><td>عُمان</td><td class='num'><span class="ltr">0.537</span></td><td>٣ نهاية وادٍ، ٢/٤ مسار، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">33</span> كم)</td></tr><tr><td><span class="ltr">C11</span></td><td class='num'><span class="ltr">18.5749</span></td><td class='num'><span class="ltr">52.9984</span></td><td>عُمان</td><td class='num'><span class="ltr">0.533</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">77</span> كم)</td></tr><tr><td><span class="ltr">C12</span></td><td class='num'><span class="ltr">20.5896</span></td><td class='num'><span class="ltr">54.0598</span></td><td>السعودية</td><td class='num'><span class="ltr">0.526</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>تركيب الحميدان (<span class="ltr">70</span> كم)</td></tr><tr><td><span class="ltr">C13</span></td><td class='num'><span class="ltr">18.6802</span></td><td class='num'><span class="ltr">52.8635</span></td><td>عُمان</td><td class='num'><span class="ltr">0.522</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">96</span> كم)</td></tr><tr><td><span class="ltr">C14</span></td><td class='num'><span class="ltr">18.8497</span></td><td class='num'><span class="ltr">53.6648</span></td><td>عُمان</td><td class='num'><span class="ltr">0.521</span></td><td>٣ نهاية وادٍ، ٢/٤ مسار، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">66</span> كم)</td></tr><tr><td><span class="ltr">C15</span></td><td class='num'><span class="ltr">18.7416</span></td><td class='num'><span class="ltr">53.6764</span></td><td>عُمان</td><td class='num'><span class="ltr">0.516</span></td><td>٣ نهاية وادٍ، ٢/٤ مسار، ٤ شذوذ هندسي</td><td>شصر (<span class="ltr">54</span> كم)</td></tr><tr><td><span class="ltr">C16</span></td><td class='num'><span class="ltr">18.5827</span></td><td class='num'><span class="ltr">52.9415</span></td><td>عُمان</td><td class='num'><span class="ltr">0.515</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">83</span> كم)</td></tr><tr><td><span class="ltr">C17</span></td><td class='num'><span class="ltr">20.6157</span></td><td class='num'><span class="ltr">55.3350</span></td><td>عُمان</td><td class='num'><span class="ltr">0.512</span></td><td>٣ نهاية وادٍ، ٥ منخفض مائي، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>تركيب الحميدان (<span class="ltr">63</span> كم)</td></tr><tr><td><span class="ltr">C18</span></td><td class='num'><span class="ltr">18.8522</span></td><td class='num'><span class="ltr">53.8070</span></td><td>عُمان</td><td class='num'><span class="ltr">0.506</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>شصر (<span class="ltr">68</span> كم)</td></tr><tr><td><span class="ltr">C19</span></td><td class='num'><span class="ltr">19.9817</span></td><td class='num'><span class="ltr">54.4437</span></td><td>السعودية</td><td class='num'><span class="ltr">0.505</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>قرية مقشن (<span class="ltr">66</span> كم)</td></tr><tr><td><span class="ltr">C20</span></td><td class='num'><span class="ltr">20.1268</span></td><td class='num'><span class="ltr">53.9156</span></td><td>السعودية</td><td class='num'><span class="ltr">0.504</span></td><td>٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</td><td>تركيب الحميدان (<span class="ltr">100</span> كم)</td></tr></tbody></table>
+  <p class="small">لكل موقع صورة تفصيلية (<span class="ltr">4×4</span> كم) وقائمة تفسيرات طبيعية أو حديثة في ملف <span class="ltr">top20_candidates.csv</span> وفي الخريطة التفاعلية. قرينة المعادن لا تبلغ <span class="ltr">0.5</span> لأن مؤشرها البديل محدود عمداً.</p>
+</section>
+<section data-n="13" class="slide">
+  <h2>مثال: الموقع المرشح <span class="ltr">C01</span> — <span class="ltr">20.675°</span> ش،<span class="ltr"> 54.941°</span> ق (السعودية)</h2>
+  <figure class="wide"><img src="figures/candidate_C01.png" alt=""><figcaption>من اليمين إلى اليسار: الخطوط المرصودة على نطاق الأحمر (<span class="ltr">20</span> م) · تظليل نموذج الارتفاع مع نهايات الأودية (▲) والمجرى المدفون المتوقع · صورة Sentinel-2 بالألوان الطبيعية (<span class="ltr">10</span> م). المربع المتقطع = خلية <span class="ltr">1</span> كم.</figcaption></figure>
+  <div class="two-notes">
+    <div><b>القراءة:</b> سبخة واسعة بين الكثبان ذات قشرة ملحية، والأشكال «الدائرية» المرصودة أنماط ملحية. تقع في جهة منخفض المعترضة حيث تصرَّف المياه الجوفية طبيعياً. مكان من هذا النوع قد يحوي رواسب بحيرات قديمة، لكن لا يظهر أي أثر بشري بهذه الدقة.</div>
+    <div class="nat"><b>تفسيرات طبيعية أو حديثة محتملة:</b> سبخة طبيعية؛ تبخّر وتسرّب حديث؛ رواسب بحيرات قديمة.</div>
+  </div>
+  <p class="small">الدرجة <span class="ltr">0.615</span> · القرائن المتحققة: ٣ نهاية وادٍ، ٥ منخفض مائي، ٤ شذوذ هندسي</p>
+</section>
+<section data-n="14" class="slide">
+  <h2>مثال: الموقع المرشح <span class="ltr">C03</span> — <span class="ltr">18.660°</span> ش،<span class="ltr"> 53.669°</span> ق (عُمان)</h2>
+  <figure class="wide"><img src="figures/candidate_C03.png" alt=""><figcaption>من اليمين إلى اليسار: الخطوط المرصودة على نطاق الأحمر (<span class="ltr">20</span> م) · تظليل نموذج الارتفاع مع نهايات الأودية (▲) والمجرى المدفون المتوقع · صورة Sentinel-2 بالألوان الطبيعية (<span class="ltr">10</span> م). المربع المتقطع = خلية <span class="ltr">1</span> كم.</figcaption></figure>
+  <div class="two-notes">
+    <div><b>القراءة:</b> كثبان هلالية على صفيحة رملية قرب نهاية وادٍ، ويمر بها خط الاتجاه الشمالي من شصر. المقاطع الخطية المرصودة هي حواف أوجه الانزلاق للكثبان.</div>
+    <div class="nat"><b>تفسيرات طبيعية أو حديثة محتملة:</b> حواف الكثبان؛ مسارات سيارات حديثة غير مُخرَّطة؛ رواسب مروحة الوادي.</div>
+  </div>
+  <p class="small">الدرجة <span class="ltr">0.587</span> · القرائن المتحققة: ٣ نهاية وادٍ، ٢/٤ مسار، ٤ شذوذ هندسي، ٦ رمال رقيقة</p>
+</section>
+<section data-n="15" class="slide">
+  <h2>مثال: الموقع المرشح <span class="ltr">C11</span> — <span class="ltr">18.575°</span> ش،<span class="ltr"> 52.998°</span> ق (عُمان)</h2>
+  <figure class="wide"><img src="figures/candidate_C11.png" alt=""><figcaption>من اليمين إلى اليسار: الخطوط المرصودة على نطاق الأحمر (<span class="ltr">20</span> م) · تظليل نموذج الارتفاع مع نهايات الأودية (▲) والمجرى المدفون المتوقع · صورة Sentinel-2 بالألوان الطبيعية (<span class="ltr">10</span> م). المربع المتقطع = خلية <span class="ltr">1</span> كم.</figcaption></figure>
+  <div class="two-notes">
+    <div><b>القراءة:</b> كثبان قبابية ونجمية على سهل منبسط في المروحة الشمالية الغربية، قرب نهاية وادٍ ومجراه المدفون المتوقع، في الجوار العام لمنطقة مَيتان التي نُشرت فيها مواقع من العصر الحجري الحديث. الخطوط المرصودة أوجه انزلاق للكثبان.</div>
+    <div class="nat"><b>تفسيرات طبيعية أو حديثة محتملة:</b> أوجه انزلاق الكثبان؛ رواسب الوادي الطرفية.</div>
+  </div>
+  <p class="small">الدرجة <span class="ltr">0.533</span> · القرائن المتحققة: ٣ نهاية وادٍ، ٤ شذوذ هندسي، ٦ رمال رقيقة</p>
+</section>
+<section data-n="16" class="slide">
+  <h2>أبرز النتائج</h2>
+  <ol class="findings">
+    <li><b>لا دليل قاطع</b> في البيانات المجانية (<span class="ltr">10–90</span> م) على مستوطنات أو مبانٍ مدفونة؛ النتائج مواقع مرشحة لمراجعة المختصين فقط.</li>
+    <li>تتجمع المواقع المرشحة في <b>ثلاث بيئات</b>: (أ) جبهة الرمال على بعد <span class="ltr">30–90</span> كم شمال شصر حيث تنتهي الأودية وتمر اتجاهات المسارات الضعيفة؛
+    (ب) المروحة الشمالية الغربية قرب <span class="ltr">53°</span> ق،<span class="ltr"> 18.6°</span> ش في الجوار العام لمواقع مَيتان المنشورة؛ (ج) سبخات بين الكثبان شرق أم الحيش.</li>
+    <li>القرائن الأقوى <b>طبيعية</b> (نهايات الأودية، المنخفضات، الرمال الرقيقة)، أما القرائن «البشرية» (المسارات والأشكال الهندسية) فضعيفة وتطغى عليها أشباه حديثة: مسارات السيارات، والري المحوري، وخطوط المسح الزلزالي.</li>
+    <li>بحيرة أم الحيش الحالية تغذيها بئر مسرّبة حديثة؛ أما السبخات حولها فتدل على منطقة تصريف طبيعي للمياه الجوفية.</li>
+    <li>تتسق النتائج مع دراسة Dellmour وآخرين في Nature (<span class="ltr">2026</span>): ارتبط الاستيطان القديم بتلاقي الماء والحجر الصالح لصنع الأدوات عند أطراف الصحراء، ولم تُعثر على آثار في عمق الربع الخالي.</li>
+    <li>لا يمكن للاستشعار عن بُعد وحده إثبات نسبة أي موقع إلى قوم عاد؛ التأريخ والنسبة يحتاجان إلى دراسة أثرية متخصصة. كما أن مطابقة شصر لمدينة «أوبار» نفسها موضع خلاف.</li>
+  </ol>
+</section>
+<section data-n="17" class="slide two-even">
+  <div><h2>القيود</h2><ul>
+    <li>دقة <span class="ltr">10–20</span> م لا تُظهر الجدران والمباني والأحجار الثلاثية.</li>
+    <li>غياب ASTER: قرينة الينابيع مقيسة بمؤشر بديل غير محدد.</li>
+    <li>لا مواقع تدريب منشورة متاحة، فلم يُدرَّب نموذج التعلم الآلي.</li>
+    <li>نموذج الارتفاع يقيس سطح الكثبان؛ «سطح ما تحت الكثبان» تقدير.</li>
+    <li>صور <span class="ltr">1972</span> مشوهة بخطوط المستشعر؛ نتائج تغير الرمال نسبية.</li>
+    <li>رصد المسارات الباهتة منخفض الحساسية؛ كثير منها لم يُرصد.</li>
+    <li>الأوزان اجتهادية ويمكن تغييرها؛ ولا يوجد تحقق ميداني (ولن يُجرى ضمن هذا العمل).</li>
+  </ul></div>
+  <div><h2>مخاطر الإيجابيات الكاذبة</h2><ul>
+    <li>السبخات والقشور الملحية والجبس الطبيعي.</li>
+    <li>الكالكريت ورواسب البحيرات القديمة (طبيعية لكنها مهمة بيئياً).</li>
+    <li>مراوح الأودية ورواسبها الطرفية.</li>
+    <li>أوجه انزلاق الكثبان وندوب التذرية.</li>
+    <li>فواصل الصخور الجيرية المتعامدة والحفر الكارستية.</li>
+    <li>مسارات السيارات الحديثة غير المُخرَّطة المتشعبة من شصر.</li>
+    <li>خطوط المسح الزلزالي النفطي وخطوط الأنابيب والكهرباء.</li>
+    <li>مزارع الري المحوري حول شصر.</li>
+    <li>البئر المسرّبة في أم الحيش.</li>
+  </ul></div>
+</section>
+<section data-n="18" class="slide">
+  <h2>الخطوات التالية (مكتبية فقط)</h2>
+  <ol class="findings">
+    <li>تشغيل مؤشرات ASTER عبر Google Earth Engine بإضافة مفتاح حساب خدمة باسم <span class="ltr">EE_SERVICE_ACCOUNT_JSON</span> في إعدادات البيئة (لا يُلصق المفتاح في المحادثة).</li>
+    <li>إتاحة نطاقات <span class="ltr">zenodo.org</span> و<span class="ltr">osf.io</span> و<span class="ltr">files.osf.io</span> لجلب إحداثيات Dellmour <span class="ltr">2026</span> (<span class="ltr">125</span> موقعاً)، ثم تدريب النموذج والتحقق المكاني منه ورسم محاذاة الأحجار الثلاثية.</li>
+    <li>مراجعة المواقع المرشحة على صور عالية الدقة (أرشيف Google Earth وBing) من قِبل مختصين في الآثار والجيومورفولوجيا.</li>
+    <li>عرض النتائج على الجهات المختصة (وزارة التراث والسياحة في عُمان، وهيئة التراث في السعودية) قبل أي متابعة. لا زيارات ميدانية ضمن هذا العمل.</li>
+  </ol>
+  <div class="callout"><b>المخرجات في مجلد المشروع:</b> الخريطة التفاعلية <span class="ltr">outputs/maps/rub_al_khali_candidates.html</span> ·
+  جدول المواقع <span class="ltr">outputs/candidates/top20_candidates.csv</span> · الصور التفصيلية <span class="ltr">outputs/candidates/snapshots/</span> · التقرير <span class="ltr">reports/report.md</span> · الشيفرة <span class="ltr">scripts/</span></div>
+</section>
+<section data-n="19" class="slide">
+  <h2>المصادر</h2>
+  <ul class="refs" dir="ltr"><li>Dellmour, R. et al. (2026). Stone and water governed early human settlement of the desert. Nature. doi:10.1038/s41586-026-11180-5</li><li>Kazak, E.S. et al. (2025). Origin of Umm Al Heesh lake in the Rub&#x27; Al Khali desert, Saudi Arabia. Scientific Reports 15, 34850.</li><li>Neville, A.S. et al. (2014). Five buried crater structures imaged on reflection seismic data in Saudi Arabia. GeoArabia 19(1), 17–44.</li><li>Matter, A. et al. (2015). Lake and sabkha deposits of the southern Rub&#x27; al-Khali, Saudi Arabia and Oman. Quaternary International 382, 120–131.</li><li>Maiorano, M.P. et al. (2020). Living and moving in Maitan. Proceedings of the Seminar for Arabian Studies 50.</li><li>Al Kindi, M. et al. (2021). Geo-archaeological survey around Maitan, Oman. Historical Biology 33(9), 1534–1555.</li><li>Rose, J.I. et al. (2011). The Nubian Complex of Dhofar, Oman. PLoS ONE 6(11), e28239.</li><li>Blom, R.G., Crippen, R., Elachi, C. et al. JPL remote sensing of Ubar/Shisr caravan tracks (1990s; IGARSS 2000).</li><li>USGS Open-File Report 82-387: brine reconnaissance, eastern Rub al Khali (Uruq al Mu&#x27;taridah – Umm as Samim).</li><li>Kellndorfer, J. et al. (2022). Global seasonal Sentinel-1 interferometric coherence and backscatter. Scientific Data 9, 73.</li><li>Ninomiya, Y. (2002, 2003). ASTER TIR and SWIR mineral indices.</li><li>Copernicus DEM (ESA, © DLR/Airbus); Sentinel-1/2 (ESA/Copernicus); Landsat (USGS/NASA); OpenStreetMap contributors via Overture Maps; Natural Earth.</li></ul>
+</section></body></html>
