@@ -1,0 +1,183 @@
+{
+  "39QXA": [
+    {
+      "scene": "S2A_T39QXA_20250105T070258_L2A",
+      "datetime": "2025-01-05T07:14:27.008000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 44.4
+    }
+  ],
+  "39QXB": [
+    {
+      "scene": "S2B_T39QXB_20250120T071230_L2A",
+      "datetime": "2025-01-20T07:14:14.782000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 45.2
+    }
+  ],
+  "39QYA": [
+    {
+      "scene": "S2C_T39QYA_20250122T065756_L2A",
+      "datetime": "2025-01-22T07:04:58.960000Z",
+      "cloud_pct": 7.7e-05,
+      "nodata_pct": 0.836039,
+      "sun_elevation": 45.6
+    }
+  ],
+  "39QYB": [
+    {
+      "scene": "S2B_T39QYB_20250216T065833_L2A",
+      "datetime": "2025-02-16T07:04:20.379000Z",
+      "cloud_pct": 0.000194,
+      "nodata_pct": 14.441667,
+      "sun_elevation": 50.5
+    },
+    {
+      "scene": "S2A_T39QYB_20250115T070229_L2A",
+      "datetime": "2025-01-15T07:14:09.159000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 51.156551,
+      "sun_elevation": 44.9
+    }
+  ],
+  "39QYC": [
+    {
+      "scene": "S2A_T39QYC_20250115T070229_L2A",
+      "datetime": "2025-01-15T07:13:54.416000Z",
+      "cloud_pct": 0.009186,
+      "nodata_pct": 31.120762,
+      "sun_elevation": 44.1
+    },
+    {
+      "scene": "S2B_T39QYC_20250216T065833_L2A",
+      "datetime": "2025-02-16T07:04:05.708000Z",
+      "cloud_pct": 0.00438,
+      "nodata_pct": 33.108103,
+      "sun_elevation": 49.8
+    }
+  ],
+  "39QYV": [
+    {
+      "scene": "S2B_T39QYV_20250117T070320_L2A",
+      "datetime": "2025-01-17T07:04:43.417000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 45.6
+    }
+  ],
+  "39QZA": [
+    {
+      "scene": "S2A_T39QZA_20250102T065300_L2A",
+      "datetime": "2025-01-02T07:04:27.392000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 44.0
+    }
+  ],
+  "39QZB": [
+    {
+      "scene": "S2B_T39QZB_20250226T065540_L2A",
+      "datetime": "2025-02-26T07:04:16.175000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 54.2
+    }
+  ],
+  "39QZC": [
+    {
+      "scene": "S2B_T39QZC_20250226T065540_L2A",
+      "datetime": "2025-02-26T07:04:01.749000Z",
+      "cloud_pct": 0.005345,
+      "nodata_pct": 0.0,
+      "sun_elevation": 53.4
+    }
+  ],
+  "39QZV": [
+    {
+      "scene": "S2C_T39QZV_20250221T070241_L2A",
+      "datetime": "2025-02-21T07:05:04.021000Z",
+      "cloud_pct": 2e-05,
+      "nodata_pct": 0.0,
+      "sun_elevation": 54.1
+    }
+  ],
+  "40QBE": [
+    {
+      "scene": "S2B_T40QBE_20250127T065723_L2A",
+      "datetime": "2025-01-27T07:04:42.950000Z",
+      "cloud_pct": 0.001234,
+      "nodata_pct": 3e-06,
+      "sun_elevation": 47.9
+    }
+  ],
+  "40QBF": [
+    {
+      "scene": "S2A_T40QBF_20250102T065300_L2A",
+      "datetime": "2025-01-02T07:04:25.893000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 44.2
+    }
+  ],
+  "40QBG": [
+    {
+      "scene": "S2B_T40QBG_20250117T070320_L2A",
+      "datetime": "2025-01-17T07:04:10.242000Z",
+      "cloud_pct": 0.0,
+      "nodata_pct": 0.0,
+      "sun_elevation": 44.6
+    }
+  ],
+  "40QBH": [
+    {
+      "scene": "S2B_T40QBH_20250226T065540_L2A",
+      "datetime": "2025-02-26T07:04:00.511000Z",
+      "cloud_pct": 0.019509,
+      "nodata_pct": 0.0,
+      "sun_elevation": 53.6
+    }
+  ],
+  "40QBJ": [
+    {
+      "scene": "S2B_T40QBJ_20250127T065723_L2A",
+      "datetime": "2025-01-27T07:03:45.195000Z",
+      "cloud_pct": 0.146164,
+      "nodata_pct": 0.0,
+      "sun_elevation": 44.7
+    }
+  ],
+  "40QCG": [
+    {
+      "scene": "S2A_T40QCG_20250112T065236_L2A",
+      "datetime": "2025-01-12T07:04:04.733000Z",
+      "cloud_pct": 8.2e-05,
+      "nodata_pct": 19.476959,
+      "sun_elevation": 44.4
+    },
+    {
+      "scene": "S2C_T40QCG_20250129T064929_L2A",
+      "datetime": "2025-01-29T06:54:39.581000Z",
+      "cloud_pct": 0.002497,
+      "nodata_pct": 46.047783,
+      "sun_elevation": 45.9
+    }
+  ],
+  "40QCH": [
+    {
+      "scene": "S2A_T40QCH_20250112T065236_L2A",
+      "datetime": "2025-01-12T07:03:50.358000Z",
+      "cloud_pct": 0.000355,
+      "nodata_pct": 1.848103,
+      "sun_elevation": 43.6
+    },
+    {
+      "scene": "S2C_T40QCH_20241210T065401_L2A",
+      "datetime": "2024-12-10T06:54:26.149000Z",
+      "cloud_pct": 0.001679,
+      "nodata_pct": 66.605431,
+      "sun_elevation": 42.9
+    }
+  ]
+}

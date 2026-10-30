@@ -1,0 +1,34 @@
+# Study-area definition. All coordinates are WGS84 (lon, lat in decimal degrees).
+# Scripts read this file; change it here, then re-run scripts/01_define_aoi.py.
+
+anchors:
+  # Shisr fortress: Wikipedia "Archaeological site of Shisr", 18°15'18"N 53°38'56"E
+  shisr:        {lon: 53.6489, lat: 18.2550}
+  # Umm Al Heesh lakes: Arabic Wikipedia (approx.); near the Hamidan structure
+  # (Neville et al. 2014: 20°36'N 54°44'E). Position to be verified on imagery.
+  umm_al_heesh: {lon: 54.7300, lat: 20.7000}
+
+# Main corridor: a band centred on the Shisr -> Umm Al Heesh line (bearing ~23°, NNE)
+corridor:
+  half_width_km: 75     # 150 km wide; wide enough to include Muqshin (~65 km E of the centreline)
+  extend_km: 20         # extend beyond each anchor
+
+# North-west fan from Shisr: tracks leading into the sands, and the Maitan
+# Neolithic site area near the Oman-Yemen-Saudi tri-border
+nw_fan:
+  radius_km: 140
+  bearing_from_deg: 285
+  bearing_to_deg: 360
+
+# The DEM is downloaded further south than the corridor so that the full
+# upstream catchments of the north-draining wadis on the Nejd plateau are included.
+dem_south_lat: 17.0
+
+# Wider context (90 m DEM only): groundwater path from Dhofar towards the
+# 'Uruq al-Mu'taridah / Umm as Samim depression on the Saudi-Oman border.
+context_bbox: [51.5, 17.0, 56.5, 22.0]   # [west, south, east, north]
+
+# Grid for the weighted score (equal-area cells, metres, UTM zone 40N)
+score_grid:
+  crs: "EPSG:32640"
+  cell_m: 1000

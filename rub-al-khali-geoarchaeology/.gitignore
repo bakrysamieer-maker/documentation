@@ -1,0 +1,5 @@
+# Downloaded and intermediate rasters are large and fully reproducible from scripts/
+data/raw/
+data/interim/
+__pycache__/
+*.part

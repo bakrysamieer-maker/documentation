@@ -1,0 +1,99 @@
+{
+  "anchors": {
+    "shisr": {
+      "lon": 53.6489,
+      "lat": 18.255
+    },
+    "umm_al_heesh": {
+      "lon": 54.73,
+      "lat": 20.7
+    }
+  },
+  "corridor_bearing_deg": 22.6,
+  "shisr_to_umm_al_heesh_km": 293.5,
+  "download_bbox_wsen": [
+    52.35,
+    17.8,
+    55.5,
+    21.150000000000002
+  ],
+  "dem_extent_wsen": [
+    52.35,
+    17.0,
+    55.5,
+    21.150000000000002
+  ],
+  "context_bbox_wsen": [
+    51.5,
+    17.0,
+    56.5,
+    22.0
+  ],
+  "area_km2": {
+    "corridor": 56349,
+    "download_bbox": 122625,
+    "context_bbox": 290418
+  },
+  "dem30_tiles": [
+    "N17E052",
+    "N17E053",
+    "N17E054",
+    "N17E055",
+    "N18E052",
+    "N18E053",
+    "N18E054",
+    "N18E055",
+    "N19E052",
+    "N19E053",
+    "N19E054",
+    "N19E055",
+    "N20E053",
+    "N20E054",
+    "N20E055",
+    "N21E054"
+  ],
+  "dem30_size": "629.9 MB",
+  "dem90_tiles": 30,
+  "dem90_size": "137.2 MB",
+  "sentinel2_mgrs_tiles": [
+    "39QXA",
+    "39QXB",
+    "39QYA",
+    "39QYB",
+    "39QYC",
+    "39QYV",
+    "39QZA",
+    "39QZB",
+    "39QZC",
+    "39QZV",
+    "40QBE",
+    "40QBF",
+    "40QBG",
+    "40QBH",
+    "40QBJ",
+    "40QCG",
+    "40QCH"
+  ],
+  "sentinel2_squares_not_in_archive": [
+    "40QAE",
+    "40QAF",
+    "40QAG",
+    "40QAH",
+    "40QAJ"
+  ],
+  "sentinel1_seasonal_tiles": [
+    "N18E053",
+    "N18E054",
+    "N19E052",
+    "N19E053",
+    "N19E054",
+    "N20E052",
+    "N20E053",
+    "N20E054",
+    "N20E055",
+    "N21E053",
+    "N21E054",
+    "N21E055",
+    "N22E054"
+  ]
+}
