@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rub' al-Khali Candidate Screen</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+:root {
+  color-scheme: light;
+  --surface-1: #fcfcfb; --page: #f9f9f7; --text-primary: #0b0b0b; --text-secondary: #52514e;
+  --muted: #898781; --hairline: #e1e0d9; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #f0efec; --text-secondary: #c3c2b7;
+    --muted: #898781; --hairline: #2c2c2a; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #f0efec; --text-secondary: #c3c2b7;
+  --muted: #898781; --hairline: #2c2c2a; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--page); color: var(--text-primary);
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+#wrap { display: flex; height: 100%; }
+#map { flex: 1 1 auto; min-width: 0; background: #d9d6cf; }
+#panel { flex: 0 0 380px; overflow-y: auto; background: var(--surface-1); border-left: 1px solid var(--border);
+  padding: 14px 16px 24px; }
+@media (max-width: 820px) {
+  #wrap { flex-direction: column; }
+  #map { flex: 0 0 62vh; }
+  #panel { flex: 1 1 auto; border-left: 0; border-top: 1px solid var(--border); padding: 12px 16px 24px; }
+}
+h1 { font-size: 16px; margin: 0 0 4px; }
+h2 { font-size: 13px; margin: 18px 0 6px; color: var(--text-primary); }
+p, li { color: var(--text-secondary); }
+.note { border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; background: var(--page); margin: 8px 0; }
+.note b { color: var(--text-primary); }
+.row { display: grid; grid-template-columns: 1fr 120px 44px; gap: 8px; align-items: center; margin: 4px 0; }
+.row label { color: var(--text-primary); }
+.row output { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-secondary); }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.ctrl { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin: 6px 0; }
+button { font: inherit; border: 1px solid var(--border); background: var(--page); color: var(--text-primary);
+  border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+select, input[type=number] { font: inherit; color: var(--text-primary); background: var(--page);
+  border: 1px solid var(--border); border-radius: 6px; padding: 2px 6px; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+th, td { text-align: left; padding: 4px 4px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+th { color: var(--text-secondary); font-weight: 600; }
+td.num { font-variant-numeric: tabular-nums; text-align: right; }
+tr.cand:hover { background: var(--page); cursor: pointer; }
+.swatch { display: inline-block; width: 14px; height: 10px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.lineswatch { display: inline-block; width: 22px; height: 0; border-top-width: 2px; vertical-align: middle; margin-right: 6px; }
+.ramp { height: 10px; border-radius: 3px; margin: 4px 0 2px;
+  background: linear-gradient(90deg, rgba(205,226,251,0.35), #86b6ef, #3987e5, #1c5cab, #0d366b); }
+.legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; font-size: 12px; color: var(--text-secondary); }
+#hover { font-size: 12px; color: var(--text-secondary); min-height: 34px; }
+.leaflet-tooltip.cand-label { background: #ffffff; color: #0b0b0b; border: 1px solid #0b0b0b; font-weight: 600;
+  padding: 0 4px; box-shadow: none; }
+.leaflet-popup-content { font-size: 12px; color: #0b0b0b; }
+.leaflet-popup-content img { max-width: 100%; border-radius: 4px; margin-top: 6px; }
+.bar { height: 6px; background: #3987e5; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="map" role="region" aria-label="Map of candidate scores"></div>
+  <aside id="panel">
+    <h1>Southern Rub' al-Khali: candidate screen</h1>
+    <p>Free satellite data screened for places that match six clues of the hypothesis
+    (springs, stone markers and tracks, north-draining valleys, caravan routes, groundwater
+    lows, shallow sand). <span id="asof"></span></p>
+    <div class="note"><b>Candidates, not discoveries.</b> Every high score has natural or modern
+    explanations (listed per candidate). Desk study only: this is a sensitive border region and
+    nothing here is a basis for field visits.</div>
+
+    <h2>Weights</h2>
+    <div id="weights"></div>
+    <div class="ctrl">
+      <label><input type="checkbox" id="m-modern" checked> suppress modern features (300 m buffer)</label>
+      <label><input type="checkbox" id="m-farm" checked> exclude farms / pivots</label>
+    </div>
+    <div class="row"><label for="m-seis">Seismic-line cells multiplier</label>
+      <input type="range" id="m-seis" min="0" max="100" value="50"><output id="m-seis-o">0.50</output></div>
+    <div class="ctrl"><button id="reset">Reset to config</button><button id="yaml">Copy weights as YAML</button></div>
+
+    <h2>Show</h2>
+    <div class="ctrl"><select id="view"></select>
+      <label>opacity <input type="range" id="opacity" min="20" max="100" value="85" style="width:90px"></label></div>
+    <div class="ramp" aria-hidden="true"></div>
+    <div class="legend-grid"><span>low</span><span style="text-align:right">high (relative)</span></div>
+    <div id="hover" aria-live="polite">Hover over the corridor to read cell values.</div>
+
+    <h2>Top candidates</h2>
+    <div class="ctrl">
+      <label>number <input type="number" id="topn" min="5" max="50" value="20" style="width:56px"></label>
+      <label>min spacing km <input type="number" id="spacing" min="1" max="30" value="5" style="width:56px"></label>
+      <button id="csv">Download CSV</button>
+    </div>
+    <table><thead><tr><th>#</th><th>Lat, Lon</th><th class="num">Score</th><th>Clues &ge; 0.5</th></tr></thead>
+      <tbody id="ctable"></tbody></table>
+
+    <h2>Legend</h2>
+    <div class="legend-grid" id="legend"></div>
+
+    <h2>Data and method</h2>
+    <ul id="method"></ul>
+  </aside>
+</div>
+<script>
+const D = __DATA__;
+
+// ---------------------------------------------------------------- UTM zone 40N (WGS84), Snyder 1987
+const UTM = (() => {
+  const a = 6378137, f = 1 / 298.257223563, k0 = 0.9996, e2 = f * (2 - f), ep2 = e2 / (1 - e2);
+  const e4 = e2 * e2, e6 = e4 * e2, lon0 = 57 * Math.PI / 180;
+  const M = (p) => a * ((1 - e2 / 4 - 3 * e4 / 64 - 5 * e6 / 256) * p - (3 * e2 / 8 + 3 * e4 / 32 + 45 * e6 / 1024) * Math.sin(2 * p)
+    + (15 * e4 / 256 + 45 * e6 / 1024) * Math.sin(4 * p) - (35 * e6 / 3072) * Math.sin(6 * p));
+  function fwd(lon, lat) {
+    const p = lat * Math.PI / 180, l = lon * Math.PI / 180, s = Math.sin(p), c = Math.cos(p), t = Math.tan(p);
+    const N = a / Math.sqrt(1 - e2 * s * s), T = t * t, C = ep2 * c * c, A = (l - lon0) * c;
+    const x = k0 * N * (A + (1 - T + C) * A ** 3 / 6 + (5 - 18 * T + T * T + 72 * C - 58 * ep2) * A ** 5 / 120) + 500000;
+    const y = k0 * (M(p) + N * t * (A * A / 2 + (5 - T + 9 * C + 4 * C * C) * A ** 4 / 24
+      + (61 - 58 * T + T * T + 600 * C - 330 * ep2) * A ** 6 / 720));
+    return [x, y];
+  }
+  function inv(x, y) {
+    const e1 = (1 - Math.sqrt(1 - e2)) / (1 + Math.sqrt(1 - e2));
+    const mu = (y / k0) / (a * (1 - e2 / 4 - 3 * e4 / 64 - 5 * e6 / 256));
+    const p1 = mu + (3 * e1 / 2 - 27 * e1 ** 3 / 32) * Math.sin(2 * mu) + (21 * e1 * e1 / 16 - 55 * e1 ** 4 / 32) * Math.sin(4 * mu)
+      + (151 * e1 ** 3 / 96) * Math.sin(6 * mu) + (1097 * e1 ** 4 / 512) * Math.sin(8 * mu);
+    const s = Math.sin(p1), c = Math.cos(p1), t = Math.tan(p1);
+    const C1 = ep2 * c * c, T1 = t * t, N1 = a / Math.sqrt(1 - e2 * s * s), R1 = a * (1 - e2) / Math.pow(1 - e2 * s * s, 1.5);
+    const D_ = (x - 500000) / (N1 * k0);
+    const lat = p1 - (N1 * t / R1) * (D_ * D_ / 2 - (5 + 3 * T1 + 10 * C1 - 4 * C1 * C1 - 9 * ep2) * D_ ** 4 / 24
+      + (61 + 90 * T1 + 298 * C1 + 45 * T1 * T1 - 252 * ep2 - 3 * C1 * C1) * D_ ** 6 / 720);
+    const lon = lon0 + (D_ - (1 + 2 * T1 + C1) * D_ ** 3 / 6 + (5 - 2 * C1 + 28 * T1 - 3 * C1 * C1 + 8 * ep2 + 24 * T1 * T1) * D_ ** 5 / 120) / c;
+    return [lon * 180 / Math.PI, lat * 180 / Math.PI];
+  }
+  return { fwd, inv };
+})();
+
+// ---------------------------------------------------------------- data
+const el = (id) => document.getElementById(id);
+const dec = (b64) => Uint8Array.from(atob(b64), (ch) => ch.charCodeAt(0));
+const A = {};
+for (const k in D.arrays) A[k] = dec(D.arrays[k]);
+const G = D.grid, NAMES = D.components, LABEL = D.labels;
+el("asof").textContent = D.asof;
+const cellLL = (k) => { const r = Math.floor(k / G.W), c = k % G.W;
+  return UTM.inv(G.c + (c + 0.5) * G.a, G.f + (r + 0.5) * G.e); };
+const cellAt = (lat, lon) => { const [x, y] = UTM.fwd(lon, lat);
+  const c = Math.floor((x - G.c) / G.a), r = Math.floor((y - G.f) / G.e);
+  if (r < 0 || r >= G.H || c < 0 || c >= G.W) return -1; const k = r * G.W + c; return A.inside[k] ? k : -1; };
+
+// ---------------------------------------------------------------- map and layers
+const map = L.map("map", { preferCanvas: true }).fitBounds(D.canvas_bounds);
+const bases = {
+  "Sentinel-2 true colour 2024-25 (embedded)": L.imageOverlay(D.images.s2.url, D.images.s2.bounds),
+  "DEM hillshade 30 m (embedded)": L.imageOverlay(D.images.hillshade.url, D.images.hillshade.bounds),
+  "Esri World Imagery (online)": L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    { attribution: "Esri, Maxar, Earthstar Geographics", maxZoom: 18 }),
+  "OpenStreetMap (online)": L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    { attribution: "&copy; OpenStreetMap contributors", maxZoom: 18 }),
+};
+bases["Sentinel-2 true colour 2024-25 (embedded)"].addTo(map);
+const overlays = {};
+for (const [key, img] of Object.entries(D.images)) {
+  if (key === "s2" || key === "hillshade") continue;
+  overlays[img.label] = L.imageOverlay(img.url, img.bounds, { opacity: 0.85 });
+}
+const lineLayer = (gj, style, tip) => L.geoJSON(gj, { style, onEachFeature: (f, l) => tip && l.bindTooltip(tip(f.properties), { sticky: true }) });
+const V = D.vectors;
+overlays["Corridor outline"] = L.geoJSON(V.corridor, { style: { color: "#0b0b0b", weight: 2, fill: false, dashArray: "6 4" } });
+overlays["International borders (Natural Earth, approx.)"] = L.geoJSON(V.borders, { style: { color: "#ffffff", weight: 2, dashArray: "8 4", opacity: 0.9 } });
+overlays["Wadis (catchment >= 50 km2)"] = lineLayer(V.streams, (f) => ({ color: "#2a78d6", weight: Math.min(4, 0.8 + Math.log10(f.properties.catchment_km2 || 50) - 1.2) }),
+  (p) => `wadi, catchment ${Math.round(p.catchment_km2)} km2`);
+overlays["Wadi ends under dunes"] = L.geoJSON(V.termini, { pointToLayer: (f, ll) => L.circleMarker(ll, { radius: 4 + Math.log10(f.properties.catchment_km2), color: "#ffffff", weight: 1, fillColor: "#2a78d6", fillOpacity: 1 })
+  .bindTooltip(`wadi end under dunes: catchment ${f.properties.catchment_km2} km2, ${f.properties.elev_m} m`) });
+overlays["Projected buried courses (40 km)"] = lineLayer(V.courses, { color: "#2a78d6", weight: 2, dashArray: "2 5" }, (p) => `projected course from a ${p.catchment_km2} km2 wadi`);
+overlays["Tracks radiating from Shisr (+40 km extension)"] = lineLayer(V.tracks, (f) => ({ color: f.properties.mapped_modern_fraction >= 0.5 ? "#898781" : "#1baf7a", weight: 3, dashArray: f.properties.part === "detected" ? null : "8 6" }),
+  (p) => `bearing ${p.bearing_deg} deg, ${p.segment_km} km of segments, detected to ${p.detected_to_km} km, ${Math.round(p.mapped_modern_fraction * 100)}% on mapped modern roads (${p.part})`);
+overlays["Long straight lines (seismic / pipeline / road-like)"] = lineLayer(V.straight, { color: "#c3c2b7", weight: 1.5, dashArray: "4 4" }, (p) => `straight for ${p.extent_km} km, azimuth ${p.azimuth_deg} deg`);
+overlays["Mapped modern roads and tracks (OSM via Overture)"] = lineLayer(V.roads, { color: "#52514e", weight: 1 }, (p) => `${p.class || "road"} ${p.names || ""}`);
+overlays["Mapped pipelines and power lines"] = lineLayer(V.pipes, { color: "#0b0b0b", weight: 1.2, dashArray: "1 4" }, (p) => p.class);
+overlays["Dune displacement 1972-2025 (indicative)"] = lineLayer(V.disp, { color: "#eb6834", weight: 1.5 }, (p) => `${p.shift_m} m (${p.rate_m_per_yr} m/yr), azimuth ${p.azimuth_deg} deg`);
+overlays["Reference points"] = L.geoJSON(V.refs, { pointToLayer: (f, ll) => L.circleMarker(ll, { radius: 6, color: "#0b0b0b", weight: 1.5, fillColor: f.properties.role === "known_site" ? "#e34948" : "#ffffff", fillOpacity: 1 })
+  .bindPopup(`<b>${f.properties.name}</b><br>${f.properties.notes || ""}<br><i>${f.properties.source || ""}</i>`) });
+for (const k of ["Corridor outline", "International borders (Natural Earth, approx.)", "Wadi ends under dunes", "Tracks radiating from Shisr (+40 km extension)", "Reference points"]) overlays[k].addTo(map);
+L.control.layers(bases, overlays, { collapsed: window.innerWidth < 1100 }).addTo(map);
+L.control.scale({ imperial: false }).addTo(map);
+
+// ---------------------------------------------------------------- live score canvas (UTM cells -> Web Mercator pixels)
+const bb = D.canvas_bounds, CW = 900;
+const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
+const yN = mercY(bb[1][0]), yS = mercY(bb[0][0]);
+const CH = Math.round(CW * (yN - yS) / ((bb[1][1] - bb[0][1]) * Math.PI / 180));
+const pix = new Int32Array(CW * CH);
+for (let j = 0; j < CH; j++) {
+  const my = yN - (j + 0.5) * (yN - yS) / CH, lat = (2 * Math.atan(Math.exp(my)) - Math.PI / 2) * 180 / Math.PI;
+  for (let i = 0; i < CW; i++) pix[j * CW + i] = cellAt(lat, bb[0][1] + (i + 0.5) * (bb[1][1] - bb[0][1]) / CW);
+}
+const canvas = document.createElement("canvas"); canvas.width = CW; canvas.height = CH;
+const ctx = canvas.getContext("2d"), img = ctx.createImageData(CW, CH);
+const RAMP = ["#cde2fb", "#b7d3f6", "#9ec5f4", "#86b6ef", "#6da7ec", "#5598e7", "#3987e5", "#2a78d6", "#256abf", "#1c5cab", "#184f95", "#104281", "#0d366b"]
+  .map((h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)));
+const LUT = Array.from({ length: 256 }, (_, i) => { const t = i / 255 * (RAMP.length - 1), a = Math.floor(t), b = Math.min(a + 1, RAMP.length - 1), f = t - a;
+  return RAMP[a].map((v, n) => Math.round(v + (RAMP[b][n] - v) * f)); });
+const scoreLayer = L.imageOverlay(canvas.toDataURL(), bb, { opacity: 0.85 }).addTo(map);
+
+let W = { ...D.weights };
+const score = new Float32Array(G.W * G.H);
+function computeScore() {
+  const wsum = NAMES.reduce((s, k) => s + W[k], 0) || 1;
+  const useModern = el("m-modern").checked, useFarm = el("m-farm").checked, seis = +el("m-seis").value / 100;
+  for (let k = 0; k < score.length; k++) {
+    if (!A.inside[k]) { score[k] = -1; continue; }
+    let s = 0; for (const n of NAMES) s += W[n] * A[n][k] / 255;
+    let m = 1; if (useModern) m *= A.modern_mult[k] / 255; if (useFarm && A.farm[k]) m = 0; if (A.seismic[k]) m *= seis;
+    score[k] = (s / wsum) * m;
+  }
+}
+function render() {
+  const view = el("view").value;
+  let mx = 1e-9; if (view === "score") for (const v of score) if (v > mx) mx = v;
+  for (let p = 0; p < pix.length; p++) {
+    const k = pix[p], o = p * 4;
+    const v = k < 0 ? 0 : (view === "score" ? score[k] / mx : A[view][k] / 255);
+    if (!(v > 0.02)) { img.data[o + 3] = 0; continue; }
+    const c = LUT[Math.min(255, Math.round(v * 255))];
+    img.data[o] = c[0]; img.data[o + 1] = c[1]; img.data[o + 2] = c[2]; img.data[o + 3] = Math.round(255 * Math.min(1, 0.2 + 0.8 * v));
+  }
+  ctx.putImageData(img, 0, 0); scoreLayer.setUrl(canvas.toDataURL());
+}
+
+// ---------------------------------------------------------------- candidates
+const candLayer = L.layerGroup().addTo(map);
+let current = [];
+const snapByCell = {}; for (const c of D.default_candidates) snapByCell[c.cell] = c;
+function rankCandidates() {
+  const N = Math.max(1, +el("topn").value), sp = Math.max(0, +el("spacing").value);
+  const order = []; for (let k = 0; k < score.length; k++) if (score[k] > 0) order.push(k);
+  order.sort((a, b) => score[b] - score[a]);
+  const chosen = [];
+  for (const k of order) { const r = Math.floor(k / G.W), c = k % G.W;
+    if (chosen.every((q) => Math.hypot(q.r - r, q.c - c) >= sp)) chosen.push({ k, r, c });
+    if (chosen.length >= N) break; }
+  current = chosen.map((q, i) => { const [lon, lat] = cellLL(q.k);
+    const comps = Object.fromEntries(NAMES.map((n) => [n, A[n][q.k] / 255]));
+    return { rank: i + 1, id: `C${String(i + 1).padStart(2, "0")}`, k: q.k, lat, lon, score: score[q.k], comps,
+      clues: NAMES.filter((n) => comps[n] >= 0.5).map((n) => LABEL[n].short) }; });
+  candLayer.clearLayers();
+  const rows = [];
+  for (const c of current) {
+    const d = snapByCell[c.k];
+    const bars = NAMES.map((n) => `<div>${LABEL[n].long}: ${c.comps[n].toFixed(2)}<div class="bar" style="width:${Math.round(c.comps[n] * 100)}%"></div></div>`).join("");
+    const extra = d ? `<p><b>Possible natural or modern explanations:</b> ${d.explanations}</p><p>Nearest reference: ${d.nearest}</p><img src="${d.thumb}" alt="snapshot of ${d.id}">`
+      : `<p>No pre-computed snapshot for this cell (it enters the list under the current weights).</p>`;
+    L.circleMarker([c.lat, c.lon], { radius: 8, color: "#0b0b0b", weight: 2, fillColor: "#ffffff", fillOpacity: 1 })
+      .bindTooltip(c.id, { permanent: true, direction: "right", className: "cand-label", offset: [8, 0] })
+      .bindPopup(`<b>${c.id}: CANDIDATE (not a discovery)</b><br>${c.lat.toFixed(4)} N, ${c.lon.toFixed(4)} E, score ${c.score.toFixed(3)}<br>${bars}${extra}`, { maxWidth: 460 })
+      .addTo(candLayer);
+    rows.push(`<tr class="cand" data-k="${c.k}"><td>${c.id}</td><td>${c.lat.toFixed(4)}, ${c.lon.toFixed(4)}</td><td class="num">${c.score.toFixed(3)}</td><td>${c.clues.join(", ") || "none"}</td></tr>`);
+  }
+  el("ctable").innerHTML = rows.join("");
+  for (const tr of el("ctable").querySelectorAll("tr")) tr.addEventListener("click", () => {
+    const c = current.find((q) => q.k === +tr.dataset.k); map.setView([c.lat, c.lon], 12); });
+}
+
+// ---------------------------------------------------------------- controls
+const wbox = el("weights");
+for (const n of NAMES) {
+  const row = document.createElement("div"); row.className = "row";
+  row.innerHTML = `<label for="w-${n}">${LABEL[n].long}</label><input type="range" id="w-${n}" min="0" max="100" value="${Math.round(W[n] * 100)}"><output id="o-${n}"></output>`;
+  wbox.appendChild(row);
+}
+const viewSel = el("view");
+viewSel.innerHTML = `<option value="score">Weighted score</option>` + NAMES.map((n) => `<option value="${n}">${LABEL[n].long}</option>`).join("");
+function showWeights() { const s = NAMES.reduce((a, n) => a + W[n], 0) || 1;
+  for (const n of NAMES) el(`o-${n}`).textContent = `${Math.round(100 * W[n] / s)}%`;
+  el("m-seis-o").textContent = (+el("m-seis").value / 100).toFixed(2); }
+let timer = null;
+function update() { clearTimeout(timer); timer = setTimeout(() => { computeScore(); render(); rankCandidates(); showWeights(); }, 80); }
+for (const n of NAMES) el(`w-${n}`).addEventListener("input", (e) => { W[n] = +e.target.value / 100; update(); });
+for (const id of ["m-modern", "m-farm", "m-seis", "topn", "spacing"]) el(id).addEventListener("input", update);
+viewSel.addEventListener("change", render);
+el("opacity").addEventListener("input", (e) => scoreLayer.setOpacity(+e.target.value / 100));
+el("m-seis").value = Math.round(D.seismic_multiplier * 100);
+el("reset").addEventListener("click", () => { W = { ...D.weights }; for (const n of NAMES) el(`w-${n}`).value = Math.round(W[n] * 100);
+  el("m-modern").checked = true; el("m-farm").checked = true; el("m-seis").value = Math.round(D.seismic_multiplier * 100); update(); });
+el("yaml").addEventListener("click", () => {
+  const s = NAMES.reduce((a, n) => a + W[n], 0) || 1;
+  const txt = "weights:\n" + NAMES.map((n) => `  ${n}: ${(W[n] / s).toFixed(3)}`).join("\n") + "\n";
+  navigator.clipboard?.writeText(txt).then(() => { el("yaml").textContent = "Copied"; setTimeout(() => el("yaml").textContent = "Copy weights as YAML", 1500); },
+    () => alert(txt));
+});
+el("csv").addEventListener("click", () => {
+  const head = ["rank", "id", "lat", "lon", "score", ...NAMES, "clues"];
+  const lines = [head.join(",")].concat(current.map((c) => [c.rank, c.id, c.lat.toFixed(5), c.lon.toFixed(5), c.score.toFixed(4),
+    ...NAMES.map((n) => c.comps[n].toFixed(3)), `"${c.clues.join("; ")}"`].join(",")));
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
+  a.download = "candidates_current_weights.csv"; a.click();
+});
+map.on("mousemove", (e) => {
+  const k = cellAt(e.latlng.lat, e.latlng.lng);
+  if (k < 0) { el("hover").textContent = "Outside the analysis corridor."; return; }
+  el("hover").innerHTML = `<b>${e.latlng.lat.toFixed(4)} N, ${e.latlng.lng.toFixed(4)} E</b> - score ${score[k].toFixed(3)}<br>`
+    + NAMES.map((n) => `${LABEL[n].short} ${(A[n][k] / 255).toFixed(2)}`).join(" · ");
+});
+
+// ---------------------------------------------------------------- legend and method notes
+el("legend").innerHTML = D.legend.map((l) => `<span><span class="${l.line ? "lineswatch" : "swatch"}" style="${l.line ? `border-top: 2px ${l.dash ? "dashed" : "solid"} ${l.color}` : `background:${l.color}`}"></span>${l.label}</span>`).join("");
+el("method").innerHTML = D.method.map((m) => `<li>${m}</li>`).join("");
+computeScore(); render(); rankCandidates(); showWeights();
+</script>
+</body>
+</html>

@@ -16,29 +16,14 @@ from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 import rasterio
-import requests
 from rasterio.merge import merge
-from rasterio.warp import Resampling, calculate_default_transform, reproject
+from rasterio.warp import Resampling, reproject
 
-from common import INTERIM, OUTPUTS, RAW, load_yaml, write_json, human_bytes
+from common import INTERIM, OUTPUTS, RAW, download, load_yaml, write_json, human_bytes
 import s2_catalog
 
 cfg = load_yaml("aoi.yaml")
 summary = json.loads((OUTPUTS / "aoi_summary.json").read_text())
-
-
-def download(url: str, dest) -> int:
-    if dest.exists() and dest.stat().st_size > 0:
-        return dest.stat().st_size
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    with requests.get(url, stream=True, timeout=120) as r:
-        r.raise_for_status()
-        tmp = dest.with_suffix(dest.suffix + ".part")
-        with open(tmp, "wb") as fh:
-            for chunk in r.iter_content(1 << 20):
-                fh.write(chunk)
-        tmp.rename(dest)
-    return dest.stat().st_size
 
 
 # ------------------------------------------------------------------ GLO-90 DEM

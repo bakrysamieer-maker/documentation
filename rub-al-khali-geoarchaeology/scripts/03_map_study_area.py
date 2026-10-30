@@ -10,8 +10,6 @@ Outputs: outputs/maps/00_study_area.html, outputs/figures/00_study_area.png,
 """
 from __future__ import annotations
 
-import base64
-import io
 import json
 
 import folium
@@ -25,12 +23,12 @@ import pandas as pd
 import rasterio
 from folium import plugins
 from matplotlib.colors import LightSource
-from PIL import Image
-from rasterio.warp import Resampling, calculate_default_transform, reproject
+from rasterio.warp import Resampling
 from scipy import ndimage
 from shapely.geometry import LineString, box
 
 from common import FIGURES, INTERIM, MAPS, OUTPUTS, PROCESSED, REFERENCE, load_yaml
+from maputil import data_uri, to_mercator
 
 cfg = load_yaml("aoi.yaml")
 summary = json.loads((OUTPUTS / "aoi_summary.json").read_text())
@@ -87,34 +85,6 @@ print(f"Regional (15 km-smoothed) low north of 19.5N: lon {low_pt[0]:.2f}, lat {
 ne = gpd.read_file(REFERENCE / "ne_10m_admin_0_boundary_lines_land.geojson")
 borders = gpd.clip(ne, box(*ctx))[["NAME", "geometry"]] if "NAME" in ne else gpd.clip(ne, box(*ctx))
 borders.to_file(PROCESSED / "borders_context.geojson")
-
-
-# ------------------------------------------------------------------ helpers: warp to Web Mercator and encode
-def to_mercator(arr, src_t, src_crs="EPSG:4326", bands_first=False, resampling=Resampling.bilinear):
-    a = arr if bands_first else arr[None]
-    h, w = a.shape[1:]
-    b = rasterio.transform.array_bounds(h, w, src_t)
-    dst_t, W, H = calculate_default_transform(src_crs, "EPSG:3857", w, h, *b)
-    out = np.zeros((a.shape[0], H, W), a.dtype)
-    for i in range(a.shape[0]):
-        reproject(a[i], out[i], src_transform=src_t, src_crs=src_crs, dst_transform=dst_t,
-                  dst_crs="EPSG:3857", resampling=resampling)
-    wb = rasterio.transform.array_bounds(H, W, dst_t)
-    from pyproj import Transformer
-    tr = Transformer.from_crs(3857, 4326, always_xy=True)
-    lo0, la0 = tr.transform(wb[0], wb[1])
-    lo1, la1 = tr.transform(wb[2], wb[3])
-    return out, [[la0, lo0], [la1, lo1]]
-
-
-def data_uri(rgb_or_rgba: np.ndarray, fmt="PNG", max_px=2200, quality=85):
-    img = Image.fromarray(rgb_or_rgba)
-    if max(img.size) > max_px:
-        s = max_px / max(img.size)
-        img = img.resize((int(img.size[0] * s), int(img.size[1] * s)), Image.LANCZOS)
-    buf = io.BytesIO()
-    img.save(buf, format=fmt, **({"quality": quality} if fmt in ("JPEG", "WEBP") else {"optimize": True}))
-    return f"data:image/{fmt.lower()};base64," + base64.b64encode(buf.getvalue()).decode()
 
 
 # hillshade tinted by elevation
